@@ -1,0 +1,640 @@
+11.5824 	INFO 	---START PARAMETERS---
+11.5825 	INFO 	filename: LetterOrderTask_d5_REMALPA-sub1-sess1-Dec_08_1453
+11.5825 	INFO 	subject: 1
+11.5825 	INFO 	session: 1
+11.5825 	INFO 	date: Dec_08_1453
+11.5825 	INFO 	catchProb: 0.0
+11.5825 	INFO 	cueDur: 1.0
+11.5825 	INFO 	cues: ['REMEMBER', 'ALPHABETIZE']
+11.5825 	INFO 	fixCrossPos: [0, 0]
+11.5825 	INFO 	fixCrossSize: 50
+11.5825 	INFO 	fullScreen: True
+11.5825 	INFO 	letters: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+11.5825 	INFO 	maxDelayDur: 9.0
+11.5825 	INFO 	maxISI: 16.0
+11.5825 	INFO 	minDelayDur: 9.0
+11.5825 	INFO 	minISI: 16.0
+11.5825 	INFO 	nLetters: 5
+11.5825 	INFO 	pauseDur: 1.5
+11.5826 	INFO 	promptDir: Prompts/
+11.5826 	INFO 	promptFile: LetterOrderPrompts_5button.txt
+11.5826 	INFO 	rememberProb: 0.0
+11.5826 	INFO 	respKeys: ['1', '2', '3', '4', '6']
+11.5826 	INFO 	screenColor: (128, 128, 128)
+11.5826 	INFO 	screenToShow: 0
+11.5826 	INFO 	sessionDur: 656.0
+11.5826 	INFO 	skipPrompts: False
+11.5826 	INFO 	stringDur: 2.5
+11.5826 	INFO 	tCoolDown: 8.0
+11.5826 	INFO 	tStartup: 8.0
+11.5826 	INFO 	testDur: 2.0
+11.5826 	INFO 	triggerKey: 5
+11.5826 	INFO 	---END PARAMETERS---
+11.6275 	WARNING 	Movie2 stim could not be imported and won't be available
+12.0671 	INFO 	Loaded monitor calibration from ['2015_12_02 12:18']
+12.5049 	EXP 	Created win = Window(allowGUI=False, allowStencil=False, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([ 128.,  128.,  128.]), colorSpace='rgb255', fullscr=UNKNOWN, gamma=None, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor instance at 0xf3d3e18>, name='win', pos=[0, 0], screen=0, size=array([800, 600]), stereo=False, units='deg', useFBO=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+12.5067 	EXP 	Created fixCross = ShapeStim(autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace='rgb', fillRGB=None, interpolate=True, lineColor='#000000', lineColorSpace='hex', lineRGB=array([0, 0, 0]), lineWidth=3.0, name='fixCross', opacity=1.0, ori=array(0.0), pos=array([ 0.,  0.]), size=array([ 1.,  1.]), units='pix', vertices=ndarray(...), win=Window(...))
+12.5506 	EXP 	Created topMsg = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='#000000', colorSpace='hex', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, name='topMsg', opacity=1.0, ori=0.0, pos=array([ 0. ,  0.5]), rgb=array([0, 0, 0]), text=u'aaa', units='norm', win=Window(...), wrapWidth=1.5)
+12.5539 	EXP 	Created bottomMsg = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='#000000', colorSpace='hex', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, name='bottomMsg', opacity=1.0, ori=0.0, pos=array([ 0. , -0.5]), rgb=array([0, 0, 0]), text=u'bbb', units='norm', win=Window(...), wrapWidth=1.5)
+12.5563 	EXP 	Created mainText = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='#000000', colorSpace='hex', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, name='mainText', opacity=1.0, ori=0.0, pos=array([ 0.,  0.]), rgb=array([0, 0, 0]), text=u'bbb', units='norm', win=Window(...), wrapWidth=3.5)
+12.6030 	EXP 	topMsg: text = 'You will see a cross and letters on the screen. Please look directly at the center of the screen (the spot where the cross appears) throughout the experiment.'
+12.6030 	EXP 	bottomMsg: text = 'Press any button to continue.'
+12.6030 	EXP 	Display Instructions1
+43.5855 	DATA 	Keypress: 3
+43.6547 	EXP 	topMsg: text = "You will see a string of letters, then instructions indicating what you should do with them. If the instructions say 'REMEMBER', remember them in the order you saw them. If they say 'ALPHABETIZE', alphabetize the letters and and remember them in that order. "
+43.6547 	EXP 	bottomMsg: text = 'Press any button to continue.'
+43.6547 	EXP 	Display Instructions2
+46.7380 	DATA 	Keypress: 3
+46.7877 	EXP 	topMsg: text = "After a delay period, you will see a letter and question mark (like 'F?'). Press the button corresponding to the position of that letter in the sequence you were remembering. Respond as quickly and accurately as you can. If you're not sure, take your best guess."
+46.7877 	EXP 	bottomMsg: text = 'Press any button to continue.'
+46.7877 	EXP 	Display Instructions3
+52.1402 	DATA 	Keypress: 3
+52.1744 	EXP 	topMsg: text = "On some trials, you will see a * instead of a letter (like '*?'). This means no response is needed for this trial and you can forget the sequence of letters."
+52.1744 	EXP 	bottomMsg: text = 'Press any button to continue.'
+52.1744 	EXP 	Display Instructions4
+54.1902 	DATA 	Keypress: 3
+54.2244 	EXP 	topMsg: text = 'If you have any questions, please ask the experimenter now.'
+54.2244 	EXP 	bottomMsg: text = 'WHEN YOU ARE READY TO BEGIN, press any button.'
+54.2244 	EXP 	Display Instructions5
+56.0514 	DATA 	Keypress: 3
+56.0710 	EXP 	topMsg: text = 'Waiting for scanner to start...'
+56.0710 	EXP 	bottomMsg: text = "(Press '5' to override.)"
+56.0710 	EXP 	Display WaitingForScanner
+98.5452 	DATA 	Keypress: 5
+98.5601 	EXP 	Display fixation
+98.5606 	EXP 	---START EXPERIMENT---
+98.5612 	EXP 	trial: iTrial = 1, isRemember = 1, delayDur = 9.0, ISI = 16.0, startString = GHVMI, testLetter = V, testLoc = 3, isCatchTrial = 0
+100.5450 	DATA 	Keypress: 5
+102.5459 	DATA 	Keypress: 5
+104.5459 	DATA 	Keypress: 5
+106.5509 	EXP 	mainText: text = 'GHVMI'
+106.5509 	EXP 	Display string (GHVMI)
+106.5518 	DATA 	Keypress: 5
+108.5467 	DATA 	Keypress: 5
+109.0546 	EXP 	Display fixation (pause)
+110.5637 	EXP 	mainText: text = 'REMEMBER'
+110.5637 	EXP 	Display cue (REMEMBER)
+110.5647 	DATA 	Keypress: 5
+111.5575 	EXP 	Display fixation (delay)
+112.5487 	DATA 	Keypress: 5
+114.5486 	DATA 	Keypress: 5
+116.5495 	DATA 	Keypress: 5
+118.5495 	DATA 	Keypress: 5
+120.5484 	EXP 	mainText: text = 'V?'
+120.5484 	EXP 	Display test stim (V?)
+120.5503 	DATA 	Keypress: 5
+121.9433 	DATA 	Keypress: 4
+121.9435 	EXP 	pressed key 4
+122.5488 	EXP 	Display fixation (ISI)
+122.5512 	DATA 	Keypress: 5
+124.5513 	DATA 	Keypress: 5
+126.5524 	DATA 	Keypress: 5
+128.5522 	DATA 	Keypress: 5
+130.5532 	DATA 	Keypress: 5
+132.5530 	DATA 	Keypress: 5
+134.5539 	DATA 	Keypress: 5
+136.5540 	DATA 	Keypress: 5
+137.5455 	EXP 	trial: iTrial = 2, isRemember = 0, delayDur = 9.0, ISI = 16.0, startString = NLYXZ, testLetter = L, testLoc = 1, isCatchTrial = 0
+138.5497 	EXP 	mainText: text = 'NLYXZ'
+138.5497 	EXP 	Display string (NLYXZ)
+138.5876 	DATA 	Keypress: 5
+140.5875 	DATA 	Keypress: 5
+141.0495 	EXP 	Display fixation (pause)
+142.5493 	EXP 	mainText: text = 'ALPHABETIZE'
+142.5493 	EXP 	Display cue (ALPHABETIZE)
+142.5875 	DATA 	Keypress: 5
+143.5495 	EXP 	Display fixation (delay)
+144.5875 	DATA 	Keypress: 5
+146.5873 	DATA 	Keypress: 5
+148.5874 	DATA 	Keypress: 5
+150.5872 	DATA 	Keypress: 5
+152.5503 	EXP 	mainText: text = 'L?'
+152.5503 	EXP 	Display test stim (L?)
+152.5872 	DATA 	Keypress: 5
+154.0444 	DATA 	Keypress: 4
+154.0445 	EXP 	pressed key 4
+154.5507 	EXP 	Display fixation (ISI)
+154.5872 	DATA 	Keypress: 5
+156.5871 	DATA 	Keypress: 5
+158.5872 	DATA 	Keypress: 5
+160.5870 	DATA 	Keypress: 5
+162.5869 	DATA 	Keypress: 5
+164.5868 	DATA 	Keypress: 5
+166.5868 	DATA 	Keypress: 5
+168.5867 	DATA 	Keypress: 5
+169.5455 	EXP 	trial: iTrial = 3, isRemember = 0, delayDur = 9.0, ISI = 16.0, startString = RSGPU, testLetter = P, testLoc = 2, isCatchTrial = 0
+170.5533 	EXP 	mainText: text = 'RSGPU'
+170.5533 	EXP 	Display string (RSGPU)
+170.5867 	DATA 	Keypress: 5
+172.5865 	DATA 	Keypress: 5
+173.0535 	EXP 	Display fixation (pause)
+174.5526 	EXP 	mainText: text = 'ALPHABETIZE'
+174.5526 	EXP 	Display cue (ALPHABETIZE)
+174.5866 	DATA 	Keypress: 5
+175.5496 	EXP 	Display fixation (delay)
+176.5865 	DATA 	Keypress: 5
+178.5865 	DATA 	Keypress: 5
+180.5864 	DATA 	Keypress: 5
+182.5863 	DATA 	Keypress: 5
+184.5506 	EXP 	mainText: text = 'P?'
+184.5506 	EXP 	Display test stim (P?)
+184.5863 	DATA 	Keypress: 5
+185.7414 	DATA 	Keypress: 2
+185.7416 	EXP 	pressed key 2
+186.5540 	EXP 	Display fixation (ISI)
+186.5863 	DATA 	Keypress: 5
+188.5860 	DATA 	Keypress: 5
+190.5860 	DATA 	Keypress: 5
+192.5859 	DATA 	Keypress: 5
+194.5859 	DATA 	Keypress: 5
+196.5859 	DATA 	Keypress: 5
+198.5858 	DATA 	Keypress: 5
+200.5857 	DATA 	Keypress: 5
+201.5455 	EXP 	trial: iTrial = 4, isRemember = 0, delayDur = 9.0, ISI = 16.0, startString = FCTLW, testLetter = T, testLoc = 4, isCatchTrial = 0
+202.5545 	EXP 	mainText: text = 'FCTLW'
+202.5545 	EXP 	Display string (FCTLW)
+202.5858 	DATA 	Keypress: 5
+204.5856 	DATA 	Keypress: 5
+205.0555 	EXP 	Display fixation (pause)
+206.5508 	EXP 	mainText: text = 'ALPHABETIZE'
+206.5508 	EXP 	Display cue (ALPHABETIZE)
+206.5856 	DATA 	Keypress: 5
+207.5570 	EXP 	Display fixation (delay)
+208.5855 	DATA 	Keypress: 5
+210.5854 	DATA 	Keypress: 5
+212.5853 	DATA 	Keypress: 5
+214.5852 	DATA 	Keypress: 5
+216.5567 	EXP 	mainText: text = 'T?'
+216.5567 	EXP 	Display test stim (T?)
+216.5854 	DATA 	Keypress: 5
+217.4015 	DATA 	Keypress: 4
+217.4017 	EXP 	pressed key 4
+218.5531 	EXP 	Display fixation (ISI)
+218.5852 	DATA 	Keypress: 5
+220.5851 	DATA 	Keypress: 5
+222.5851 	DATA 	Keypress: 5
+224.5850 	DATA 	Keypress: 5
+226.5850 	DATA 	Keypress: 5
+228.5849 	DATA 	Keypress: 5
+230.5848 	DATA 	Keypress: 5
+232.5847 	DATA 	Keypress: 5
+233.5455 	EXP 	trial: iTrial = 5, isRemember = 1, delayDur = 9.0, ISI = 16.0, startString = FRKVL, testLetter = K, testLoc = 3, isCatchTrial = 0
+234.5509 	EXP 	mainText: text = 'FRKVL'
+234.5509 	EXP 	Display string (FRKVL)
+234.5846 	DATA 	Keypress: 5
+236.5848 	DATA 	Keypress: 5
+237.0536 	EXP 	Display fixation (pause)
+238.5588 	EXP 	mainText: text = 'REMEMBER'
+238.5588 	EXP 	Display cue (REMEMBER)
+238.5848 	DATA 	Keypress: 5
+239.5570 	EXP 	Display fixation (delay)
+240.5845 	DATA 	Keypress: 5
+242.5844 	DATA 	Keypress: 5
+244.5844 	DATA 	Keypress: 5
+246.5844 	DATA 	Keypress: 5
+248.5589 	EXP 	mainText: text = 'K?'
+248.5589 	EXP 	Display test stim (K?)
+248.5843 	DATA 	Keypress: 5
+249.5344 	DATA 	Keypress: 3
+249.5348 	EXP 	pressed key 3
+250.5483 	EXP 	Display fixation (ISI)
+250.5842 	DATA 	Keypress: 5
+252.5842 	DATA 	Keypress: 5
+254.5845 	DATA 	Keypress: 5
+256.5844 	DATA 	Keypress: 5
+258.5854 	DATA 	Keypress: 5
+260.5853 	DATA 	Keypress: 5
+262.5862 	DATA 	Keypress: 5
+264.5862 	DATA 	Keypress: 5
+265.5455 	EXP 	trial: iTrial = 6, isRemember = 1, delayDur = 9.0, ISI = 16.0, startString = DUTNM, testLetter = T, testLoc = 3, isCatchTrial = 0
+266.5615 	EXP 	mainText: text = 'DUTNM'
+266.5615 	EXP 	Display string (DUTNM)
+266.5871 	DATA 	Keypress: 5
+268.5880 	DATA 	Keypress: 5
+269.0497 	EXP 	Display fixation (pause)
+270.5588 	EXP 	mainText: text = 'REMEMBER'
+270.5588 	EXP 	Display cue (REMEMBER)
+270.5880 	DATA 	Keypress: 5
+271.5525 	EXP 	Display fixation (delay)
+272.5889 	DATA 	Keypress: 5
+274.5889 	DATA 	Keypress: 5
+276.5899 	DATA 	Keypress: 5
+278.5897 	DATA 	Keypress: 5
+280.5547 	EXP 	mainText: text = 'T?'
+280.5547 	EXP 	Display test stim (T?)
+280.5908 	DATA 	Keypress: 5
+281.5335 	DATA 	Keypress: 3
+281.5339 	EXP 	pressed key 3
+282.5606 	EXP 	Display fixation (ISI)
+282.5918 	DATA 	Keypress: 5
+284.5915 	DATA 	Keypress: 5
+286.5925 	DATA 	Keypress: 5
+288.5923 	DATA 	Keypress: 5
+290.5932 	DATA 	Keypress: 5
+292.5932 	DATA 	Keypress: 5
+294.5942 	DATA 	Keypress: 5
+296.5940 	DATA 	Keypress: 5
+297.5456 	EXP 	trial: iTrial = 7, isRemember = 0, delayDur = 9.0, ISI = 16.0, startString = PSELZ, testLetter = L, testLoc = 2, isCatchTrial = 0
+298.5480 	EXP 	mainText: text = 'PSELZ'
+298.5480 	EXP 	Display string (PSELZ)
+298.5950 	DATA 	Keypress: 5
+300.5961 	DATA 	Keypress: 5
+301.0481 	EXP 	Display fixation (pause)
+302.5481 	EXP 	mainText: text = 'ALPHABETIZE'
+302.5481 	EXP 	Display cue (ALPHABETIZE)
+302.5960 	DATA 	Keypress: 5
+303.5491 	EXP 	Display fixation (delay)
+304.5969 	DATA 	Keypress: 5
+306.5969 	DATA 	Keypress: 5
+308.5979 	DATA 	Keypress: 5
+310.5978 	DATA 	Keypress: 5
+312.5495 	EXP 	mainText: text = 'L?'
+312.5495 	EXP 	Display test stim (L?)
+312.5986 	DATA 	Keypress: 5
+313.5358 	DATA 	Keypress: 2
+313.5360 	EXP 	pressed key 2
+314.5493 	EXP 	Display fixation (ISI)
+314.6324 	DATA 	Keypress: 5
+316.6324 	DATA 	Keypress: 5
+318.6323 	DATA 	Keypress: 5
+320.6323 	DATA 	Keypress: 5
+322.6322 	DATA 	Keypress: 5
+324.6321 	DATA 	Keypress: 5
+326.6323 	DATA 	Keypress: 5
+328.6320 	DATA 	Keypress: 5
+329.5456 	EXP 	trial: iTrial = 8, isRemember = 1, delayDur = 9.0, ISI = 16.0, startString = FJDTH, testLetter = T, testLoc = 4, isCatchTrial = 0
+330.5519 	EXP 	mainText: text = 'FJDTH'
+330.5519 	EXP 	Display string (FJDTH)
+330.6319 	DATA 	Keypress: 5
+332.6320 	DATA 	Keypress: 5
+333.0518 	EXP 	Display fixation (pause)
+334.5494 	EXP 	mainText: text = 'REMEMBER'
+334.5494 	EXP 	Display cue (REMEMBER)
+334.6318 	DATA 	Keypress: 5
+335.5524 	EXP 	Display fixation (delay)
+336.6318 	DATA 	Keypress: 5
+338.6318 	DATA 	Keypress: 5
+340.6317 	DATA 	Keypress: 5
+342.6317 	DATA 	Keypress: 5
+344.5533 	EXP 	mainText: text = 'T?'
+344.5533 	EXP 	Display test stim (T?)
+344.6315 	DATA 	Keypress: 5
+346.1315 	DATA 	Keypress: 4
+346.1320 	EXP 	pressed key 4
+346.5532 	EXP 	Display fixation (ISI)
+346.6315 	DATA 	Keypress: 5
+348.6315 	DATA 	Keypress: 5
+350.6315 	DATA 	Keypress: 5
+352.6313 	DATA 	Keypress: 5
+354.6314 	DATA 	Keypress: 5
+356.6312 	DATA 	Keypress: 5
+358.6312 	DATA 	Keypress: 5
+360.6311 	DATA 	Keypress: 5
+361.5456 	EXP 	trial: iTrial = 9, isRemember = 0, delayDur = 9.0, ISI = 16.0, startString = OLSIC, testLetter = S, testLoc = 5, isCatchTrial = 0
+362.5504 	EXP 	mainText: text = 'OLSIC'
+362.5504 	EXP 	Display string (OLSIC)
+362.6311 	DATA 	Keypress: 5
+364.6309 	DATA 	Keypress: 5
+365.0544 	EXP 	Display fixation (pause)
+366.5545 	EXP 	mainText: text = 'ALPHABETIZE'
+366.5545 	EXP 	Display cue (ALPHABETIZE)
+366.6308 	DATA 	Keypress: 5
+367.5547 	EXP 	Display fixation (delay)
+368.6308 	DATA 	Keypress: 5
+370.6308 	DATA 	Keypress: 5
+372.6307 	DATA 	Keypress: 5
+374.6306 	DATA 	Keypress: 5
+376.5555 	EXP 	mainText: text = 'S?'
+376.5555 	EXP 	Display test stim (S?)
+376.6306 	DATA 	Keypress: 5
+377.4307 	DATA 	Keypress: 4
+377.4311 	EXP 	pressed key 4
+378.5481 	EXP 	Display fixation (ISI)
+378.6305 	DATA 	Keypress: 5
+380.6304 	DATA 	Keypress: 5
+382.6304 	DATA 	Keypress: 5
+384.6303 	DATA 	Keypress: 5
+386.6303 	DATA 	Keypress: 5
+388.6303 	DATA 	Keypress: 5
+390.6302 	DATA 	Keypress: 5
+392.6302 	DATA 	Keypress: 5
+393.5456 	EXP 	trial: iTrial = 10, isRemember = 0, delayDur = 9.0, ISI = 16.0, startString = ICYDM, testLetter = Y, testLoc = 5, isCatchTrial = 0
+394.5580 	EXP 	mainText: text = 'ICYDM'
+394.5580 	EXP 	Display string (ICYDM)
+394.6301 	DATA 	Keypress: 5
+396.6300 	DATA 	Keypress: 5
+397.0497 	EXP 	Display fixation (pause)
+398.5577 	EXP 	mainText: text = 'ALPHABETIZE'
+398.5577 	EXP 	Display cue (ALPHABETIZE)
+398.6300 	DATA 	Keypress: 5
+399.5531 	EXP 	Display fixation (delay)
+400.6299 	DATA 	Keypress: 5
+402.6298 	DATA 	Keypress: 5
+404.6298 	DATA 	Keypress: 5
+406.6298 	DATA 	Keypress: 5
+408.5542 	EXP 	mainText: text = 'Y?'
+408.5542 	EXP 	Display test stim (Y?)
+408.6297 	DATA 	Keypress: 5
+409.2298 	DATA 	Keypress: 6
+409.2300 	EXP 	pressed key 6
+410.5588 	EXP 	Display fixation (ISI)
+410.6296 	DATA 	Keypress: 5
+412.6295 	DATA 	Keypress: 5
+414.6295 	DATA 	Keypress: 5
+416.6294 	DATA 	Keypress: 5
+418.6294 	DATA 	Keypress: 5
+420.6293 	DATA 	Keypress: 5
+422.6293 	DATA 	Keypress: 5
+424.6302 	DATA 	Keypress: 5
+425.5456 	EXP 	trial: iTrial = 11, isRemember = 1, delayDur = 9.0, ISI = 16.0, startString = AFRKP, testLetter = K, testLoc = 4, isCatchTrial = 0
+426.5584 	EXP 	mainText: text = 'AFRKP'
+426.5584 	EXP 	Display string (AFRKP)
+426.6292 	DATA 	Keypress: 5
+428.6291 	DATA 	Keypress: 5
+429.0605 	EXP 	Display fixation (pause)
+430.5544 	EXP 	mainText: text = 'REMEMBER'
+430.5544 	EXP 	Display cue (REMEMBER)
+430.6290 	DATA 	Keypress: 5
+431.5483 	EXP 	Display fixation (delay)
+432.6293 	DATA 	Keypress: 5
+434.6293 	DATA 	Keypress: 5
+436.6302 	DATA 	Keypress: 5
+438.6311 	DATA 	Keypress: 5
+440.5508 	EXP 	mainText: text = 'K?'
+440.5508 	EXP 	Display test stim (K?)
+440.6313 	DATA 	Keypress: 5
+441.1788 	DATA 	Keypress: 4
+441.1790 	EXP 	pressed key 4
+442.5561 	EXP 	Display fixation (ISI)
+442.6321 	DATA 	Keypress: 5
+444.6321 	DATA 	Keypress: 5
+446.6330 	DATA 	Keypress: 5
+448.6331 	DATA 	Keypress: 5
+450.6338 	DATA 	Keypress: 5
+452.6347 	DATA 	Keypress: 5
+454.6347 	DATA 	Keypress: 5
+456.6358 	DATA 	Keypress: 5
+457.5455 	EXP 	trial: iTrial = 12, isRemember = 1, delayDur = 9.0, ISI = 16.0, startString = RFTUO, testLetter = R, testLoc = 1, isCatchTrial = 0
+458.5539 	EXP 	mainText: text = 'RFTUO'
+458.5539 	EXP 	Display string (RFTUO)
+458.6355 	DATA 	Keypress: 5
+460.6366 	DATA 	Keypress: 5
+461.0571 	EXP 	Display fixation (pause)
+462.5496 	EXP 	mainText: text = 'REMEMBER'
+462.5496 	EXP 	Display cue (REMEMBER)
+462.6365 	DATA 	Keypress: 5
+463.5483 	EXP 	Display fixation (delay)
+464.6375 	DATA 	Keypress: 5
+466.6374 	DATA 	Keypress: 5
+468.6382 	DATA 	Keypress: 5
+470.6392 	DATA 	Keypress: 5
+472.5483 	EXP 	mainText: text = 'R?'
+472.5483 	EXP 	Display test stim (R?)
+472.6393 	DATA 	Keypress: 5
+473.1943 	DATA 	Keypress: 1
+473.1947 	EXP 	pressed key 1
+474.5483 	EXP 	Display fixation (ISI)
+474.6402 	DATA 	Keypress: 5
+476.6401 	DATA 	Keypress: 5
+478.6410 	DATA 	Keypress: 5
+480.6410 	DATA 	Keypress: 5
+482.6418 	DATA 	Keypress: 5
+484.6428 	DATA 	Keypress: 5
+486.6429 	DATA 	Keypress: 5
+488.6438 	DATA 	Keypress: 5
+489.5456 	EXP 	trial: iTrial = 13, isRemember = 1, delayDur = 9.0, ISI = 16.0, startString = ZBREC, testLetter = Z, testLoc = 1, isCatchTrial = 0
+490.5495 	EXP 	mainText: text = 'ZBREC'
+490.5495 	EXP 	Display string (ZBREC)
+490.6437 	DATA 	Keypress: 5
+492.6773 	DATA 	Keypress: 5
+493.0509 	EXP 	Display fixation (pause)
+494.5509 	EXP 	mainText: text = 'REMEMBER'
+494.5509 	EXP 	Display cue (REMEMBER)
+494.6773 	DATA 	Keypress: 5
+495.5506 	EXP 	Display fixation (delay)
+496.6773 	DATA 	Keypress: 5
+498.6774 	DATA 	Keypress: 5
+500.6772 	DATA 	Keypress: 5
+502.6771 	DATA 	Keypress: 5
+504.5519 	EXP 	mainText: text = 'Z?'
+504.5519 	EXP 	Display test stim (Z?)
+504.6771 	DATA 	Keypress: 5
+505.4270 	DATA 	Keypress: 1
+505.4272 	EXP 	pressed key 1
+506.5483 	EXP 	Display fixation (ISI)
+506.6770 	DATA 	Keypress: 5
+508.6769 	DATA 	Keypress: 5
+510.6768 	DATA 	Keypress: 5
+512.6769 	DATA 	Keypress: 5
+514.6767 	DATA 	Keypress: 5
+516.6767 	DATA 	Keypress: 5
+518.6765 	DATA 	Keypress: 5
+520.6765 	DATA 	Keypress: 5
+521.5456 	EXP 	trial: iTrial = 14, isRemember = 0, delayDur = 9.0, ISI = 16.0, startString = RSIWD, testLetter = W, testLoc = 5, isCatchTrial = 0
+522.5529 	EXP 	mainText: text = 'RSIWD'
+522.5529 	EXP 	Display string (RSIWD)
+522.6764 	DATA 	Keypress: 5
+524.6764 	DATA 	Keypress: 5
+525.0484 	EXP 	Display fixation (pause)
+526.5542 	EXP 	mainText: text = 'ALPHABETIZE'
+526.5542 	EXP 	Display cue (ALPHABETIZE)
+526.6763 	DATA 	Keypress: 5
+527.5519 	EXP 	Display fixation (delay)
+528.6763 	DATA 	Keypress: 5
+530.6762 	DATA 	Keypress: 5
+532.6761 	DATA 	Keypress: 5
+534.6761 	DATA 	Keypress: 5
+536.5539 	EXP 	mainText: text = 'W?'
+536.5539 	EXP 	Display test stim (W?)
+536.6760 	DATA 	Keypress: 5
+537.4759 	DATA 	Keypress: 4
+537.4762 	EXP 	pressed key 4
+538.5544 	EXP 	Display fixation (ISI)
+538.6759 	DATA 	Keypress: 5
+540.6758 	DATA 	Keypress: 5
+542.6758 	DATA 	Keypress: 5
+544.6758 	DATA 	Keypress: 5
+546.6756 	DATA 	Keypress: 5
+548.6755 	DATA 	Keypress: 5
+550.6755 	DATA 	Keypress: 5
+552.6754 	DATA 	Keypress: 5
+553.5456 	EXP 	trial: iTrial = 15, isRemember = 1, delayDur = 9.0, ISI = 16.0, startString = ILGSF, testLetter = I, testLoc = 1, isCatchTrial = 0
+554.5565 	EXP 	mainText: text = 'ILGSF'
+554.5565 	EXP 	Display string (ILGSF)
+554.6754 	DATA 	Keypress: 5
+556.6754 	DATA 	Keypress: 5
+557.0564 	EXP 	Display fixation (pause)
+558.5530 	EXP 	mainText: text = 'REMEMBER'
+558.5530 	EXP 	Display cue (REMEMBER)
+558.6753 	DATA 	Keypress: 5
+559.5483 	EXP 	Display fixation (delay)
+560.6752 	DATA 	Keypress: 5
+562.6753 	DATA 	Keypress: 5
+564.6751 	DATA 	Keypress: 5
+566.6752 	DATA 	Keypress: 5
+568.5495 	EXP 	mainText: text = 'I?'
+568.5495 	EXP 	Display test stim (I?)
+568.6751 	DATA 	Keypress: 5
+569.2750 	DATA 	Keypress: 1
+569.2754 	EXP 	pressed key 1
+570.5554 	EXP 	Display fixation (ISI)
+570.6750 	DATA 	Keypress: 5
+572.6748 	DATA 	Keypress: 5
+574.6749 	DATA 	Keypress: 5
+576.6748 	DATA 	Keypress: 5
+578.6746 	DATA 	Keypress: 5
+580.6745 	DATA 	Keypress: 5
+582.6746 	DATA 	Keypress: 5
+584.6746 	DATA 	Keypress: 5
+585.5455 	EXP 	trial: iTrial = 16, isRemember = 0, delayDur = 9.0, ISI = 16.0, startString = SHMLF, testLetter = H, testLoc = 2, isCatchTrial = 0
+586.5544 	EXP 	mainText: text = 'SHMLF'
+586.5544 	EXP 	Display string (SHMLF)
+586.6744 	DATA 	Keypress: 5
+588.6743 	DATA 	Keypress: 5
+589.0577 	EXP 	Display fixation (pause)
+590.5484 	EXP 	mainText: text = 'ALPHABETIZE'
+590.5484 	EXP 	Display cue (ALPHABETIZE)
+590.6743 	DATA 	Keypress: 5
+591.5595 	EXP 	Display fixation (delay)
+592.6744 	DATA 	Keypress: 5
+594.6741 	DATA 	Keypress: 5
+596.6740 	DATA 	Keypress: 5
+598.6739 	DATA 	Keypress: 5
+600.5603 	EXP 	mainText: text = 'H?'
+600.5603 	EXP 	Display test stim (H?)
+600.6739 	DATA 	Keypress: 5
+601.4239 	DATA 	Keypress: 2
+601.4242 	EXP 	pressed key 2
+602.5515 	EXP 	Display fixation (ISI)
+602.6738 	DATA 	Keypress: 5
+604.6737 	DATA 	Keypress: 5
+606.6738 	DATA 	Keypress: 5
+608.6740 	DATA 	Keypress: 5
+610.6739 	DATA 	Keypress: 5
+612.6750 	DATA 	Keypress: 5
+614.6750 	DATA 	Keypress: 5
+616.6758 	DATA 	Keypress: 5
+617.5456 	EXP 	trial: iTrial = 17, isRemember = 0, delayDur = 9.0, ISI = 16.0, startString = WHPLQ, testLetter = P, testLoc = 3, isCatchTrial = 0
+618.5498 	EXP 	mainText: text = 'WHPLQ'
+618.5498 	EXP 	Display string (WHPLQ)
+618.6757 	DATA 	Keypress: 5
+620.6766 	DATA 	Keypress: 5
+621.0532 	EXP 	Display fixation (pause)
+622.5608 	EXP 	mainText: text = 'ALPHABETIZE'
+622.5608 	EXP 	Display cue (ALPHABETIZE)
+622.6777 	DATA 	Keypress: 5
+623.5556 	EXP 	Display fixation (delay)
+624.6776 	DATA 	Keypress: 5
+626.6786 	DATA 	Keypress: 5
+628.6784 	DATA 	Keypress: 5
+630.6793 	DATA 	Keypress: 5
+632.5575 	EXP 	mainText: text = 'P?'
+632.5575 	EXP 	Display test stim (P?)
+632.6793 	DATA 	Keypress: 5
+633.3230 	DATA 	Keypress: 3
+633.3233 	EXP 	pressed key 3
+634.5634 	EXP 	Display fixation (ISI)
+634.6803 	DATA 	Keypress: 5
+636.6802 	DATA 	Keypress: 5
+638.6811 	DATA 	Keypress: 5
+640.6820 	DATA 	Keypress: 5
+642.6820 	DATA 	Keypress: 5
+644.6830 	DATA 	Keypress: 5
+646.6828 	DATA 	Keypress: 5
+648.6839 	DATA 	Keypress: 5
+649.5455 	EXP 	trial: iTrial = 18, isRemember = 0, delayDur = 9.0, ISI = 16.0, startString = QHARJ, testLetter = A, testLoc = 1, isCatchTrial = 0
+650.5484 	EXP 	mainText: text = 'QHARJ'
+650.5484 	EXP 	Display string (QHARJ)
+650.6837 	DATA 	Keypress: 5
+652.6847 	DATA 	Keypress: 5
+653.0483 	EXP 	Display fixation (pause)
+654.5496 	EXP 	mainText: text = 'ALPHABETIZE'
+654.5496 	EXP 	Display cue (ALPHABETIZE)
+654.6856 	DATA 	Keypress: 5
+655.5495 	EXP 	Display fixation (delay)
+656.6855 	DATA 	Keypress: 5
+658.6865 	DATA 	Keypress: 5
+660.6871 	DATA 	Keypress: 5
+662.6874 	DATA 	Keypress: 5
+664.5510 	EXP 	mainText: text = 'A?'
+664.5510 	EXP 	Display test stim (A?)
+664.6873 	DATA 	Keypress: 5
+665.1721 	DATA 	Keypress: 1
+665.1725 	EXP 	pressed key 1
+666.5509 	EXP 	Display fixation (ISI)
+666.6883 	DATA 	Keypress: 5
+668.7219 	DATA 	Keypress: 5
+670.7217 	DATA 	Keypress: 5
+672.7218 	DATA 	Keypress: 5
+674.7219 	DATA 	Keypress: 5
+676.7216 	DATA 	Keypress: 5
+678.7216 	DATA 	Keypress: 5
+680.7215 	DATA 	Keypress: 5
+681.5455 	EXP 	trial: iTrial = 19, isRemember = 1, delayDur = 9.0, ISI = 16.0, startString = CKYUP, testLetter = K, testLoc = 2, isCatchTrial = 0
+682.5521 	EXP 	mainText: text = 'CKYUP'
+682.5521 	EXP 	Display string (CKYUP)
+682.7215 	DATA 	Keypress: 5
+684.7214 	DATA 	Keypress: 5
+685.0519 	EXP 	Display fixation (pause)
+686.5517 	EXP 	mainText: text = 'REMEMBER'
+686.5517 	EXP 	Display cue (REMEMBER)
+686.7213 	DATA 	Keypress: 5
+687.5517 	EXP 	Display fixation (delay)
+688.7212 	DATA 	Keypress: 5
+690.7213 	DATA 	Keypress: 5
+692.7212 	DATA 	Keypress: 5
+694.7211 	DATA 	Keypress: 5
+696.5496 	EXP 	mainText: text = 'K?'
+696.5496 	EXP 	Display test stim (K?)
+696.7210 	DATA 	Keypress: 5
+697.3223 	DATA 	Keypress: 2
+697.3225 	EXP 	pressed key 2
+698.5530 	EXP 	Display fixation (ISI)
+698.7210 	DATA 	Keypress: 5
+700.7209 	DATA 	Keypress: 5
+702.7209 	DATA 	Keypress: 5
+704.7208 	DATA 	Keypress: 5
+706.7208 	DATA 	Keypress: 5
+708.7207 	DATA 	Keypress: 5
+710.7207 	DATA 	Keypress: 5
+712.7206 	DATA 	Keypress: 5
+713.5455 	EXP 	trial: iTrial = 20, isRemember = 1, delayDur = 9.0, ISI = 16.0, startString = ZVQEU, testLetter = U, testLoc = 5, isCatchTrial = 0
+714.5531 	EXP 	mainText: text = 'ZVQEU'
+714.5531 	EXP 	Display string (ZVQEU)
+714.7205 	DATA 	Keypress: 5
+716.7206 	DATA 	Keypress: 5
+717.0547 	EXP 	Display fixation (pause)
+718.5483 	EXP 	mainText: text = 'REMEMBER'
+718.5483 	EXP 	Display cue (REMEMBER)
+718.7203 	DATA 	Keypress: 5
+719.5550 	EXP 	Display fixation (delay)
+720.7202 	DATA 	Keypress: 5
+722.7202 	DATA 	Keypress: 5
+724.7202 	DATA 	Keypress: 5
+726.7201 	DATA 	Keypress: 5
+728.5559 	EXP 	mainText: text = 'U?'
+728.5559 	EXP 	Display test stim (U?)
+728.7201 	DATA 	Keypress: 5
+729.7843 	DATA 	Keypress: 4
+729.7846 	EXP 	pressed key 4
+730.5506 	EXP 	Display fixation (ISI)
+730.7200 	DATA 	Keypress: 5
+732.7199 	DATA 	Keypress: 5
+734.7198 	DATA 	Keypress: 5
+736.7198 	DATA 	Keypress: 5
+738.7198 	DATA 	Keypress: 5
+740.7197 	DATA 	Keypress: 5
+742.7196 	DATA 	Keypress: 5
+744.7196 	DATA 	Keypress: 5
+746.7195 	DATA 	Keypress: 5
+748.7194 	DATA 	Keypress: 5
+750.7194 	DATA 	Keypress: 5
+752.7192 	DATA 	Keypress: 5
+754.5455 	EXP 	--- END EXPERIMENT ---
+754.5733 	EXP 	topMsg: text = "That's the end! "
+754.5733 	EXP 	bottomMsg: text = "Press 'q' or 'escape' to end the session."
+754.5733 	EXP 	Display TheEnd
+754.7192 	DATA 	Keypress: 5
+756.7192 	DATA 	Keypress: 5
+758.7192 	DATA 	Keypress: 5
+783.0185 	DATA 	Keypress: escape
