@@ -26,7 +26,7 @@ saveParams = False
 newParamsFilename = 'LetterOrder_20trialRUN_TR2p5.pickle' # 'LetterOrderParams.pickle' # 'LetterOrder_10mRUN.pickle' #
 
 # Set this to "True" if you are doing functional localizer, "False" to do full run
-isLoc = True
+isLoc = False
 
 # Set this to "True" to test contrast ALPHA vs REMEM (all go trials)
 # Set this to "False" to test contrast GO vs NO-GO (all alpha trials)
