@@ -1,11 +1,17 @@
+
+from __future__ import division
+from __future__ import print_function
+
 from psychopy import visual, core, event
 #win = visual.Window([1024,768])
 # the screen refers to which monitor is used to show the movie
-win = visual.Window([1024,768],fullscr=False,allowGUI=False,monitor='testMonitor',screen=1)
-mov = visual.MovieStim(win, 'nosound.mkv', size=[1024,720],  
+win = visual.Window([1024,768],fullscr=False,allowGUI=False,monitor='testMonitor',screen=0)
+mov = visual.MovieStim3(win, 'nosound.mkv', size=[1024,720],  
                        flipVert=False, flipHoriz=False, loop=True)
-print 'orig movie size=[%i,%i]' %(mov.format.width, mov.format.height)
-print 'duration=%.2fs' %(mov.duration)
+#print 'orig movie size=[%i,%i]' %(mov.format.width, mov.format.height)
+#print 'duration=%.2fs' %(mov.duration)
+print('orig movie size=%s' % mov.size)
+print('duration=%.2fs' % mov.duration)
 globalClock = core.Clock()
 
 
