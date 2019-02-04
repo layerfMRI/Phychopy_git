@@ -2,11 +2,7 @@
 """Display multi-page text with a quiz at the end."""
 #Renzo use this in first experiment
 
-# TappingWithTrtriggering
-# Created 11/09/15 by DJ based on DistractionTask_practice_d3.py
-# Updated 12/4/15 by DJ - made movie version
-# Updated 12/7/15 by DJ - updated prompts, general cleanup
-# Updated 1/12/16 by DJ - moved from movie to frame-by-frame display, single repeated condition
+#USE this with Psychopy2 
 
 from psychopy import core, gui, data, event, sound, logging 
 # from psychopy import visual # visual causes a bug in the guis, so it's declared after all GUIs run.

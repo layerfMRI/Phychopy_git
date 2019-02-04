@@ -1,5 +1,7 @@
-
 #!t/usr/bin/envt pythonwn
+
+# use Psychopy2 for this.
+
 from psychopy import core, visual, event, gui, logging
 #Renzo setup for first ecperimenteeeenbegqr
 import time
