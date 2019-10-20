@@ -6,9 +6,11 @@ from psychopy import visual, core, event
 
 #win = visual.Window([1024,768])
 # the screen refers to which monitor is used to show the movie
-win = visual.Window([1024,768],fullscr=False,allowGUI=False,monitor='testMonitor',screen=0)
+# is was win = visual.Window([1024,768],fullscr=False,allowGUI=False,monitor='testMonitor',screen=0)
+win = visual.Window([1536,1152],fullscr=False,allowGUI=False,monitor='testMonitor',screen=0)
 # use nosound.mkv if youy want it to run withiout errors
-mov = visual.MovieStim3(win, 'withsound.mp4', size=[1024,720],   
+#it was mov = visual.MovieStim3(win, 'withsound.mp4', size=[1024,720],   
+mov = visual.MovieStim3(win, 'withsound.mp4', size=[1536,1080],   
                        flipVert=False, flipHoriz=False, loop=True)
 #print 'orig movie size=[%i,%i]' %(mov.format.width, mov.format.height)
 #print 'duration=%.2fs' %(mov.duration)

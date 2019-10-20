@@ -1,8 +1,8 @@
 #!/usr/bin/env python2
-"""Display multi-page text with a quiz at the end."""
-#Renzo use this in first experiment
+"""Display multi-page text Twith a quiz at the end."""
+#Renzo use this in first experT
 
-#USE this with Psychopy2 
+#USE this with Psychopy2 TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
 
 from psychopy import core, gui, data, event, sound, logging 
 # from psychopy import visual # visual causes a bug in the guis, so it's declared after all GUIs run.
@@ -22,11 +22,11 @@ newParamsFilename = 'TappingParams.pickle'
 # Declare primary task parameters.
 params = {
 # Declare stimulus and response parameters
-    'nBlocks': 48,            # number of blocks in this session (number of on and off blocks)
+    'nBlocks': 68,            # number of blocks in this session (number of on and off blocks)
     'condition': 'TapRight',
     'movieFolder': 'Images/', # relative path to tapping videos
-    'blockDur_TRs':20,            # duration of each tapping block (in TRs)
-    'restDur_TRs':20,             # duration of each rest block (in TRs)
+    'blockDur_TRs':40,            # duration of each tapping block (in TRs)
+    'restDur_TRs':40,             # duration of each rest block (in TRs)
     'tStartup_TRs': 0,            # pause time before starting first stimulus (in TRs)
     'triggerKey': 't',        # key from scanner that says scan is starting
 # declare prompt and question files
@@ -36,7 +36,7 @@ params = {
     'fullScreen': True,       # run in full screen mode?
     'screenToShow': 0,        # display on primary screen (0) or secondary (1)? # Renzo hats auf null gesetzt
     'fixCrossSize': 100,       # size of cross, in pixels
-    'movieSize': (800,500), # size of image in pixels # Renzo hat te zahlen verdoppelt
+    'movieSize': (1600,1000), # size of image in pixels # Renzo hat te zahlen verdoppelt
     'fixCrossPos': [0,0],     # (x,y) pos of fixation cross displayed before each stimulus (for gaze drift correction)
     'screenColor':(128,128,128), # in rgb255 space: (r,g,b) all between 0 and 255
     'textHeight': 40 #(in pixels)
