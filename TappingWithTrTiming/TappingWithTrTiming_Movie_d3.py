@@ -2,7 +2,7 @@
 """Display multi-page text Twith a quiz at the end."""
 #Renzo use this in first experT
 
-#USE this with Psychopy2 TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+#USE this with Psychopy2 
 
 from psychopy import core, gui, data, event, sound, logging 
 # from psychopy import visual # visual causes a bug in the guis, so it's declared after all GUIs run.
@@ -25,8 +25,8 @@ params = {
     'nBlocks': 68,            # number of blocks in this session (number of on and off blocks)
     'condition': 'TapRight',
     'movieFolder': 'Images/', # relative path to tapping videos
-    'blockDur_TRs':40,            # duration of each tapping block (in TRs)
-    'restDur_TRs':40,             # duration of each rest block (in TRs)
+    'blockDur_TRs':20,            # duration of each tapping block (in TRs)
+    'restDur_TRs':20,             # duration of each rest block (in TRs)
     'tStartup_TRs': 0,            # pause time before starting first stimulus (in TRs)
     'triggerKey': 't',        # key from scanner that says scan is starting
 # declare prompt and question files
