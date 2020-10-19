@@ -11,7 +11,7 @@ win = visual.Window([1536,1152],fullscr=False,allowGUI=False,monitor='testMonito
 # use nosound.mkv if youy want it to run withiout errors
 #it was mov = visual.MovieStim3(win, 'withsound.mp4', size=[1024,720],   
 mov = visual.MovieStim3(win, 'withsound.mp4', size=[1536,1080],   
-                       flipVert=False, flipHoriz=False, loop=False)
+                       flipVert=False, flipHoriz=False, loop=True)
 #print 'orig movie size=[%i,%i]' %(mov.format.width, mov.format.height)
 #print 'duration=%.2fs' %(mov.duration)
 print('orig movie size=%s' % mov.size)
