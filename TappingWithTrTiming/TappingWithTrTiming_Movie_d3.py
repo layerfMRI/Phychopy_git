@@ -25,8 +25,8 @@ params = {
     'nBlocks': 68,            # number of blocks in this session (number of on and off blocks)
     'condition': 'TapRight',
     'movieFolder': 'Images/', # relative path to tapping videos
-    'blockDur_TRs':16,            # duration of each tapping block (in TRs)
-    'restDur_TRs':16,             # duration of each rest block (in TRs)
+    'blockDur_TRs':24,            # duration of each tapping block (in TRs)
+    'restDur_TRs':24,             # duration of each rest block (in TRs)
     'tStartup_TRs': 0,            # pause time before starting first stimulus (in TRs)
     'triggerKey': 't',        # key from scanner that says scan is starting
 # declare prompt and question files
