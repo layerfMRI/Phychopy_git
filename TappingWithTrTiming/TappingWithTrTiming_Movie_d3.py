@@ -25,8 +25,8 @@ params = {
     'nBlocks': 68,            # number of blocks in this session (number of on and off blocks)
     'condition': 'TapRight',
     'movieFolder': 'Images/', # relative path to tapping videos
-    'blockDur_TRs':24,            # duration of each tapping block (in TRs)
-    'restDur_TRs':24,             # duration of each rest block (in TRs)
+    'blockDur_TRs':8,            # duration of each tapping block (in TRs)
+    'restDur_TRs':8,             # duration of each rest block (in TRs)
     'tStartup_TRs': 0,            # pause time before starting first stimulus (in TRs)
     'triggerKey': 't',        # key from scanner that says scan is starting
 # declare prompt and question files
@@ -43,12 +43,12 @@ params = {
 }
 
 stimList = {
-    'conditionList':['TapRight','TapFast','TapLeft','AlmostRight','ImagineRight','sensationOnly','vis'],
-    'moviePromptList': ['Tap along with the video.','Tap along with the video.','Tap along with the video.','Move (Right Hand) but do NOT touch fingers \nAlong with the video.','Imagine Tapping (Right Hand).','feel the hand','look at the center'],
-    'moviePrefixList': ['right','right','left','right_almost','right_imagine','right_sensation','visual'], # filenames of movies
-    'movieFrameRateList': [10, 30, 30, 10, 1,1,8], # frame rate of each movie (s)
-    'movieNFrameList':[10, 10, 10, 10, 1,1,2], # nFrames in each movie (numbered from 0 to nFrames-1
-    'promptFileList': ['TappingPrompts_Movie.txt','TappingPrompts_Movie.txt','TappingPrompts_Movie.txt','AlmostPrompts_Movie.txt','ImaginePrompts_Movie.txt','SensationPrompts_Movie.txt','VisPrompts_Movie.txt'] # Name of text file containing prompts 
+    'conditionList':['TapRight','TapFast','TapLeft','AlmostRight','ImagineRight','sensationOnly','vis','globalvis'],
+    'moviePromptList': ['Tap along with the video.','Tap along with the video.','Tap along with the video.','Move (Right Hand) but do NOT touch fingers \nAlong with the video.','Imagine Tapping (Right Hand).','feel the hand','look at the center','look at the center'],
+    'moviePrefixList': ['right','right','left','right_almost','right_imagine','right_sensation','visual','globalvisual'], # filenames of movies
+    'movieFrameRateList': [10, 30, 30, 10, 1,1,8,8], # frame rate of each movie (s)
+    'movieNFrameList':[10, 10, 10, 10, 1,1,2,2], # nFrames in each movie (numbered from 0 to nFrames-1
+    'promptFileList': ['TappingPrompts_Movie.txt','TappingPrompts_Movie.txt','TappingPrompts_Movie.txt','AlmostPrompts_Movie.txt','ImaginePrompts_Movie.txt','SensationPrompts_Movie.txt','VisPrompts_Movie.txt','globalVisPrompts_Movie.txt'] # Name of text file containing prompts 
 }
 # save parameters
 if saveParams:
