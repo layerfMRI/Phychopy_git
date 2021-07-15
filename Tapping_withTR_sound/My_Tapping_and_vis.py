@@ -26,8 +26,8 @@ autoScreenSize = True
 outputPrefix   = 'output'
 numTrials=48                                              #Number of trials of stimulation+rest blocks
 bufferDur=0                                              #Duration of additional fixation period immediately after scan starts and following last rest block [TRs]
-visStimDur=12                                           #Duration of flickering checkerboard blocks
-restDur=12
+visStimDur=20                                           #Duration of flickering checkerboard blocks
+restDur=20
 
 defaultScreenRes = [800,600]
 # Ask user
