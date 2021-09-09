@@ -3,7 +3,9 @@
 #Renzo use this in first experT
 
 #USE this with Psychopy2 
-
+import pyglet
+print(pyglet.version)
+from pyglet.gl import *
 from psychopy import core, gui, data, event, sound, logging 
 # from psychopy import visual # visual causes a bug in the guis, so it's declared after all GUIs run.
 from psychopy.tools.filetools import fromFile, toFile # saving and loading parameter files
@@ -106,10 +108,10 @@ iCondition = stimList['conditionList'].index(params['condition'])
 print('iCondition = %d'%iCondition)
 
 # print params to Output
-print 'params = {'
+print ('params = {')
 for key in sorted(params.keys()):
-    print "   '%s': %s"%(key,params[key]) # print each value as-is (no quotes)
-print '}'
+    print ("   '%s': %s"%(key,params[key])) # print each value as-is (no quotes)
+print ('}')
     
 # save experimental info
 toFile('%s-lastExpInfo.pickle'%scriptName, expInfo)#save params to file for next time
@@ -144,8 +146,7 @@ if params['fullScreen']:
 else:
     screenRes = [800,600]
 
-print "screenRes = [%d,%d]"%screenRes
-
+print ("screenRes = [%d,%d]"%screenRes)
 
 # ========================== #
 # ===== SET UP STIMULI ===== #

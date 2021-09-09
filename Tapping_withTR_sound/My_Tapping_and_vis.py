@@ -9,11 +9,14 @@ import numpy
 import string
 
 import AppKit
+
+print('Using %s (with %s) for sounds' % (sound.audioLib, sound.audioDriver))
+
 def screenRes(myScreen):
     screens = AppKit.NSScreen.screens() # get list of screen objects
     screenRes = (int(screens[myScreen].frame().size.width), int(screens[myScreen].frame().size.height))
     #screenRes = [800,600]
-    print "screenRes = [%d,%d]"%screenRes 
+    #print "screenRes = [%d,%d]"%screenRes 
     return screenRes
 
 # Default Definitions
@@ -34,7 +37,7 @@ defaultScreenRes = [800,600]
 myFields  = {'Monitor':['External','Laptop'],'Auto Screen Size Detection':['Yes','No'],'Log Prefix':outputPrefix,'Trigger':triggerKey,'Numer of trials':numTrials,'initial rest [TR]':bufferDur,'rest dur [TR]':restDur,'activity dur [TR]':visStimDur}
 configDlg = gui.DlgFromDict(dictionary=myFields, title='Run Configuration',order=['Monitor','Auto Screen Size Detection','Log Prefix','Trigger'])
 if (configDlg.OK==False):
-    print 'User Cancelled'
+    print ('User Cancelled')
     core.quit()
 # Import visual here to avoid silly issue with GUI not selecting drop list options properly
 from psychopy import visual
@@ -65,16 +68,16 @@ visStimDur=   myFields.get('activity dur [TR]')
 
 
 # Print Selection
-print "Selected Monitor: %i" % (screen_to_show)
-print "Auto Screen Size Detection (True/False): %s" % (str(autoScreenSize))
-print "Screen Size: (%i,%i)" % (screenSize[0],screenSize[1])
+print ("Selected Monitor: %i" % (screen_to_show))
+print ("Auto Screen Size Detection (True/False): %s" % (str(autoScreenSize)))
+print ("Screen Size: (%i,%i)" % (screenSize[0],screenSize[1]))
 
 # Create Log File
 LogFileName='./ResponseLogs/'+outputPrefix+'_ResponseLog.txt';
 Logger=logging.LogFile(LogFileName,34,'w');
 
 params = {'portName': '/dev/tty.usbserial', 'portBaud': 115200, 'screenColor': (0,0,0), 'textColor': (255,255,255), 'screenSize':screenRes, 'screen_to_show':screen_to_show}
-print params
+print (params)
 
 
 # CREATE SCREEN
@@ -157,17 +160,17 @@ Exp_Start_Time=clock.getTime();                                                 
 
 
 # prepare sound stuff
-if prefs.general['audioLib'][0] == 'pyo':
+#if prefs.general['audioLib'][0] == 'pyo':
     #if pyo is the first lib in the list of preferred libs then we could use small buffer
     #pygame sound is very bad with a small buffer though
-    sound.init(48000,buffer=128)
-print 'Using %s(with %s) for sounds' %(sound.audioLib, sound.audioDriver)
+#t   sound.init(48000,buffer=128)
+#print ('Using %s(with %s) for sounds' %(sound.audioLib, sound.audioDriver))
 
-highA = sound.Sound('A',octave=3, sampleRate=44100, secs=2, bits=8)
-highA.setVolume(0.8)
-tick = sound.Sound(800,secs=0.1,sampleRate=44100, bits=8)#sample rate ignored because already set
-tock = sound.Sound('600',secs=0.1, sampleRate=44100)
-gerauesch = sound.Sound('/Users/l.huber/Documents/Programme_und_Grafik/Phychopy_git/Tapping_withTR_sound/file-2.wav')
+#highA = sound.Sound('A',octave=3, sampleRate=44100, secs=2, bits=8)
+#highA.setVolume(0.8)
+#tick = sound.Sound(800,secs=0.1,sampleRate=44100, bits=8)#sample rate ignored because already set
+#tock = sound.Sound('600',secs=0.1, sampleRate=44100)
+gerauesch = sound.Sound('/Users/l.huber/Documents/Programme_und_Grafik/Phychopy_git/Tapping_withTR_sound/file-2_1p75.wav')
 
 
 
@@ -216,7 +219,7 @@ while numbtrials<numTrials:
         Instr_FLEX.draw();win.flip();
         
         gerauesch.play()
-        #core.wait(2.0)
+        core.wait(0.1)
         
         event.waitKeys(keyList=['t'])
         numbtrigger=numbtrigger+1
