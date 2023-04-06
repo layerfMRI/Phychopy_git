@@ -6,13 +6,14 @@
 import pyglet
 print(pyglet.version)
 from pyglet.gl import *
-from psychopy import core, gui, data, event, sound, logging 
+from psychopy import core, gui, data, event, sound, logging
 # from psychopy import visual # visual causes a bug in the guis, so it's declared after all GUIs run.
 from psychopy.tools.filetools import fromFile, toFile # saving and loading parameter files
 import time as ts, numpy as np # for timing and array operations
 import AppKit, os, glob # for monitor size detection, files
 import BasicPromptTools # for loading/presenting prompts and questions
 import random # for randomization of trials
+
 
 # ====================== #
 # ===== PARAMETERS ===== #
