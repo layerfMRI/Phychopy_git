@@ -57,11 +57,11 @@ import glob
 # SETUP inital params
 
 # ==== ~~ for testing ~~ ==== 
-testMode=0 #if 1, can overwrite exisiting datafile (for TESTING), otherwise cannot (i.e. when collecting real data)
+testMode=1 #if 1, can overwrite exisiting datafile (for TESTING), otherwise cannot (i.e. when collecting real data)
 # ==== ~~ for testing ~~ ==== 
-screenNum=0 #if multiple displays... nb: psychopy on a Mac cannot specify display screen, so have to MIRROR screens @ scanner
+screenNum=1 #if multiple displays... nb: psychopy on a Mac cannot specify display screen, so have to MIRROR screens @ scanner
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# ~~~~~~~~~~~~~~~~~~~~~t~~~~~~~~~~
 # ===============================
 # DEFINE which 2 categories of localizer stimuli to use
 # (for easy changing / create new localizers)
@@ -125,18 +125,18 @@ else:
 	sys.exit('ERROR. stimfirst number invalid (must be 1 or 2)')
 
 
-# ===============================
+# ===============================tttttttttttttttttttttttt
 
 #localizer params
 pixperdeg=120 #for 3TB BOLDscreen
 stimSize=5*pixperdeg #5 deg
-fixDuration=16 #16 seconds, both at start and end of run
-numOnOffBlocks=9 #9 #complete on-off scene-face blocks
+fixDuration=0 #16 seconds, both at start and end of run
+numOnOffBlocks=5 #9 #complete on-off scene-face blocks
 numBlocks=numOnOffBlocks*2 #scene or face blocks
-stimDuration=0.3 #seconds each stim is shown
+stimDuration=1.0 #seconds each stim is shown
 isi=0.5 #blank screen inbetween stim
 numBlockStim=20 #how many stim in each category per block (scenes / faces)
-blockDuration=16
+blockDuration=30
 numTaskTrials=numBlocks*2 #2 1-back trials per block
 
 if stimSize>ORIGstimsize:
