@@ -17,7 +17,7 @@ BOLDscreen 15.9 x 9.0 deg visible area
 #active screen area: 698.4mm x 392.9mm 
 
 NIH 7T ######
-VPIXX projector (use VGA with new laptop)
+VPIXX projector (use VGA  with new laptop)
 1920 x 1080 (so this code also works as for 3TB!)
 
 TIMING:
@@ -41,7 +41,7 @@ july 23 2021 -- added keypress buffer
 from psychopy import visual, core, event, logging, data, gui  # import some libraries from PsychoPy
 from math import atan2, degrees
 
-import numpy as np # nb can shorten name
+import numpy as np # nb can shorten name 
 import numpy.matlib as npmat
 import matplotlib.pyplot as plt
 import random
@@ -57,7 +57,7 @@ import glob
 # SETUP inital params
 
 # ==== ~~ for testing ~~ ==== 
-testMode=1 #if 1, can overwrite exisiting datafile (for TESTING), otherwise cannot (i.e. when collecting real data)
+testMode=0 #if 1, can overwrite exisiting datafile (for TESTING), otherwise cannot (i.e. when collecting real data)
 # ==== ~~ for testing ~~ ==== 
 screenNum=1 #if multiple displays... nb: psychopy on a Mac cannot specify display screen, so have to MIRROR screens @ scanner
 
