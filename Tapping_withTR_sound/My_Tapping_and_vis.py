@@ -29,8 +29,8 @@ autoScreenSize = True
 outputPrefix   = 'output'
 numTrials=48                                              #Number of trials of stimulation+rest blocks
 bufferDur=0                                              #Duration of additional fixation period immediately after scan starts and following last rest block [TRs]
-visStimDur=20                                           #Duration of flickering checkerboard blocks
-restDur=20
+visStimDur=12                                           #Duration of flickering checkerboard blocks
+restDur=12
 
 defaultScreenRes = [800,600]
 # Ask user
@@ -170,7 +170,7 @@ Exp_Start_Time=clock.getTime();                                                 
 #highA.setVolume(0.8)
 #tick = sound.Sound(800,secs=0.1,sampleRate=44100, bits=8)#sample rate ignored because already set
 #tock = sound.Sound('600',secs=0.1, sampleRate=44100)
-gerauesch = sound.Sound('/Users/l.huber/Documents/Programme_und_Grafik/Phychopy_git/Tapping_withTR_sound/file-2_2p25.wav')
+gerauesch = sound.Sound('/Users/administrator/Git/Phychopy_git/Tapping_withTR_sound/file-2_2p25.wav')
 
 
 

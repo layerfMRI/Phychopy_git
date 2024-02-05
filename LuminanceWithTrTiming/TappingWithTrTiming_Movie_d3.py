@@ -28,8 +28,8 @@ params = {
     'nBlocks': 68,            # number of blocks in this session (number of on and off blocks)
     'condition': 'TapRight',
     'movieFolder': 'Images/', # relative path to tapping videos
-    'blockDur_TRs':16,            # duration of each tapping block (in TRs)
-    'restDur_TRs':16,             # duration of each rest block (in TRs)
+    'blockDur_TRs':8,            # duration of each tapping block (in TRs)
+    'restDur_TRs':8,             # duration of each rest block (in TRs)
     'tStartup_TRs': 0,            # pause time before starting first stimulus (in TRs)
     'triggerKey': 't',        # key from scanner that says scan is starting
 # declare prompt and question files
@@ -41,14 +41,14 @@ params = {
     'fixCrossSize': 100,       # size of cross, in pixels
     'movieSize': (1600,1000), # size of image in pixels # Renzo hat te zahlen verdoppelt
     'fixCrossPos': [0,0],     # (x,y) pos of fixation cross displayed before each stimulus (for gaze drift correction)
-    'screenColor':(128,128,128), # in rgb255 space: (r,g,b) all between 0 and 255
+    'screenColor':(10,10,10), # in rgb255 space: (r,g,b) all between 0 and 255
     'textHeight': 40 #(in pixels)
 }
 
 stimList = {
-    'conditionList':['TapRight','TapFast','TapLeft','AlmostRight','ImagineRight','sensationOnly','vis','globalvis'],
-    'moviePromptList': ['Tap along with the video.','Tap along with the video.','Tap along with the video.','Move (Right Hand) but do NOT touch fingers \nAlong with the video.','Imagine Tapping (Right Hand).','feel the hand','look at the center','look at the center'],
-    'moviePrefixList': ['right','right','left','right_almost','right_imagine','right_sensation','visual','globalvisual'], # filenames of movies
+    'conditionList':['Luminance','TapFast','TapLeft','AlmostRight','ImagineRight','sensationOnly','vis','globalvis'],
+    'moviePromptList': ['look at the center of the screen','Tap along with the video.','Tap along with the video.','Move (Right Hand) but do NOT touch fingers \nAlong with the video.','Imagine Tapping (Right Hand).','feel the hand','look at the center','look at the center'],
+    'moviePrefixList': ['luminance','right','left','right_almost','right_imagine','right_sensation','visual','globalvisual'], # filenames of movies
     'movieFrameRateList': [10, 30, 30, 10, 1,1,8,8], # frame rate of each movie (s)
     'movieNFrameList':[10, 10, 10, 10, 1,1,2,2], # nFrames in each movie (numbered from 0 to nFrames-1
     'promptFileList': ['TappingPrompts_Movie.txt','TappingPrompts_Movie.txt','TappingPrompts_Movie.txt','AlmostPrompts_Movie.txt','ImaginePrompts_Movie.txt','SensationPrompts_Movie.txt','VisPrompts_Movie.txt','globalVisPrompts_Movie.txt'] # Name of text file containing prompts 
@@ -164,18 +164,18 @@ win = visual.Window(screenRes, fullscr=params['fullScreen'], allowGUI=False, mon
 # create fixation cross
 fCS = params['fixCrossSize'] # size (for brevity)
 fCP = params['fixCrossPos'] # position (for brevity)
-fixation = visual.ShapeStim(win,lineColor='#000000',lineWidth=3.0,vertices=((fCP[0]-fCS/2,fCP[1]),(fCP[0]+fCS/2,fCP[1]),(fCP[0],fCP[1]),(fCP[0],fCP[1]+fCS/2),(fCP[0],fCP[1]-fCS/2)),units='pix',closeShape=False,name='fixCross');
+fixation = visual.ShapeStim(win,lineColor='#FAEBD7',lineWidth=3.0,vertices=((fCP[0]-fCS/2,fCP[1]),(fCP[0]+fCS/2,fCP[1]),(fCP[0],fCP[1]),(fCP[0],fCP[1]+fCS/2),(fCP[0],fCP[1]-fCS/2)),units='pix',closeShape=False,name='fixCross');
 # create text stimuli
-message1 = visual.TextStim(win, pos=[0,+.5], wrapWidth=1.5, color='#000000', alignHoriz='center', name='topMsg', text="aaa",units='norm')
+message1 = visual.TextStim(win, pos=[0,+.5], wrapWidth=1.5, color='#FAEBD7', alignHoriz='center', name='topMsg', text="aaa",units='norm')
 # Renzo removed nec
-message2 = visual.TextStim(win, pos=[0,-.5], wrapWidth=1.5, color='#000000', alignHoriz='center', name='bottomMsg', text="bbb",units='norm')
+message2 = visual.TextStim(win, pos=[0,-.5], wrapWidth=1.5, color='#FAEBD7', alignHoriz='center', name='bottomMsg', text="bbb",units='norm')
 
 # Load new image stimuli
 tapImages = []
 for i in range(0,stimList['movieNFrameList'][iCondition]):
     tapImages.append(visual.ImageStim(win, pos=[0,0], name='Movie Frame %d'%i,image='%s%s_%d.png'%(params['movieFolder'],stimList['moviePrefixList'][iCondition],i), units='pix', size=params['movieSize']))
 # Create bottom text stim
-tapText = visual.TextStim(win, stimList['moviePromptList'][iCondition], wrapWidth=params['movieSize'][0], color='#000000', pos=(0, params['movieSize'][1]/2+params['textHeight']*2), height = params['textHeight'], units = 'pix')
+tapText = visual.TextStim(win, stimList['moviePromptList'][iCondition], wrapWidth=params['movieSize'][0], color='#FAEBD7', pos=(0, params['movieSize'][1]/2+params['textHeight']*2), height = params['textHeight'], units = 'pix')
 
 # read prompts from text files
 [topPrompts,bottomPrompts] = BasicPromptTools.ParsePromptFile(params['promptDir']+stimList['promptFileList'][iCondition])
