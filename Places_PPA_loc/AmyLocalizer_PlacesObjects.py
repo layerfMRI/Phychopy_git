@@ -79,9 +79,7 @@ stim1dir='100places'
 stim2dir='100objects'
 
 #directory that the above stimuli directories are in:
-# thisDir=os.getcwd()
-
-thisDir='/Users/barilari/GitHub/Phychopy_git/Places_PPA_loc'
+thisDir=os.getcwd()
 
 print(thisDir)
 
