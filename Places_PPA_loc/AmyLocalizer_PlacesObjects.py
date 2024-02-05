@@ -141,7 +141,7 @@ numOnOffBlocks=5 #9 #complete on-off scene-face blocks
 numBlocks=numOnOffBlocks*2 #scene or face blocks
 stimDuration=1.0 #seconds each stim is shown
 isi=0.5 #blank screen inbetween stim
-numBlockStim=40 #how many stim in each category per block (scenes / faces)
+numBlockStim=20 #how many stim in each category per block (scenes / faces)
 blockDuration=30
 numTaskTrials=numBlocks*2 #2 1-back trials per block
 
