@@ -231,8 +231,9 @@ win = visual.Window(monitor="NIH3TB", size=(1920,1080), units="pix", fullscr=Tru
 winW= win.size[0]
 winH= win.size[1]
 
-#crossCol=[0, 1, 1] #cyan
-crossCol=[-1, -1, -1] #black
+crossCol=[0, 1, 1] #cyan
+# crossCol=[-1, -1, -1] #black
+# crossCol=[1.0,-1,-1] # red
 crossContrast=1 #0.7
 fixdetectcol=[1, 1, 1] #cross turns white for detection task
 crossLength=24 #pixels? or 0.5 deg
@@ -393,6 +394,7 @@ for t in range(numBlocks):
 					stim.image=imDir+stim2dir+'/'+stim2imlist[s2cnt]
 					s2cnt=s2cnt+1 # image counter
 				stim.draw()
+				fix.draw()
 				Sclock.reset() #set clock to 0 again.. find that missing 50ms!
 				win.flip()
 				imstart=Gclock.getTime()
@@ -409,12 +411,13 @@ for t in range(numBlocks):
 						waitresp = 1
 				event.clearEvents(eventType=None) #clear any pressed keys
 		wbox.draw()
+		fix.draw()
 		win.flip() #clear screen
 		imlist.append([stim.image,imstart,Gclock.getTime()])
 		#ISI INBETWEEN IMAGES
 		while Gclock.getTime() < fixDuration+(t*blockDuration)+(stimDuration*(im+1))+(isi*(im+1)): #use global clock to prevent timing slip, recover time in blank
-			#fix.draw()
 			wbox.draw()
+			fix.draw()
 			win.flip()
 			#check for 1-back response
 			pressed=event.getKeys(keyList=validKeys, modifiers=False, timeStamped=Gclock) #nb add the globalclock to timestamp
@@ -427,7 +430,8 @@ for t in range(numBlocks):
 						tally=tally+1
 						waitresp = 1
 				event.clearEvents(eventType=None) #clear any pressed keys
-
+    
+		#store last stim for 1-back task
 		#inbetween stim and isi
 		laststim=stim.image #store this image as the last stimulus for 1-back task response coding
 		#print(laststim)
