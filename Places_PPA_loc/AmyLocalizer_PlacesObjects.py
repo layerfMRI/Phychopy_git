@@ -43,6 +43,7 @@ mainly from Meissner et al https://doi.org/10.1016/j.neuroimage.2019.02.025
 #psychopy
 from psychopy import visual, core, event, logging, data, gui  # import some libraries from PsychoPy
 from math import atan2, degrees
+from datetime import datetime
 
 import numpy as np # nb can shorten name 
 import numpy.matlib as npmat
@@ -295,9 +296,14 @@ if not os.path.exists(dataDir):
 expInfo = {'observer':subID, 'expName':exptname, 'runNum':runNum,'stim1':stim1,'stim2':stim2, 'whichstim_first':stimfirst, 'winW':float(winW), 'winH':float(winH)}
 expInfo['dateStr'] = data.getDateStr()  # add the current time
 
-# make a text file to save data
-fileName = dataDir + exptname + '_' + expInfo['observer'] + '_run' + str(expInfo['runNum']) + '.tsv'
+# Get the current date and time
+now = datetime.now()
 
+# Format the date and time as a string
+timestamp = now.strftime("%Y%m%d_%H%M%S")
+
+# make a text file to save data
+fileName = dataDir + exptname + '_' + expInfo['observer'] + '_run' + str(expInfo['runNum']) + '_' + timestamp +'.tsv'
 # check data file doesnt exist, quit if it does
 data_path_exists = os.path.exists(fileName)
 if data_path_exists:
