@@ -43,6 +43,7 @@ mainly from Meissner et al https://doi.org/10.1016/j.neuroimage.2019.02.025
 #psychopy
 from psychopy import visual, core, event, logging, data, gui  # import some libraries from PsychoPy
 from math import atan2, degrees
+from datetime import datetime
 
 import numpy as np # nb can shorten name 
 import numpy.matlib as npmat
@@ -231,8 +232,9 @@ win = visual.Window(monitor="NIH3TB", size=(1920,1080), units="pix", fullscr=Tru
 winW= win.size[0]
 winH= win.size[1]
 
-#crossCol=[0, 1, 1] #cyan
-crossCol=[-1, -1, -1] #black
+crossCol=[0, 1, 1] #cyan
+# crossCol=[-1, -1, -1] #black
+# crossCol=[1.0,-1,-1] # red
 crossContrast=1 #0.7
 fixdetectcol=[1, 1, 1] #cross turns white for detection task
 crossLength=24 #pixels? or 0.5 deg
@@ -294,9 +296,14 @@ if not os.path.exists(dataDir):
 expInfo = {'observer':subID, 'expName':exptname, 'runNum':runNum,'stim1':stim1,'stim2':stim2, 'whichstim_first':stimfirst, 'winW':float(winW), 'winH':float(winH)}
 expInfo['dateStr'] = data.getDateStr()  # add the current time
 
-# make a text file to save data
-fileName = dataDir + exptname + '_' + expInfo['observer'] + '_run' + str(expInfo['runNum']) + '.tsv'
+# Get the current date and time
+now = datetime.now()
 
+# Format the date and time as a string
+timestamp = now.strftime("%Y%m%d_%H%M%S")
+
+# make a text file to save data
+fileName = dataDir + exptname + '_' + expInfo['observer'] + '_run' + str(expInfo['runNum']) + '_' + timestamp +'.tsv'
 # check data file doesnt exist, quit if it does
 data_path_exists = os.path.exists(fileName)
 if data_path_exists:
@@ -393,6 +400,7 @@ for t in range(numBlocks):
 					stim.image=imDir+stim2dir+'/'+stim2imlist[s2cnt]
 					s2cnt=s2cnt+1 # image counter
 				stim.draw()
+				fix.draw()
 				Sclock.reset() #set clock to 0 again.. find that missing 50ms!
 				win.flip()
 				imstart=Gclock.getTime()
@@ -409,12 +417,13 @@ for t in range(numBlocks):
 						waitresp = 1
 				event.clearEvents(eventType=None) #clear any pressed keys
 		wbox.draw()
+		fix.draw()
 		win.flip() #clear screen
 		imlist.append([stim.image,imstart,Gclock.getTime()])
 		#ISI INBETWEEN IMAGES
 		while Gclock.getTime() < fixDuration+(t*blockDuration)+(stimDuration*(im+1))+(isi*(im+1)): #use global clock to prevent timing slip, recover time in blank
-			#fix.draw()
 			wbox.draw()
+			fix.draw()
 			win.flip()
 			#check for 1-back response
 			pressed=event.getKeys(keyList=validKeys, modifiers=False, timeStamped=Gclock) #nb add the globalclock to timestamp
@@ -427,7 +436,8 @@ for t in range(numBlocks):
 						tally=tally+1
 						waitresp = 1
 				event.clearEvents(eventType=None) #clear any pressed keys
-
+    
+		#store last stim for 1-back task
 		#inbetween stim and isi
 		laststim=stim.image #store this image as the last stimulus for 1-back task response coding
 		#print(laststim)
