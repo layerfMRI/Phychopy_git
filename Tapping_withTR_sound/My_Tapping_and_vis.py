@@ -1,4 +1,3 @@
-
 #!t/usr/bin/envt pythonwn
 from psychopy import sound, core, visual, event, gui, logging, prefs
 #Renzo setup for first ecperimenteeeenbegqr

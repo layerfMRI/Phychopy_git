@@ -1,0 +1,3797 @@
+1.0191 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+7.5312 	INFO 	---START PARAMETERS---
+7.5313 	INFO 	filename: TappingWithTrTiming_Movie_d3.py-1tt-87-Apr_02_1617
+7.5315 	INFO 	subject: 1tt
+7.5316 	INFO 	session: 87
+7.5316 	INFO 	date: Apr_02_1617
+7.5316 	INFO 	blockDur_TRs: 16
+7.5316 	INFO 	condition: vis
+7.5316 	INFO 	fixCrossPos: [0, 0]
+7.5316 	INFO 	fixCrossSize: 100
+7.5316 	INFO 	fullScreen: True
+7.5317 	INFO 	movieFolder: Images/
+7.5317 	INFO 	movieSize: (1600, 1000)
+7.5317 	INFO 	nBlocks: 68
+7.5317 	INFO 	promptDir: Text/
+7.5317 	INFO 	restDur_TRs: 16
+7.5317 	INFO 	screenColor: (128, 128, 128)
+7.5317 	INFO 	screenToShow: 0
+7.5317 	INFO 	skipPrompts: False
+7.5317 	INFO 	tStartup_TRs: 0
+7.5317 	INFO 	textHeight: 40
+7.5317 	INFO 	triggerKey: t
+7.5317 	INFO 	---END PARAMETERS---
+8.6246 	INFO 	Loaded monitor calibration from ['2022_03_25 08:03']
+10.6168 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+10.6176 	EXP 	Created win = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([128, 128, 128]), colorSpace='rgb255', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f8052da2160>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7f80c2c669a0>, multiSample=False, name='win', numSamples=2, pos=[480.0, 270.0], screen=0, size=array([3840, 2160]), stencilBits=0, stereo=False, units='deg', useFBO=False, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.6179 	EXP 	win: mouseVisible = True
+10.6258 	EXP 	Created fixCross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=False, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=3.0, name='fixCross', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='pix', vertices=ndarray(...), win=Window(...), windingRule=None)
+10.6265 	WARNING 	TextStim.alignHoriz is deprecated. Use alignText and anchorHoriz attributes instead
+10.6606 	EXP 	Created topMsg = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='topMsg', opacity=1.0, ori=0.0, pos=array([0. , 0.5]), rgb=UNKNOWN, text='aaa', units='norm', win=Window(...), wrapWidth=1.5)
+10.6607 	WARNING 	TextStim.alignHoriz is deprecated. Use alignText and anchorHoriz attributes instead
+10.6635 	EXP 	Created bottomMsg = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='bottomMsg', opacity=1.0, ori=0.0, pos=array([ 0. , -0.5]), rgb=UNKNOWN, text='bbb', units='norm', win=Window(...), wrapWidth=1.5)
+10.6871 	EXP 	Created Movie Frame 0 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='Images/visual_0.png', interpolate=False, mask=None, maskParams=None, name='Movie Frame 0', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1600., 1000.]), texRes=128, units='pix', win=Window(...))
+10.7004 	EXP 	Created Movie Frame 1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='Images/visual_1.png', interpolate=False, mask=None, maskParams=None, name='Movie Frame 1', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1600., 1000.]), texRes=128, units='pix', win=Window(...))
+10.7071 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=40.0, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([  0., 580.]), rgb=UNKNOWN, text='look at the center', units='pix', win=Window(...), wrapWidth=1600)
+10.7238 	WARNING 	t of last frame was 107.16ms (=1/9)
+10.7238 	EXP 	topMsg: height = 0.1
+10.7238 	EXP 	topMsg: height = 0.1
+10.7238 	EXP 	topMsg: text = 'You will see a flickering checkerboard. When it is on the screen, try to fixate the center of the checkerboard. When the fixation cross appears, relax and stare at the cross.'
+10.7238 	EXP 	bottomMsg: height = 0.1
+10.7238 	EXP 	bottomMsg: height = 0.1
+10.7238 	EXP 	bottomMsg: text = 'The experiment will begin shortly'
+10.7238 	EXP 	Display Instructions1
+11.1216 	DATA 	Keypress: space
+11.1287 	WARNING 	t of last frame was 404.90ms (=1/2)
+11.1287 	EXP 	topMsg: height = 0.1
+11.1287 	EXP 	topMsg: height = 0.1
+11.1287 	EXP 	topMsg: text = "Please don't move..."
+11.1287 	EXP 	bottomMsg: height = 0.1
+11.1287 	EXP 	bottomMsg: height = 0.1
+11.1287 	EXP 	bottomMsg: text = ''
+11.1287 	EXP 	PleaseDontMove
+86.9896 	DATA 	Keypress: t
+86.9953 	WARNING 	t of last frame was 75866.67ms (=1/0)
+86.9953 	EXP 	Display Fixation
+86.9956 	EXP 	---START EXPERIMENT---
+86.9986 	EXP 	Display Fixation
+88.9210 	DATA 	Keypress: t
+91.3640 	DATA 	Keypress: t
+93.2914 	DATA 	Keypress: t
+95.7388 	DATA 	Keypress: t
+97.6664 	DATA 	Keypress: t
+100.1135 	DATA 	Keypress: t
+102.0409 	DATA 	Keypress: t
+104.4884 	DATA 	Keypress: t
+106.4152 	DATA 	Keypress: t
+108.8632 	DATA 	Keypress: t
+110.7899 	DATA 	Keypress: t
+113.2379 	DATA 	Keypress: t
+115.1656 	DATA 	Keypress: t
+117.6122 	DATA 	Keypress: t
+119.5402 	DATA 	Keypress: t
+121.9873 	DATA 	Keypress: t
+121.9917 	WARNING 	t of last frame was 34993.06ms (=1/0)
+122.1162 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+122.1162 	EXP 	Display Frame 1
+122.2402 	EXP 	Display Frame 0
+122.3649 	EXP 	Display Frame 1
+122.4902 	EXP 	Display Frame 0
+122.6153 	EXP 	Display Frame 1
+122.7401 	EXP 	Display Frame 0
+122.8640 	EXP 	Display Frame 1
+122.9902 	EXP 	Display Frame 0
+123.1151 	EXP 	Display Frame 1
+123.2400 	EXP 	Display Frame 0
+123.3650 	EXP 	Display Frame 1
+123.4902 	EXP 	Display Frame 0
+123.6152 	EXP 	Display Frame 1
+123.7400 	EXP 	Display Frame 0
+123.8640 	EXP 	Display Frame 1
+123.9893 	DATA 	Keypress: t
+123.9926 	EXP 	Display Frame 0
+124.1148 	EXP 	Display Frame 1
+124.2400 	EXP 	Display Frame 0
+124.3651 	EXP 	Display Frame 1
+124.4900 	EXP 	Display Frame 0
+124.6153 	EXP 	Display Frame 1
+124.7401 	EXP 	Display Frame 0
+124.8638 	EXP 	Display Frame 1
+124.9899 	EXP 	Display Frame 0
+125.1149 	EXP 	Display Frame 1
+125.2399 	EXP 	Display Frame 0
+125.3651 	EXP 	Display Frame 1
+125.4901 	EXP 	Display Frame 0
+125.6150 	EXP 	Display Frame 1
+125.7400 	EXP 	Display Frame 0
+125.8641 	EXP 	Display Frame 1
+125.9899 	EXP 	Display Frame 0
+126.1149 	EXP 	Display Frame 1
+126.2402 	EXP 	Display Frame 0
+126.3652 	EXP 	Display Frame 1
+126.3662 	DATA 	Keypress: t
+126.4900 	EXP 	Display Frame 0
+126.6150 	EXP 	Display Frame 1
+126.7401 	EXP 	Display Frame 0
+126.8637 	EXP 	Display Frame 1
+126.9903 	EXP 	Display Frame 0
+127.1152 	EXP 	Display Frame 1
+127.2400 	EXP 	Display Frame 0
+127.3652 	EXP 	Display Frame 1
+127.4901 	EXP 	Display Frame 0
+127.6152 	EXP 	Display Frame 1
+127.7399 	EXP 	Display Frame 0
+127.8643 	EXP 	Display Frame 1
+127.9902 	EXP 	Display Frame 0
+128.1150 	EXP 	Display Frame 1
+128.2399 	EXP 	Display Frame 0
+128.3644 	DATA 	Keypress: t
+128.3672 	EXP 	Display Frame 1
+128.4898 	EXP 	Display Frame 0
+128.6150 	EXP 	Display Frame 1
+128.7399 	EXP 	Display Frame 0
+128.8650 	EXP 	Display Frame 1
+128.9901 	EXP 	Display Frame 0
+129.1156 	EXP 	Display Frame 1
+129.2400 	EXP 	Display Frame 0
+129.3650 	EXP 	Display Frame 1
+129.4899 	EXP 	Display Frame 0
+129.6153 	EXP 	Display Frame 1
+129.7396 	EXP 	Display Frame 0
+129.8650 	EXP 	Display Frame 1
+129.9900 	EXP 	Display Frame 0
+130.1150 	EXP 	Display Frame 1
+130.2401 	EXP 	Display Frame 0
+130.3646 	EXP 	Display Frame 1
+130.4905 	EXP 	Display Frame 0
+130.6149 	EXP 	Display Frame 1
+130.7399 	EXP 	Display Frame 0
+130.7409 	DATA 	Keypress: t
+130.8652 	EXP 	Display Frame 1
+130.9899 	EXP 	Display Frame 0
+131.1151 	EXP 	Display Frame 1
+131.2400 	EXP 	Display Frame 0
+131.3652 	EXP 	Display Frame 1
+131.4904 	EXP 	Display Frame 0
+131.6148 	EXP 	Display Frame 1
+131.7402 	EXP 	Display Frame 0
+131.8651 	EXP 	Display Frame 1
+131.9900 	EXP 	Display Frame 0
+132.1152 	EXP 	Display Frame 1
+132.2401 	EXP 	Display Frame 0
+132.3650 	EXP 	Display Frame 1
+132.4902 	EXP 	Display Frame 0
+132.6151 	EXP 	Display Frame 1
+132.7390 	DATA 	Keypress: t
+132.7421 	EXP 	Display Frame 0
+132.8650 	EXP 	Display Frame 1
+132.9899 	EXP 	Display Frame 0
+133.1152 	EXP 	Display Frame 1
+133.2401 	EXP 	Display Frame 0
+133.3653 	EXP 	Display Frame 1
+133.4901 	EXP 	Display Frame 0
+133.6150 	EXP 	Display Frame 1
+133.7402 	EXP 	Display Frame 0
+133.8652 	EXP 	Display Frame 1
+133.9900 	EXP 	Display Frame 0
+134.1152 	EXP 	Display Frame 1
+134.2401 	EXP 	Display Frame 0
+134.3650 	EXP 	Display Frame 1
+134.4902 	EXP 	Display Frame 0
+134.6151 	EXP 	Display Frame 1
+134.7401 	EXP 	Display Frame 0
+134.8653 	EXP 	Display Frame 1
+134.9901 	EXP 	Display Frame 0
+135.1140 	DATA 	Keypress: t
+135.1170 	EXP 	Display Frame 1
+135.2401 	EXP 	Display Frame 0
+135.3650 	EXP 	Display Frame 1
+135.4900 	EXP 	Display Frame 0
+135.6151 	EXP 	Display Frame 1
+135.7401 	EXP 	Display Frame 0
+135.8646 	EXP 	Display Frame 1
+135.9899 	EXP 	Display Frame 0
+136.1150 	EXP 	Display Frame 1
+136.2399 	EXP 	Display Frame 0
+136.3648 	EXP 	Display Frame 1
+136.4902 	EXP 	Display Frame 0
+136.6151 	EXP 	Display Frame 1
+136.7400 	EXP 	Display Frame 0
+136.8653 	EXP 	Display Frame 1
+136.9901 	EXP 	Display Frame 0
+137.1144 	DATA 	Keypress: t
+137.1170 	EXP 	Display Frame 1
+137.2400 	EXP 	Display Frame 0
+137.3652 	EXP 	Display Frame 1
+137.4900 	EXP 	Display Frame 0
+137.6150 	EXP 	Display Frame 1
+137.7401 	EXP 	Display Frame 0
+137.8652 	EXP 	Display Frame 1
+137.9900 	EXP 	Display Frame 0
+138.1153 	EXP 	Display Frame 1
+138.2401 	EXP 	Display Frame 0
+138.3651 	EXP 	Display Frame 1
+138.4902 	EXP 	Display Frame 0
+138.6152 	EXP 	Display Frame 1
+138.7400 	EXP 	Display Frame 0
+138.8653 	EXP 	Display Frame 1
+138.9901 	EXP 	Display Frame 0
+139.1151 	EXP 	Display Frame 1
+139.2403 	EXP 	Display Frame 0
+139.3651 	EXP 	Display Frame 1
+139.4887 	DATA 	Keypress: t
+139.4915 	EXP 	Display Frame 0
+139.6152 	EXP 	Display Frame 1
+139.7400 	EXP 	Display Frame 0
+139.8652 	EXP 	Display Frame 1
+139.9902 	EXP 	Display Frame 0
+140.1151 	EXP 	Display Frame 1
+140.2400 	EXP 	Display Frame 0
+140.3652 	EXP 	Display Frame 1
+140.4901 	EXP 	Display Frame 0
+140.6152 	EXP 	Display Frame 1
+140.7400 	EXP 	Display Frame 0
+140.8647 	EXP 	Display Frame 1
+140.9899 	EXP 	Display Frame 0
+141.1148 	EXP 	Display Frame 1
+141.2399 	EXP 	Display Frame 0
+141.3646 	EXP 	Display Frame 1
+141.4886 	DATA 	Keypress: t
+141.4912 	EXP 	Display Frame 0
+141.6149 	EXP 	Display Frame 1
+141.7398 	EXP 	Display Frame 0
+141.8651 	EXP 	Display Frame 1
+141.9903 	EXP 	Display Frame 0
+142.1152 	EXP 	Display Frame 1
+142.2400 	EXP 	Display Frame 0
+142.3653 	EXP 	Display Frame 1
+142.4901 	EXP 	Display Frame 0
+142.6151 	EXP 	Display Frame 1
+142.7400 	EXP 	Display Frame 0
+142.8652 	EXP 	Display Frame 1
+142.9902 	EXP 	Display Frame 0
+143.1148 	EXP 	Display Frame 1
+143.2401 	EXP 	Display Frame 0
+143.3648 	EXP 	Display Frame 1
+143.4901 	EXP 	Display Frame 0
+143.6150 	EXP 	Display Frame 1
+143.7400 	EXP 	Display Frame 0
+143.8644 	DATA 	Keypress: t
+143.8670 	EXP 	Display Frame 1
+143.9904 	EXP 	Display Frame 0
+144.1149 	EXP 	Display Frame 1
+144.2400 	EXP 	Display Frame 0
+144.3652 	EXP 	Display Frame 1
+144.4901 	EXP 	Display Frame 0
+144.6152 	EXP 	Display Frame 1
+144.7401 	EXP 	Display Frame 0
+144.8652 	EXP 	Display Frame 1
+144.9902 	EXP 	Display Frame 0
+145.1151 	EXP 	Display Frame 1
+145.2402 	EXP 	Display Frame 0
+145.3651 	EXP 	Display Frame 1
+145.4900 	EXP 	Display Frame 0
+145.6151 	EXP 	Display Frame 1
+145.7401 	EXP 	Display Frame 0
+145.8643 	DATA 	Keypress: t
+145.8676 	EXP 	Display Frame 1
+145.9900 	EXP 	Display Frame 0
+146.1149 	EXP 	Display Frame 1
+146.2398 	EXP 	Display Frame 0
+146.3650 	EXP 	Display Frame 1
+146.4901 	EXP 	Display Frame 0
+146.6150 	EXP 	Display Frame 1
+146.7398 	EXP 	Display Frame 0
+146.8647 	EXP 	Display Frame 1
+146.9898 	EXP 	Display Frame 0
+147.1150 	EXP 	Display Frame 1
+147.2400 	EXP 	Display Frame 0
+147.3651 	EXP 	Display Frame 1
+147.4900 	EXP 	Display Frame 0
+147.6151 	EXP 	Display Frame 1
+147.7400 	EXP 	Display Frame 0
+147.8651 	EXP 	Display Frame 1
+147.9901 	EXP 	Display Frame 0
+148.1151 	EXP 	Display Frame 1
+148.2391 	DATA 	Keypress: t
+148.2419 	EXP 	Display Frame 0
+148.3652 	EXP 	Display Frame 1
+148.4898 	EXP 	Display Frame 0
+148.6150 	EXP 	Display Frame 1
+148.7402 	EXP 	Display Frame 0
+148.8651 	EXP 	Display Frame 1
+148.9900 	EXP 	Display Frame 0
+149.1152 	EXP 	Display Frame 1
+149.2401 	EXP 	Display Frame 0
+149.3650 	EXP 	Display Frame 1
+149.4904 	EXP 	Display Frame 0
+149.6151 	EXP 	Display Frame 1
+149.7400 	EXP 	Display Frame 0
+149.8650 	EXP 	Display Frame 1
+149.9901 	EXP 	Display Frame 0
+150.1150 	EXP 	Display Frame 1
+150.2391 	DATA 	Keypress: t
+150.2419 	EXP 	Display Frame 0
+150.3649 	EXP 	Display Frame 1
+150.4900 	EXP 	Display Frame 0
+150.6150 	EXP 	Display Frame 1
+150.7401 	EXP 	Display Frame 0
+150.8654 	EXP 	Display Frame 1
+150.9899 	EXP 	Display Frame 0
+151.1151 	EXP 	Display Frame 1
+151.2398 	EXP 	Display Frame 0
+151.3650 	EXP 	Display Frame 1
+151.4903 	EXP 	Display Frame 0
+151.6149 	EXP 	Display Frame 1
+151.7399 	EXP 	Display Frame 0
+151.8652 	EXP 	Display Frame 1
+151.9902 	EXP 	Display Frame 0
+152.1150 	EXP 	Display Frame 1
+152.2399 	EXP 	Display Frame 0
+152.3647 	EXP 	Display Frame 1
+152.4899 	EXP 	Display Frame 0
+152.6136 	DATA 	Keypress: t
+152.6162 	EXP 	Display Frame 1
+152.7402 	EXP 	Display Frame 0
+152.8649 	EXP 	Display Frame 1
+152.9898 	EXP 	Display Frame 0
+153.1151 	EXP 	Display Frame 1
+153.2401 	EXP 	Display Frame 0
+153.3650 	EXP 	Display Frame 1
+153.4902 	EXP 	Display Frame 0
+153.6151 	EXP 	Display Frame 1
+153.7400 	EXP 	Display Frame 0
+153.8650 	EXP 	Display Frame 1
+153.9901 	EXP 	Display Frame 0
+154.1150 	EXP 	Display Frame 1
+154.2402 	EXP 	Display Frame 0
+154.3652 	EXP 	Display Frame 1
+154.4900 	EXP 	Display Frame 0
+154.6143 	DATA 	Keypress: t
+154.6171 	EXP 	Display Frame 1
+154.7398 	EXP 	Display Frame 0
+154.8649 	EXP 	Display Frame 1
+154.9898 	EXP 	Display Frame 0
+155.1151 	EXP 	Display Frame 1
+155.2401 	EXP 	Display Frame 0
+155.3650 	EXP 	Display Frame 1
+155.4902 	EXP 	Display Frame 0
+155.6152 	EXP 	Display Frame 1
+155.7400 	EXP 	Display Frame 0
+155.8654 	EXP 	Display Frame 1
+155.9897 	EXP 	Display Frame 0
+156.1151 	EXP 	Display Frame 1
+156.2400 	EXP 	Display Frame 0
+156.3651 	EXP 	Display Frame 1
+156.4900 	EXP 	Display Frame 0
+156.6153 	EXP 	Display Frame 1
+156.7401 	EXP 	Display Frame 0
+156.8653 	EXP 	Display Frame 1
+156.9893 	DATA 	Keypress: t
+156.9916 	EXP 	Display Frame 0
+156.9931 	EXP 	Display Fixation
+158.9127 	DATA 	Keypress: t
+161.3606 	DATA 	Keypress: t
+163.2873 	DATA 	Keypress: t
+165.7345 	DATA 	Keypress: t
+167.6621 	DATA 	Keypress: t
+170.1094 	DATA 	Keypress: t
+172.0362 	DATA 	Keypress: t
+174.4844 	DATA 	Keypress: t
+176.4112 	DATA 	Keypress: t
+178.8596 	DATA 	Keypress: t
+180.7862 	DATA 	Keypress: t
+183.2333 	DATA 	Keypress: t
+185.1612 	DATA 	Keypress: t
+187.6086 	DATA 	Keypress: t
+189.5356 	DATA 	Keypress: t
+191.9836 	DATA 	Keypress: t
+192.1110 	EXP 	Display Frame 1
+192.2363 	EXP 	Display Frame 0
+192.3614 	EXP 	Display Frame 1
+192.4863 	EXP 	Display Frame 0
+192.6113 	EXP 	Display Frame 1
+192.7364 	EXP 	Display Frame 0
+192.8610 	EXP 	Display Frame 1
+192.9863 	EXP 	Display Frame 0
+193.1113 	EXP 	Display Frame 1
+193.2364 	EXP 	Display Frame 0
+193.3614 	EXP 	Display Frame 1
+193.4865 	EXP 	Display Frame 0
+193.6116 	EXP 	Display Frame 1
+193.7361 	EXP 	Display Frame 0
+193.8613 	EXP 	Display Frame 1
+193.9858 	DATA 	Keypress: t
+193.9889 	EXP 	Display Frame 0
+194.1111 	EXP 	Display Frame 1
+194.2366 	EXP 	Display Frame 0
+194.3615 	EXP 	Display Frame 1
+194.4863 	EXP 	Display Frame 0
+194.6116 	EXP 	Display Frame 1
+194.7364 	EXP 	Display Frame 0
+194.8614 	EXP 	Display Frame 1
+194.9864 	EXP 	Display Frame 0
+195.1114 	EXP 	Display Frame 1
+195.2365 	EXP 	Display Frame 0
+195.3613 	EXP 	Display Frame 1
+195.4865 	EXP 	Display Frame 0
+195.6115 	EXP 	Display Frame 1
+195.7363 	EXP 	Display Frame 0
+195.8616 	EXP 	Display Frame 1
+195.9863 	EXP 	Display Frame 0
+196.1114 	EXP 	Display Frame 1
+196.2360 	EXP 	Display Frame 0
+196.3597 	DATA 	Keypress: t
+196.3618 	EXP 	Display Frame 1
+196.4871 	EXP 	Display Frame 0
+196.6113 	EXP 	Display Frame 1
+196.7362 	EXP 	Display Frame 0
+196.8614 	EXP 	Display Frame 1
+196.9865 	EXP 	Display Frame 0
+197.1112 	EXP 	Display Frame 1
+197.2362 	EXP 	Display Frame 0
+197.3613 	EXP 	Display Frame 1
+197.4866 	EXP 	Display Frame 0
+197.6114 	EXP 	Display Frame 1
+197.7365 	EXP 	Display Frame 0
+197.8615 	EXP 	Display Frame 1
+197.9863 	EXP 	Display Frame 0
+198.1114 	EXP 	Display Frame 1
+198.2364 	EXP 	Display Frame 0
+198.3606 	DATA 	Keypress: t
+198.3635 	EXP 	Display Frame 1
+198.4861 	EXP 	Display Frame 0
+198.6113 	EXP 	Display Frame 1
+198.7363 	EXP 	Display Frame 0
+198.8614 	EXP 	Display Frame 1
+198.9864 	EXP 	Display Frame 0
+199.1114 	EXP 	Display Frame 1
+199.2363 	EXP 	Display Frame 0
+199.3614 	EXP 	Display Frame 1
+199.4864 	EXP 	Display Frame 0
+199.6114 	EXP 	Display Frame 1
+199.7363 	EXP 	Display Frame 0
+199.8614 	EXP 	Display Frame 1
+199.9863 	EXP 	Display Frame 0
+200.1113 	EXP 	Display Frame 1
+200.2364 	EXP 	Display Frame 0
+200.3615 	EXP 	Display Frame 1
+200.4863 	EXP 	Display Frame 0
+200.6115 	EXP 	Display Frame 1
+200.7352 	DATA 	Keypress: t
+200.7382 	EXP 	Display Frame 0
+200.8614 	EXP 	Display Frame 1
+200.9863 	EXP 	Display Frame 0
+201.1115 	EXP 	Display Frame 1
+201.2363 	EXP 	Display Frame 0
+201.3616 	EXP 	Display Frame 1
+201.4865 	EXP 	Display Frame 0
+201.6111 	EXP 	Display Frame 1
+201.7363 	EXP 	Display Frame 0
+201.8609 	EXP 	Display Frame 1
+201.9862 	EXP 	Display Frame 0
+202.1113 	EXP 	Display Frame 1
+202.2363 	EXP 	Display Frame 0
+202.3615 	EXP 	Display Frame 1
+202.4864 	EXP 	Display Frame 0
+202.6114 	EXP 	Display Frame 1
+202.7361 	DATA 	Keypress: t
+202.7389 	EXP 	Display Frame 0
+202.8610 	EXP 	Display Frame 1
+202.9863 	EXP 	Display Frame 0
+203.1114 	EXP 	Display Frame 1
+203.2363 	EXP 	Display Frame 0
+203.3616 	EXP 	Display Frame 1
+203.4867 	EXP 	Display Frame 0
+203.6112 	EXP 	Display Frame 1
+203.7363 	EXP 	Display Frame 0
+203.8615 	EXP 	Display Frame 1
+203.9863 	EXP 	Display Frame 0
+204.1116 	EXP 	Display Frame 1
+204.2365 	EXP 	Display Frame 0
+204.3613 	EXP 	Display Frame 1
+204.4863 	EXP 	Display Frame 0
+204.6114 	EXP 	Display Frame 1
+204.7364 	EXP 	Display Frame 0
+204.8613 	EXP 	Display Frame 1
+204.9864 	EXP 	Display Frame 0
+205.1104 	DATA 	Keypress: t
+205.1130 	EXP 	Display Frame 1
+205.2366 	EXP 	Display Frame 0
+205.3612 	EXP 	Display Frame 1
+205.4864 	EXP 	Display Frame 0
+205.6113 	EXP 	Display Frame 1
+205.7365 	EXP 	Display Frame 0
+205.8615 	EXP 	Display Frame 1
+205.9863 	EXP 	Display Frame 0
+206.1114 	EXP 	Display Frame 1
+206.2362 	EXP 	Display Frame 0
+206.3613 	EXP 	Display Frame 1
+206.4865 	EXP 	Display Frame 0
+206.6113 	EXP 	Display Frame 1
+206.7362 	EXP 	Display Frame 0
+206.8612 	EXP 	Display Frame 1
+206.9864 	EXP 	Display Frame 0
+207.1100 	DATA 	Keypress: t
+207.1128 	EXP 	Display Frame 1
+207.2360 	EXP 	Display Frame 0
+207.3609 	EXP 	Display Frame 1
+207.4866 	EXP 	Display Frame 0
+207.6115 	EXP 	Display Frame 1
+207.7357 	EXP 	Display Frame 0
+207.8612 	EXP 	Display Frame 1
+207.9862 	EXP 	Display Frame 0
+208.1115 	EXP 	Display Frame 1
+208.2364 	EXP 	Display Frame 0
+208.3613 	EXP 	Display Frame 1
+208.4865 	EXP 	Display Frame 0
+208.6114 	EXP 	Display Frame 1
+208.7363 	EXP 	Display Frame 0
+208.8613 	EXP 	Display Frame 1
+208.9865 	EXP 	Display Frame 0
+209.1111 	EXP 	Display Frame 1
+209.2365 	EXP 	Display Frame 0
+209.3614 	EXP 	Display Frame 1
+209.4855 	DATA 	Keypress: t
+209.4884 	EXP 	Display Frame 0
+209.6115 	EXP 	Display Frame 1
+209.7362 	EXP 	Display Frame 0
+209.8614 	EXP 	Display Frame 1
+209.9861 	EXP 	Display Frame 0
+210.1114 	EXP 	Display Frame 1
+210.2364 	EXP 	Display Frame 0
+210.3614 	EXP 	Display Frame 1
+210.4864 	EXP 	Display Frame 0
+210.6111 	EXP 	Display Frame 1
+210.7363 	EXP 	Display Frame 0
+210.8615 	EXP 	Display Frame 1
+210.9864 	EXP 	Display Frame 0
+211.1113 	EXP 	Display Frame 1
+211.2361 	EXP 	Display Frame 0
+211.3615 	EXP 	Display Frame 1
+211.4855 	DATA 	Keypress: t
+211.4884 	EXP 	Display Frame 0
+211.6113 	EXP 	Display Frame 1
+211.7362 	EXP 	Display Frame 0
+211.8615 	EXP 	Display Frame 1
+211.9865 	EXP 	Display Frame 0
+212.1114 	EXP 	Display Frame 1
+212.2364 	EXP 	Display Frame 0
+212.3616 	EXP 	Display Frame 1
+212.4866 	EXP 	Display Frame 0
+212.6116 	EXP 	Display Frame 1
+212.7360 	EXP 	Display Frame 0
+212.8610 	EXP 	Display Frame 1
+212.9865 	EXP 	Display Frame 0
+213.1111 	EXP 	Display Frame 1
+213.2363 	EXP 	Display Frame 0
+213.3615 	EXP 	Display Frame 1
+213.4863 	EXP 	Display Frame 0
+213.6115 	EXP 	Display Frame 1
+213.7364 	EXP 	Display Frame 0
+213.8604 	DATA 	Keypress: t
+213.8630 	EXP 	Display Frame 1
+213.9865 	EXP 	Display Frame 0
+214.1112 	EXP 	Display Frame 1
+214.2365 	EXP 	Display Frame 0
+214.3616 	EXP 	Display Frame 1
+214.4866 	EXP 	Display Frame 0
+214.6114 	EXP 	Display Frame 1
+214.7366 	EXP 	Display Frame 0
+214.8616 	EXP 	Display Frame 1
+214.9866 	EXP 	Display Frame 0
+215.1111 	EXP 	Display Frame 1
+215.2365 	EXP 	Display Frame 0
+215.3615 	EXP 	Display Frame 1
+215.4863 	EXP 	Display Frame 0
+215.6114 	EXP 	Display Frame 1
+215.7362 	EXP 	Display Frame 0
+215.8598 	DATA 	Keypress: t
+215.8624 	EXP 	Display Frame 1
+215.9861 	EXP 	Display Frame 0
+216.1112 	EXP 	Display Frame 1
+216.2363 	EXP 	Display Frame 0
+216.3615 	EXP 	Display Frame 1
+216.4864 	EXP 	Display Frame 0
+216.6114 	EXP 	Display Frame 1
+216.7365 	EXP 	Display Frame 0
+216.8614 	EXP 	Display Frame 1
+216.9863 	EXP 	Display Frame 0
+217.1116 	EXP 	Display Frame 1
+217.2364 	EXP 	Display Frame 0
+217.3615 	EXP 	Display Frame 1
+217.4863 	EXP 	Display Frame 0
+217.6114 	EXP 	Display Frame 1
+217.7364 	EXP 	Display Frame 0
+217.8613 	EXP 	Display Frame 1
+217.9864 	EXP 	Display Frame 0
+218.1114 	EXP 	Display Frame 1
+218.2354 	DATA 	Keypress: t
+218.2381 	EXP 	Display Frame 0
+218.3613 	EXP 	Display Frame 1
+218.4865 	EXP 	Display Frame 0
+218.6114 	EXP 	Display Frame 1
+218.7363 	EXP 	Display Frame 0
+218.8612 	EXP 	Display Frame 1
+218.9863 	EXP 	Display Frame 0
+219.1115 	EXP 	Display Frame 1
+219.2364 	EXP 	Display Frame 0
+219.3614 	EXP 	Display Frame 1
+219.4863 	EXP 	Display Frame 0
+219.6115 	EXP 	Display Frame 1
+219.7362 	EXP 	Display Frame 0
+219.8611 	EXP 	Display Frame 1
+219.9864 	EXP 	Display Frame 0
+220.1114 	EXP 	Display Frame 1
+220.2358 	DATA 	Keypress: t
+220.2384 	EXP 	Display Frame 0
+220.3612 	EXP 	Display Frame 1
+220.4862 	EXP 	Display Frame 0
+220.6116 	EXP 	Display Frame 1
+220.7363 	EXP 	Display Frame 0
+220.8615 	EXP 	Display Frame 1
+220.9861 	EXP 	Display Frame 0
+221.1113 	EXP 	Display Frame 1
+221.2364 	EXP 	Display Frame 0
+221.3614 	EXP 	Display Frame 1
+221.4865 	EXP 	Display Frame 0
+221.6115 	EXP 	Display Frame 1
+221.7361 	EXP 	Display Frame 0
+221.8613 	EXP 	Display Frame 1
+221.9864 	EXP 	Display Frame 0
+222.1114 	EXP 	Display Frame 1
+222.2363 	EXP 	Display Frame 0
+222.3614 	EXP 	Display Frame 1
+222.4864 	EXP 	Display Frame 0
+222.6106 	DATA 	Keypress: t
+222.6131 	EXP 	Display Frame 1
+222.7365 	EXP 	Display Frame 0
+222.8611 	EXP 	Display Frame 1
+222.9863 	EXP 	Display Frame 0
+223.1115 	EXP 	Display Frame 1
+223.2362 	EXP 	Display Frame 0
+223.3613 	EXP 	Display Frame 1
+223.4865 	EXP 	Display Frame 0
+223.6114 	EXP 	Display Frame 1
+223.7361 	EXP 	Display Frame 0
+223.8611 	EXP 	Display Frame 1
+223.9862 	EXP 	Display Frame 0
+224.1111 	EXP 	Display Frame 1
+224.2363 	EXP 	Display Frame 0
+224.3614 	EXP 	Display Frame 1
+224.4864 	EXP 	Display Frame 0
+224.6108 	DATA 	Keypress: t
+224.6137 	EXP 	Display Frame 1
+224.7362 	EXP 	Display Frame 0
+224.8612 	EXP 	Display Frame 1
+224.9863 	EXP 	Display Frame 0
+225.1114 	EXP 	Display Frame 1
+225.2364 	EXP 	Display Frame 0
+225.3613 	EXP 	Display Frame 1
+225.4864 	EXP 	Display Frame 0
+225.6115 	EXP 	Display Frame 1
+225.7363 	EXP 	Display Frame 0
+225.8616 	EXP 	Display Frame 1
+225.9864 	EXP 	Display Frame 0
+226.1111 	EXP 	Display Frame 1
+226.2365 	EXP 	Display Frame 0
+226.3615 	EXP 	Display Frame 1
+226.4863 	EXP 	Display Frame 0
+226.6111 	EXP 	Display Frame 1
+226.7364 	EXP 	Display Frame 0
+226.8614 	EXP 	Display Frame 1
+226.9855 	DATA 	Keypress: t
+226.9878 	EXP 	Display Frame 0
+226.9892 	EXP 	Display Fixation
+228.9085 	DATA 	Keypress: t
+231.3568 	DATA 	Keypress: t
+233.2834 	DATA 	Keypress: t
+235.7307 	DATA 	Keypress: t
+237.6582 	DATA 	Keypress: t
+240.1056 	DATA 	Keypress: t
+242.0330 	DATA 	Keypress: t
+244.4805 	DATA 	Keypress: t
+246.4079 	DATA 	Keypress: t
+248.8555 	DATA 	Keypress: t
+250.7825 	DATA 	Keypress: t
+253.2299 	DATA 	Keypress: t
+255.1564 	DATA 	Keypress: t
+257.6048 	DATA 	Keypress: t
+259.5314 	DATA 	Keypress: t
+261.9794 	DATA 	Keypress: t
+262.1071 	EXP 	Display Frame 1
+262.2320 	EXP 	Display Frame 0
+262.3568 	EXP 	Display Frame 1
+262.4823 	EXP 	Display Frame 0
+262.6069 	EXP 	Display Frame 1
+262.7319 	EXP 	Display Frame 0
+262.8572 	EXP 	Display Frame 1
+262.9821 	EXP 	Display Frame 0
+263.1071 	EXP 	Display Frame 1
+263.2322 	EXP 	Display Frame 0
+263.3573 	EXP 	Display Frame 1
+263.4822 	EXP 	Display Frame 0
+263.6074 	EXP 	Display Frame 1
+263.7325 	EXP 	Display Frame 0
+263.8572 	EXP 	Display Frame 1
+263.9814 	DATA 	Keypress: t
+263.9839 	EXP 	Display Frame 0
+264.1070 	EXP 	Display Frame 1
+264.2321 	EXP 	Display Frame 0
+264.3573 	EXP 	Display Frame 1
+264.4818 	EXP 	Display Frame 0
+264.6069 	EXP 	Display Frame 1
+264.7319 	EXP 	Display Frame 0
+264.8572 	EXP 	Display Frame 1
+264.9821 	EXP 	Display Frame 0
+265.1071 	EXP 	Display Frame 1
+265.2322 	EXP 	Display Frame 0
+265.3572 	EXP 	Display Frame 1
+265.4821 	EXP 	Display Frame 0
+265.6072 	EXP 	Display Frame 1
+265.7323 	EXP 	Display Frame 0
+265.8571 	EXP 	Display Frame 1
+265.9822 	EXP 	Display Frame 0
+266.1072 	EXP 	Display Frame 1
+266.2321 	EXP 	Display Frame 0
+266.3574 	EXP 	Display Frame 1
+266.3583 	DATA 	Keypress: t
+266.4822 	EXP 	Display Frame 0
+266.6069 	EXP 	Display Frame 1
+266.7323 	EXP 	Display Frame 0
+266.8573 	EXP 	Display Frame 1
+266.9821 	EXP 	Display Frame 0
+267.1071 	EXP 	Display Frame 1
+267.2322 	EXP 	Display Frame 0
+267.3571 	EXP 	Display Frame 1
+267.4821 	EXP 	Display Frame 0
+267.6072 	EXP 	Display Frame 1
+267.7321 	EXP 	Display Frame 0
+267.8568 	EXP 	Display Frame 1
+267.9820 	EXP 	Display Frame 0
+268.1070 	EXP 	Display Frame 1
+268.2319 	EXP 	Display Frame 0
+268.3565 	DATA 	Keypress: t
+268.3592 	EXP 	Display Frame 1
+268.4820 	EXP 	Display Frame 0
+268.6070 	EXP 	Display Frame 1
+268.7321 	EXP 	Display Frame 0
+268.8572 	EXP 	Display Frame 1
+268.9821 	EXP 	Display Frame 0
+269.1073 	EXP 	Display Frame 1
+269.2322 	EXP 	Display Frame 0
+269.3572 	EXP 	Display Frame 1
+269.4821 	EXP 	Display Frame 0
+269.6072 	EXP 	Display Frame 1
+269.7321 	EXP 	Display Frame 0
+269.8572 	EXP 	Display Frame 1
+269.9822 	EXP 	Display Frame 0
+270.1072 	EXP 	Display Frame 1
+270.2332 	EXP 	Display Frame 0
+270.3572 	EXP 	Display Frame 1
+270.4822 	EXP 	Display Frame 0
+270.6072 	EXP 	Display Frame 1
+270.7322 	EXP 	Display Frame 0
+270.7332 	DATA 	Keypress: t
+270.8572 	EXP 	Display Frame 1
+270.9819 	EXP 	Display Frame 0
+271.1072 	EXP 	Display Frame 1
+271.2322 	EXP 	Display Frame 0
+271.3576 	EXP 	Display Frame 1
+271.4820 	EXP 	Display Frame 0
+271.6070 	EXP 	Display Frame 1
+271.7320 	EXP 	Display Frame 0
+271.8574 	EXP 	Display Frame 1
+271.9822 	EXP 	Display Frame 0
+272.1073 	EXP 	Display Frame 1
+272.2324 	EXP 	Display Frame 0
+272.3573 	EXP 	Display Frame 1
+272.4821 	EXP 	Display Frame 0
+272.6073 	EXP 	Display Frame 1
+272.7307 	DATA 	Keypress: t
+272.7336 	EXP 	Display Frame 0
+272.8570 	EXP 	Display Frame 1
+272.9821 	EXP 	Display Frame 0
+273.1072 	EXP 	Display Frame 1
+273.2320 	EXP 	Display Frame 0
+273.3569 	EXP 	Display Frame 1
+273.4825 	EXP 	Display Frame 0
+273.6070 	EXP 	Display Frame 1
+273.7319 	EXP 	Display Frame 0
+273.8573 	EXP 	Display Frame 1
+273.9822 	EXP 	Display Frame 0
+274.1071 	EXP 	Display Frame 1
+274.2323 	EXP 	Display Frame 0
+274.3572 	EXP 	Display Frame 1
+274.4821 	EXP 	Display Frame 0
+274.6070 	EXP 	Display Frame 1
+274.7322 	EXP 	Display Frame 0
+274.8571 	EXP 	Display Frame 1
+274.9820 	EXP 	Display Frame 0
+275.1065 	DATA 	Keypress: t
+275.1089 	EXP 	Display Frame 1
+275.2322 	EXP 	Display Frame 0
+275.3569 	EXP 	Display Frame 1
+275.4822 	EXP 	Display Frame 0
+275.6073 	EXP 	Display Frame 1
+275.7321 	EXP 	Display Frame 0
+275.8572 	EXP 	Display Frame 1
+275.9826 	EXP 	Display Frame 0
+276.1068 	EXP 	Display Frame 1
+276.2321 	EXP 	Display Frame 0
+276.3568 	EXP 	Display Frame 1
+276.4819 	EXP 	Display Frame 0
+276.6071 	EXP 	Display Frame 1
+276.7323 	EXP 	Display Frame 0
+276.8571 	EXP 	Display Frame 1
+276.9823 	EXP 	Display Frame 0
+277.1065 	DATA 	Keypress: t
+277.1091 	EXP 	Display Frame 1
+277.2319 	EXP 	Display Frame 0
+277.3569 	EXP 	Display Frame 1
+277.4821 	EXP 	Display Frame 0
+277.6072 	EXP 	Display Frame 1
+277.7324 	EXP 	Display Frame 0
+277.8572 	EXP 	Display Frame 1
+277.9820 	EXP 	Display Frame 0
+278.1071 	EXP 	Display Frame 1
+278.2323 	EXP 	Display Frame 0
+278.3572 	EXP 	Display Frame 1
+278.4821 	EXP 	Display Frame 0
+278.6073 	EXP 	Display Frame 1
+278.7322 	EXP 	Display Frame 0
+278.8569 	EXP 	Display Frame 1
+278.9824 	EXP 	Display Frame 0
+279.1072 	EXP 	Display Frame 1
+279.2321 	EXP 	Display Frame 0
+279.3573 	EXP 	Display Frame 1
+279.4815 	DATA 	Keypress: t
+279.4843 	EXP 	Display Frame 0
+279.6074 	EXP 	Display Frame 1
+279.7321 	EXP 	Display Frame 0
+279.8570 	EXP 	Display Frame 1
+279.9821 	EXP 	Display Frame 0
+280.1075 	EXP 	Display Frame 1
+280.2321 	EXP 	Display Frame 0
+280.3570 	EXP 	Display Frame 1
+280.4823 	EXP 	Display Frame 0
+280.6073 	EXP 	Display Frame 1
+280.7320 	EXP 	Display Frame 0
+280.8569 	EXP 	Display Frame 1
+280.9823 	EXP 	Display Frame 0
+281.1072 	EXP 	Display Frame 1
+281.2322 	EXP 	Display Frame 0
+281.3574 	EXP 	Display Frame 1
+281.4814 	DATA 	Keypress: t
+281.4840 	EXP 	Display Frame 0
+281.6069 	EXP 	Display Frame 1
+281.7322 	EXP 	Display Frame 0
+281.8572 	EXP 	Display Frame 1
+281.9821 	EXP 	Display Frame 0
+282.1071 	EXP 	Display Frame 1
+282.2323 	EXP 	Display Frame 0
+282.3573 	EXP 	Display Frame 1
+282.4823 	EXP 	Display Frame 0
+282.6072 	EXP 	Display Frame 1
+282.7323 	EXP 	Display Frame 0
+282.8573 	EXP 	Display Frame 1
+282.9822 	EXP 	Display Frame 0
+283.1073 	EXP 	Display Frame 1
+283.2322 	EXP 	Display Frame 0
+283.3572 	EXP 	Display Frame 1
+283.4823 	EXP 	Display Frame 0
+283.6071 	EXP 	Display Frame 1
+283.7324 	EXP 	Display Frame 0
+283.8559 	DATA 	Keypress: t
+283.8589 	EXP 	Display Frame 1
+283.9822 	EXP 	Display Frame 0
+284.1069 	EXP 	Display Frame 1
+284.2318 	EXP 	Display Frame 0
+284.3567 	EXP 	Display Frame 1
+284.4822 	EXP 	Display Frame 0
+284.6070 	EXP 	Display Frame 1
+284.7319 	EXP 	Display Frame 0
+284.8571 	EXP 	Display Frame 1
+284.9822 	EXP 	Display Frame 0
+285.1071 	EXP 	Display Frame 1
+285.2321 	EXP 	Display Frame 0
+285.3573 	EXP 	Display Frame 1
+285.4822 	EXP 	Display Frame 0
+285.6075 	EXP 	Display Frame 1
+285.7320 	EXP 	Display Frame 0
+285.8562 	DATA 	Keypress: t
+285.8591 	EXP 	Display Frame 1
+285.9819 	EXP 	Display Frame 0
+286.1071 	EXP 	Display Frame 1
+286.2322 	EXP 	Display Frame 0
+286.3575 	EXP 	Display Frame 1
+286.4821 	EXP 	Display Frame 0
+286.6070 	EXP 	Display Frame 1
+286.7321 	EXP 	Display Frame 0
+286.8570 	EXP 	Display Frame 1
+286.9822 	EXP 	Display Frame 0
+287.1071 	EXP 	Display Frame 1
+287.2321 	EXP 	Display Frame 0
+287.3573 	EXP 	Display Frame 1
+287.4821 	EXP 	Display Frame 0
+287.6071 	EXP 	Display Frame 1
+287.7322 	EXP 	Display Frame 0
+287.8572 	EXP 	Display Frame 1
+287.9821 	EXP 	Display Frame 0
+288.1072 	EXP 	Display Frame 1
+288.2313 	DATA 	Keypress: t
+288.2336 	EXP 	Display Frame 0
+288.3571 	EXP 	Display Frame 1
+288.4818 	EXP 	Display Frame 0
+288.6072 	EXP 	Display Frame 1
+288.7321 	EXP 	Display Frame 0
+288.8572 	EXP 	Display Frame 1
+288.9822 	EXP 	Display Frame 0
+289.1071 	EXP 	Display Frame 1
+289.2324 	EXP 	Display Frame 0
+289.3572 	EXP 	Display Frame 1
+289.4821 	EXP 	Display Frame 0
+289.6071 	EXP 	Display Frame 1
+289.7322 	EXP 	Display Frame 0
+289.8570 	EXP 	Display Frame 1
+289.9823 	EXP 	Display Frame 0
+290.1072 	EXP 	Display Frame 1
+290.2313 	DATA 	Keypress: t
+290.2342 	EXP 	Display Frame 0
+290.3569 	EXP 	Display Frame 1
+290.4822 	EXP 	Display Frame 0
+290.6072 	EXP 	Display Frame 1
+290.7321 	EXP 	Display Frame 0
+290.8574 	EXP 	Display Frame 1
+290.9822 	EXP 	Display Frame 0
+291.1071 	EXP 	Display Frame 1
+291.2324 	EXP 	Display Frame 0
+291.3572 	EXP 	Display Frame 1
+291.4821 	EXP 	Display Frame 0
+291.6071 	EXP 	Display Frame 1
+291.7322 	EXP 	Display Frame 0
+291.8571 	EXP 	Display Frame 1
+291.9822 	EXP 	Display Frame 0
+292.1072 	EXP 	Display Frame 1
+292.2322 	EXP 	Display Frame 0
+292.3574 	EXP 	Display Frame 1
+292.4822 	EXP 	Display Frame 0
+292.6060 	DATA 	Keypress: t
+292.6084 	EXP 	Display Frame 1
+292.7324 	EXP 	Display Frame 0
+292.8571 	EXP 	Display Frame 1
+292.9822 	EXP 	Display Frame 0
+293.1071 	EXP 	Display Frame 1
+293.2323 	EXP 	Display Frame 0
+293.3573 	EXP 	Display Frame 1
+293.4823 	EXP 	Display Frame 0
+293.6074 	EXP 	Display Frame 1
+293.7324 	EXP 	Display Frame 0
+293.8572 	EXP 	Display Frame 1
+293.9823 	EXP 	Display Frame 0
+294.1072 	EXP 	Display Frame 1
+294.2323 	EXP 	Display Frame 0
+294.3573 	EXP 	Display Frame 1
+294.4822 	EXP 	Display Frame 0
+294.6060 	DATA 	Keypress: t
+294.6086 	EXP 	Display Frame 1
+294.7321 	EXP 	Display Frame 0
+294.8573 	EXP 	Display Frame 1
+294.9822 	EXP 	Display Frame 0
+295.1072 	EXP 	Display Frame 1
+295.2323 	EXP 	Display Frame 0
+295.3569 	EXP 	Display Frame 1
+295.4823 	EXP 	Display Frame 0
+295.6070 	EXP 	Display Frame 1
+295.7321 	EXP 	Display Frame 0
+295.8572 	EXP 	Display Frame 1
+295.9823 	EXP 	Display Frame 0
+296.1072 	EXP 	Display Frame 1
+296.2325 	EXP 	Display Frame 0
+296.3573 	EXP 	Display Frame 1
+296.4822 	EXP 	Display Frame 0
+296.6071 	EXP 	Display Frame 1
+296.7324 	EXP 	Display Frame 0
+296.8572 	EXP 	Display Frame 1
+296.9815 	DATA 	Keypress: t
+296.9842 	EXP 	Display Frame 0
+296.9855 	EXP 	Display Fixation
+298.9050 	DATA 	Keypress: t
+301.3522 	DATA 	Keypress: t
+303.2797 	DATA 	Keypress: t
+305.7267 	DATA 	Keypress: t
+307.6541 	DATA 	Keypress: t
+310.1018 	DATA 	Keypress: t
+312.0290 	DATA 	Keypress: t
+314.4767 	DATA 	Keypress: t
+316.4038 	DATA 	Keypress: t
+318.8512 	DATA 	Keypress: t
+320.7787 	DATA 	Keypress: t
+323.2261 	DATA 	Keypress: t
+325.1524 	DATA 	Keypress: t
+327.6013 	DATA 	Keypress: t
+329.5284 	DATA 	Keypress: t
+331.9758 	DATA 	Keypress: t
+332.1036 	EXP 	Display Frame 1
+332.2285 	EXP 	Display Frame 0
+332.3537 	EXP 	Display Frame 1
+332.4788 	EXP 	Display Frame 0
+332.6036 	EXP 	Display Frame 1
+332.7286 	EXP 	Display Frame 0
+332.8537 	EXP 	Display Frame 1
+332.9787 	EXP 	Display Frame 0
+333.1032 	EXP 	Display Frame 1
+333.2285 	EXP 	Display Frame 0
+333.3538 	EXP 	Display Frame 1
+333.4786 	EXP 	Display Frame 0
+333.6037 	EXP 	Display Frame 1
+333.7288 	EXP 	Display Frame 0
+333.8534 	EXP 	Display Frame 1
+333.9772 	DATA 	Keypress: t
+333.9798 	EXP 	Display Frame 0
+334.1035 	EXP 	Display Frame 1
+334.2288 	EXP 	Display Frame 0
+334.3536 	EXP 	Display Frame 1
+334.4787 	EXP 	Display Frame 0
+334.6040 	EXP 	Display Frame 1
+334.7284 	EXP 	Display Frame 0
+334.8538 	EXP 	Display Frame 1
+334.9787 	EXP 	Display Frame 0
+335.1036 	EXP 	Display Frame 1
+335.2289 	EXP 	Display Frame 0
+335.3538 	EXP 	Display Frame 1
+335.4786 	EXP 	Display Frame 0
+335.6036 	EXP 	Display Frame 1
+335.7288 	EXP 	Display Frame 0
+335.8536 	EXP 	Display Frame 1
+335.9790 	EXP 	Display Frame 0
+336.1033 	EXP 	Display Frame 1
+336.2288 	EXP 	Display Frame 0
+336.3529 	DATA 	Keypress: t
+336.3559 	EXP 	Display Frame 1
+336.4788 	EXP 	Display Frame 0
+336.6035 	EXP 	Display Frame 1
+336.7286 	EXP 	Display Frame 0
+336.8538 	EXP 	Display Frame 1
+336.9787 	EXP 	Display Frame 0
+337.1033 	EXP 	Display Frame 1
+337.2288 	EXP 	Display Frame 0
+337.3537 	EXP 	Display Frame 1
+337.4786 	EXP 	Display Frame 0
+337.6037 	EXP 	Display Frame 1
+337.7287 	EXP 	Display Frame 0
+337.8536 	EXP 	Display Frame 1
+337.9785 	EXP 	Display Frame 0
+338.1037 	EXP 	Display Frame 1
+338.2287 	EXP 	Display Frame 0
+338.3529 	DATA 	Keypress: t
+338.3558 	EXP 	Display Frame 1
+338.4785 	EXP 	Display Frame 0
+338.6035 	EXP 	Display Frame 1
+338.7286 	EXP 	Display Frame 0
+338.8537 	EXP 	Display Frame 1
+338.9787 	EXP 	Display Frame 0
+339.1036 	EXP 	Display Frame 1
+339.2287 	EXP 	Display Frame 0
+339.3535 	EXP 	Display Frame 1
+339.4784 	EXP 	Display Frame 0
+339.6035 	EXP 	Display Frame 1
+339.7285 	EXP 	Display Frame 0
+339.8534 	EXP 	Display Frame 1
+339.9785 	EXP 	Display Frame 0
+340.1038 	EXP 	Display Frame 1
+340.2285 	EXP 	Display Frame 0
+340.3536 	EXP 	Display Frame 1
+340.4786 	EXP 	Display Frame 0
+340.6037 	EXP 	Display Frame 1
+340.7272 	DATA 	Keypress: t
+340.7295 	EXP 	Display Frame 0
+340.8538 	EXP 	Display Frame 1
+340.9785 	EXP 	Display Frame 0
+341.1033 	EXP 	Display Frame 1
+341.2287 	EXP 	Display Frame 0
+341.3538 	EXP 	Display Frame 1
+341.4786 	EXP 	Display Frame 0
+341.6035 	EXP 	Display Frame 1
+341.7288 	EXP 	Display Frame 0
+341.8537 	EXP 	Display Frame 1
+341.9785 	EXP 	Display Frame 0
+342.1036 	EXP 	Display Frame 1
+342.2286 	EXP 	Display Frame 0
+342.3537 	EXP 	Display Frame 1
+342.4787 	EXP 	Display Frame 0
+342.6037 	EXP 	Display Frame 1
+342.7279 	DATA 	Keypress: t
+342.7308 	EXP 	Display Frame 0
+342.8535 	EXP 	Display Frame 1
+342.9783 	EXP 	Display Frame 0
+343.1035 	EXP 	Display Frame 1
+343.2287 	EXP 	Display Frame 0
+343.3536 	EXP 	Display Frame 1
+343.4785 	EXP 	Display Frame 0
+343.6036 	EXP 	Display Frame 1
+343.7286 	EXP 	Display Frame 0
+343.8536 	EXP 	Display Frame 1
+343.9785 	EXP 	Display Frame 0
+344.1035 	EXP 	Display Frame 1
+344.2286 	EXP 	Display Frame 0
+344.3539 	EXP 	Display Frame 1
+344.4786 	EXP 	Display Frame 0
+344.6037 	EXP 	Display Frame 1
+344.7287 	EXP 	Display Frame 0
+344.8535 	EXP 	Display Frame 1
+344.9784 	EXP 	Display Frame 0
+345.1026 	DATA 	Keypress: t
+345.1052 	EXP 	Display Frame 1
+345.2287 	EXP 	Display Frame 0
+345.3534 	EXP 	Display Frame 1
+345.4785 	EXP 	Display Frame 0
+345.6038 	EXP 	Display Frame 1
+345.7286 	EXP 	Display Frame 0
+345.8536 	EXP 	Display Frame 1
+345.9787 	EXP 	Display Frame 0
+346.1036 	EXP 	Display Frame 1
+346.2286 	EXP 	Display Frame 0
+346.3537 	EXP 	Display Frame 1
+346.4785 	EXP 	Display Frame 0
+346.6034 	EXP 	Display Frame 1
+346.7285 	EXP 	Display Frame 0
+346.8537 	EXP 	Display Frame 1
+346.9786 	EXP 	Display Frame 0
+347.1028 	DATA 	Keypress: t
+347.1054 	EXP 	Display Frame 1
+347.2285 	EXP 	Display Frame 0
+347.3537 	EXP 	Display Frame 1
+347.4785 	EXP 	Display Frame 0
+347.6037 	EXP 	Display Frame 1
+347.7286 	EXP 	Display Frame 0
+347.8535 	EXP 	Display Frame 1
+347.9787 	EXP 	Display Frame 0
+348.1036 	EXP 	Display Frame 1
+348.2286 	EXP 	Display Frame 0
+348.3539 	EXP 	Display Frame 1
+348.4786 	EXP 	Display Frame 0
+348.6037 	EXP 	Display Frame 1
+348.7287 	EXP 	Display Frame 0
+348.8538 	EXP 	Display Frame 1
+348.9784 	EXP 	Display Frame 0
+349.1032 	EXP 	Display Frame 1
+349.2287 	EXP 	Display Frame 0
+349.3539 	EXP 	Display Frame 1
+349.4776 	DATA 	Keypress: t
+349.4802 	EXP 	Display Frame 0
+349.6038 	EXP 	Display Frame 1
+349.7284 	EXP 	Display Frame 0
+349.8535 	EXP 	Display Frame 1
+349.9787 	EXP 	Display Frame 0
+350.1036 	EXP 	Display Frame 1
+350.2287 	EXP 	Display Frame 0
+350.3534 	EXP 	Display Frame 1
+350.4784 	EXP 	Display Frame 0
+350.6035 	EXP 	Display Frame 1
+350.7287 	EXP 	Display Frame 0
+350.8537 	EXP 	Display Frame 1
+350.9786 	EXP 	Display Frame 0
+351.1037 	EXP 	Display Frame 1
+351.2286 	EXP 	Display Frame 0
+351.3536 	EXP 	Display Frame 1
+351.4780 	DATA 	Keypress: t
+351.4806 	EXP 	Display Frame 0
+351.6034 	EXP 	Display Frame 1
+351.7284 	EXP 	Display Frame 0
+351.8538 	EXP 	Display Frame 1
+351.9787 	EXP 	Display Frame 0
+352.1036 	EXP 	Display Frame 1
+352.2285 	EXP 	Display Frame 0
+352.3538 	EXP 	Display Frame 1
+352.4786 	EXP 	Display Frame 0
+352.6038 	EXP 	Display Frame 1
+352.7287 	EXP 	Display Frame 0
+352.8537 	EXP 	Display Frame 1
+352.9786 	EXP 	Display Frame 0
+353.1037 	EXP 	Display Frame 1
+353.2286 	EXP 	Display Frame 0
+353.3536 	EXP 	Display Frame 1
+353.4788 	EXP 	Display Frame 0
+353.6038 	EXP 	Display Frame 1
+353.7287 	EXP 	Display Frame 0
+353.8522 	DATA 	Keypress: t
+353.8549 	EXP 	Display Frame 1
+353.9787 	EXP 	Display Frame 0
+354.1034 	EXP 	Display Frame 1
+354.2287 	EXP 	Display Frame 0
+354.3537 	EXP 	Display Frame 1
+354.4786 	EXP 	Display Frame 0
+354.6038 	EXP 	Display Frame 1
+354.7287 	EXP 	Display Frame 0
+354.8537 	EXP 	Display Frame 1
+354.9785 	EXP 	Display Frame 0
+355.1038 	EXP 	Display Frame 1
+355.2286 	EXP 	Display Frame 0
+355.3537 	EXP 	Display Frame 1
+355.4788 	EXP 	Display Frame 0
+355.6037 	EXP 	Display Frame 1
+355.7287 	EXP 	Display Frame 0
+355.8519 	DATA 	Keypress: t
+355.8545 	EXP 	Display Frame 1
+355.9785 	EXP 	Display Frame 0
+356.1034 	EXP 	Display Frame 1
+356.2287 	EXP 	Display Frame 0
+356.3538 	EXP 	Display Frame 1
+356.4786 	EXP 	Display Frame 0
+356.6037 	EXP 	Display Frame 1
+356.7287 	EXP 	Display Frame 0
+356.8537 	EXP 	Display Frame 1
+356.9785 	EXP 	Display Frame 0
+357.1037 	EXP 	Display Frame 1
+357.2286 	EXP 	Display Frame 0
+357.3539 	EXP 	Display Frame 1
+357.4787 	EXP 	Display Frame 0
+357.6035 	EXP 	Display Frame 1
+357.7287 	EXP 	Display Frame 0
+357.8537 	EXP 	Display Frame 1
+357.9786 	EXP 	Display Frame 0
+358.1035 	EXP 	Display Frame 1
+358.2276 	DATA 	Keypress: t
+358.2304 	EXP 	Display Frame 0
+358.3536 	EXP 	Display Frame 1
+358.4782 	EXP 	Display Frame 0
+358.6037 	EXP 	Display Frame 1
+358.7286 	EXP 	Display Frame 0
+358.8536 	EXP 	Display Frame 1
+358.9787 	EXP 	Display Frame 0
+359.1036 	EXP 	Display Frame 1
+359.2286 	EXP 	Display Frame 0
+359.3535 	EXP 	Display Frame 1
+359.4787 	EXP 	Display Frame 0
+359.6037 	EXP 	Display Frame 1
+359.7285 	EXP 	Display Frame 0
+359.8533 	EXP 	Display Frame 1
+359.9784 	EXP 	Display Frame 0
+360.1033 	EXP 	Display Frame 1
+360.2280 	DATA 	Keypress: t
+360.2308 	EXP 	Display Frame 0
+360.3534 	EXP 	Display Frame 1
+360.4784 	EXP 	Display Frame 0
+360.6038 	EXP 	Display Frame 1
+360.7286 	EXP 	Display Frame 0
+360.8536 	EXP 	Display Frame 1
+360.9785 	EXP 	Display Frame 0
+361.1035 	EXP 	Display Frame 1
+361.2288 	EXP 	Display Frame 0
+361.3538 	EXP 	Display Frame 1
+361.4784 	EXP 	Display Frame 0
+361.6034 	EXP 	Display Frame 1
+361.7289 	EXP 	Display Frame 0
+361.8538 	EXP 	Display Frame 1
+361.9786 	EXP 	Display Frame 0
+362.1025 	EXP 	Display Frame 1
+362.2287 	EXP 	Display Frame 0
+362.3537 	EXP 	Display Frame 1
+362.4785 	EXP 	Display Frame 0
+362.6029 	DATA 	Keypress: t
+362.6058 	EXP 	Display Frame 1
+362.7287 	EXP 	Display Frame 0
+362.8534 	EXP 	Display Frame 1
+362.9787 	EXP 	Display Frame 0
+363.1026 	EXP 	Display Frame 1
+363.2287 	EXP 	Display Frame 0
+363.3537 	EXP 	Display Frame 1
+363.4786 	EXP 	Display Frame 0
+363.6036 	EXP 	Display Frame 1
+363.7286 	EXP 	Display Frame 0
+363.8537 	EXP 	Display Frame 1
+363.9786 	EXP 	Display Frame 0
+364.1025 	EXP 	Display Frame 1
+364.2287 	EXP 	Display Frame 0
+364.3537 	EXP 	Display Frame 1
+364.4786 	EXP 	Display Frame 0
+364.6023 	DATA 	Keypress: t
+364.6051 	EXP 	Display Frame 1
+364.7284 	EXP 	Display Frame 0
+364.8537 	EXP 	Display Frame 1
+364.9787 	EXP 	Display Frame 0
+365.1022 	EXP 	Display Frame 1
+365.2286 	EXP 	Display Frame 0
+365.3536 	EXP 	Display Frame 1
+365.4786 	EXP 	Display Frame 0
+365.6035 	EXP 	Display Frame 1
+365.7288 	EXP 	Display Frame 0
+365.8536 	EXP 	Display Frame 1
+365.9784 	EXP 	Display Frame 0
+366.1023 	EXP 	Display Frame 1
+366.2286 	EXP 	Display Frame 0
+366.3536 	EXP 	Display Frame 1
+366.4785 	EXP 	Display Frame 0
+366.6037 	EXP 	Display Frame 1
+366.7286 	EXP 	Display Frame 0
+366.8534 	EXP 	Display Frame 1
+366.9771 	DATA 	Keypress: t
+366.9796 	EXP 	Display Frame 0
+366.9961 	EXP 	Display Fixation
+368.9010 	DATA 	Keypress: t
+371.3479 	DATA 	Keypress: t
+373.2753 	DATA 	Keypress: t
+375.7229 	DATA 	Keypress: t
+377.6501 	DATA 	Keypress: t
+380.0985 	DATA 	Keypress: t
+382.0249 	DATA 	Keypress: t
+384.4723 	DATA 	Keypress: t
+386.4000 	DATA 	Keypress: t
+388.8470 	DATA 	Keypress: t
+390.7740 	DATA 	Keypress: t
+393.2222 	DATA 	Keypress: t
+395.1497 	DATA 	Keypress: t
+397.5974 	DATA 	Keypress: t
+399.5240 	DATA 	Keypress: t
+401.9715 	DATA 	Keypress: t
+402.0993 	EXP 	Display Frame 1
+402.2241 	EXP 	Display Frame 0
+402.3493 	EXP 	Display Frame 1
+402.4743 	EXP 	Display Frame 0
+402.5993 	EXP 	Display Frame 1
+402.7246 	EXP 	Display Frame 0
+402.8494 	EXP 	Display Frame 1
+402.9744 	EXP 	Display Frame 0
+403.0996 	EXP 	Display Frame 1
+403.2245 	EXP 	Display Frame 0
+403.3493 	EXP 	Display Frame 1
+403.4743 	EXP 	Display Frame 0
+403.5995 	EXP 	Display Frame 1
+403.7245 	EXP 	Display Frame 0
+403.8494 	EXP 	Display Frame 1
+403.9736 	DATA 	Keypress: t
+403.9764 	EXP 	Display Frame 0
+404.0992 	EXP 	Display Frame 1
+404.2241 	EXP 	Display Frame 0
+404.3495 	EXP 	Display Frame 1
+404.4744 	EXP 	Display Frame 0
+404.5993 	EXP 	Display Frame 1
+404.7245 	EXP 	Display Frame 0
+404.8494 	EXP 	Display Frame 1
+404.9743 	EXP 	Display Frame 0
+405.0994 	EXP 	Display Frame 1
+405.2248 	EXP 	Display Frame 0
+405.3497 	EXP 	Display Frame 1
+405.4743 	EXP 	Display Frame 0
+405.5993 	EXP 	Display Frame 1
+405.7243 	EXP 	Display Frame 0
+405.8495 	EXP 	Display Frame 1
+405.9744 	EXP 	Display Frame 0
+406.0994 	EXP 	Display Frame 1
+406.2243 	EXP 	Display Frame 0
+406.3487 	DATA 	Keypress: t
+406.3511 	EXP 	Display Frame 1
+406.4744 	EXP 	Display Frame 0
+406.5993 	EXP 	Display Frame 1
+406.7243 	EXP 	Display Frame 0
+406.8494 	EXP 	Display Frame 1
+406.9745 	EXP 	Display Frame 0
+407.0993 	EXP 	Display Frame 1
+407.2244 	EXP 	Display Frame 0
+407.3494 	EXP 	Display Frame 1
+407.4744 	EXP 	Display Frame 0
+407.5994 	EXP 	Display Frame 1
+407.7243 	EXP 	Display Frame 0
+407.8495 	EXP 	Display Frame 1
+407.9744 	EXP 	Display Frame 0
+408.0995 	EXP 	Display Frame 1
+408.2242 	EXP 	Display Frame 0
+408.3484 	DATA 	Keypress: t
+408.3515 	EXP 	Display Frame 1
+408.4742 	EXP 	Display Frame 0
+408.5995 	EXP 	Display Frame 1
+408.7244 	EXP 	Display Frame 0
+408.8493 	EXP 	Display Frame 1
+408.9743 	EXP 	Display Frame 0
+409.0994 	EXP 	Display Frame 1
+409.2241 	EXP 	Display Frame 0
+409.3493 	EXP 	Display Frame 1
+409.4744 	EXP 	Display Frame 0
+409.5994 	EXP 	Display Frame 1
+409.7243 	EXP 	Display Frame 0
+409.8495 	EXP 	Display Frame 1
+409.9744 	EXP 	Display Frame 0
+410.0993 	EXP 	Display Frame 1
+410.2245 	EXP 	Display Frame 0
+410.3495 	EXP 	Display Frame 1
+410.4742 	EXP 	Display Frame 0
+410.5994 	EXP 	Display Frame 1
+410.7245 	EXP 	Display Frame 0
+410.7255 	DATA 	Keypress: t
+410.8499 	EXP 	Display Frame 1
+410.9743 	EXP 	Display Frame 0
+411.0993 	EXP 	Display Frame 1
+411.2243 	EXP 	Display Frame 0
+411.3495 	EXP 	Display Frame 1
+411.4744 	EXP 	Display Frame 0
+411.5992 	EXP 	Display Frame 1
+411.7243 	EXP 	Display Frame 0
+411.8494 	EXP 	Display Frame 1
+411.9743 	EXP 	Display Frame 0
+412.0994 	EXP 	Display Frame 1
+412.2242 	EXP 	Display Frame 0
+412.3492 	EXP 	Display Frame 1
+412.4741 	EXP 	Display Frame 0
+412.5996 	EXP 	Display Frame 1
+412.7238 	DATA 	Keypress: t
+412.7269 	EXP 	Display Frame 0
+412.8494 	EXP 	Display Frame 1
+412.9743 	EXP 	Display Frame 0
+413.0995 	EXP 	Display Frame 1
+413.2243 	EXP 	Display Frame 0
+413.3496 	EXP 	Display Frame 1
+413.4743 	EXP 	Display Frame 0
+413.5992 	EXP 	Display Frame 1
+413.7241 	EXP 	Display Frame 0
+413.8494 	EXP 	Display Frame 1
+413.9743 	EXP 	Display Frame 0
+414.0994 	EXP 	Display Frame 1
+414.2244 	EXP 	Display Frame 0
+414.3495 	EXP 	Display Frame 1
+414.4743 	EXP 	Display Frame 0
+414.5995 	EXP 	Display Frame 1
+414.7245 	EXP 	Display Frame 0
+414.8494 	EXP 	Display Frame 1
+414.9745 	EXP 	Display Frame 0
+415.0995 	EXP 	Display Frame 1
+415.1005 	DATA 	Keypress: t
+415.2244 	EXP 	Display Frame 0
+415.3493 	EXP 	Display Frame 1
+415.4744 	EXP 	Display Frame 0
+415.5994 	EXP 	Display Frame 1
+415.7245 	EXP 	Display Frame 0
+415.8495 	EXP 	Display Frame 1
+415.9743 	EXP 	Display Frame 0
+416.0994 	EXP 	Display Frame 1
+416.2244 	EXP 	Display Frame 0
+416.3497 	EXP 	Display Frame 1
+416.4743 	EXP 	Display Frame 0
+416.5993 	EXP 	Display Frame 1
+416.7244 	EXP 	Display Frame 0
+416.8495 	EXP 	Display Frame 1
+416.9745 	EXP 	Display Frame 0
+417.0988 	DATA 	Keypress: t
+417.1020 	EXP 	Display Frame 1
+417.2241 	EXP 	Display Frame 0
+417.3493 	EXP 	Display Frame 1
+417.4744 	EXP 	Display Frame 0
+417.5994 	EXP 	Display Frame 1
+417.7243 	EXP 	Display Frame 0
+417.8494 	EXP 	Display Frame 1
+417.9743 	EXP 	Display Frame 0
+418.0995 	EXP 	Display Frame 1
+418.2244 	EXP 	Display Frame 0
+418.3493 	EXP 	Display Frame 1
+418.4743 	EXP 	Display Frame 0
+418.5995 	EXP 	Display Frame 1
+418.7243 	EXP 	Display Frame 0
+418.8495 	EXP 	Display Frame 1
+418.9744 	EXP 	Display Frame 0
+419.0995 	EXP 	Display Frame 1
+419.2243 	EXP 	Display Frame 0
+419.3496 	EXP 	Display Frame 1
+419.4730 	DATA 	Keypress: t
+419.4757 	EXP 	Display Frame 0
+419.5994 	EXP 	Display Frame 1
+419.7242 	EXP 	Display Frame 0
+419.8494 	EXP 	Display Frame 1
+419.9743 	EXP 	Display Frame 0
+420.0992 	EXP 	Display Frame 1
+420.2244 	EXP 	Display Frame 0
+420.3494 	EXP 	Display Frame 1
+420.4745 	EXP 	Display Frame 0
+420.5995 	EXP 	Display Frame 1
+420.7242 	EXP 	Display Frame 0
+420.8493 	EXP 	Display Frame 1
+420.9744 	EXP 	Display Frame 0
+421.0994 	EXP 	Display Frame 1
+421.2239 	EXP 	Display Frame 0
+421.3494 	EXP 	Display Frame 1
+421.4730 	DATA 	Keypress: t
+421.4759 	EXP 	Display Frame 0
+421.5990 	EXP 	Display Frame 1
+421.7243 	EXP 	Display Frame 0
+421.8495 	EXP 	Display Frame 1
+421.9741 	EXP 	Display Frame 0
+422.0993 	EXP 	Display Frame 1
+422.2244 	EXP 	Display Frame 0
+422.3493 	EXP 	Display Frame 1
+422.4745 	EXP 	Display Frame 0
+422.5994 	EXP 	Display Frame 1
+422.7243 	EXP 	Display Frame 0
+422.8495 	EXP 	Display Frame 1
+422.9744 	EXP 	Display Frame 0
+423.0993 	EXP 	Display Frame 1
+423.2243 	EXP 	Display Frame 0
+423.3494 	EXP 	Display Frame 1
+423.4743 	EXP 	Display Frame 0
+423.5993 	EXP 	Display Frame 1
+423.7244 	EXP 	Display Frame 0
+423.8485 	DATA 	Keypress: t
+423.8513 	EXP 	Display Frame 1
+423.9746 	EXP 	Display Frame 0
+424.0993 	EXP 	Display Frame 1
+424.2244 	EXP 	Display Frame 0
+424.3493 	EXP 	Display Frame 1
+424.4745 	EXP 	Display Frame 0
+424.5994 	EXP 	Display Frame 1
+424.7243 	EXP 	Display Frame 0
+424.8495 	EXP 	Display Frame 1
+424.9744 	EXP 	Display Frame 0
+425.0993 	EXP 	Display Frame 1
+425.2242 	EXP 	Display Frame 0
+425.3494 	EXP 	Display Frame 1
+425.4743 	EXP 	Display Frame 0
+425.5996 	EXP 	Display Frame 1
+425.7244 	EXP 	Display Frame 0
+425.8482 	DATA 	Keypress: t
+425.8509 	EXP 	Display Frame 1
+425.9740 	EXP 	Display Frame 0
+426.0995 	EXP 	Display Frame 1
+426.2242 	EXP 	Display Frame 0
+426.3493 	EXP 	Display Frame 1
+426.4744 	EXP 	Display Frame 0
+426.5994 	EXP 	Display Frame 1
+426.7243 	EXP 	Display Frame 0
+426.8494 	EXP 	Display Frame 1
+426.9740 	EXP 	Display Frame 0
+427.0991 	EXP 	Display Frame 1
+427.2243 	EXP 	Display Frame 0
+427.3493 	EXP 	Display Frame 1
+427.4741 	EXP 	Display Frame 0
+427.5994 	EXP 	Display Frame 1
+427.7244 	EXP 	Display Frame 0
+427.8495 	EXP 	Display Frame 1
+427.9743 	EXP 	Display Frame 0
+428.0996 	EXP 	Display Frame 1
+428.2236 	DATA 	Keypress: t
+428.2258 	EXP 	Display Frame 0
+428.3497 	EXP 	Display Frame 1
+428.4740 	EXP 	Display Frame 0
+428.5992 	EXP 	Display Frame 1
+428.7245 	EXP 	Display Frame 0
+428.8495 	EXP 	Display Frame 1
+428.9743 	EXP 	Display Frame 0
+429.0995 	EXP 	Display Frame 1
+429.2245 	EXP 	Display Frame 0
+429.3494 	EXP 	Display Frame 1
+429.4741 	EXP 	Display Frame 0
+429.5995 	EXP 	Display Frame 1
+429.7244 	EXP 	Display Frame 0
+429.8490 	EXP 	Display Frame 1
+429.9743 	EXP 	Display Frame 0
+430.0994 	EXP 	Display Frame 1
+430.2237 	DATA 	Keypress: t
+430.2268 	EXP 	Display Frame 0
+430.3493 	EXP 	Display Frame 1
+430.4742 	EXP 	Display Frame 0
+430.5994 	EXP 	Display Frame 1
+430.7245 	EXP 	Display Frame 0
+430.8494 	EXP 	Display Frame 1
+430.9744 	EXP 	Display Frame 0
+431.0996 	EXP 	Display Frame 1
+431.2244 	EXP 	Display Frame 0
+431.3494 	EXP 	Display Frame 1
+431.4743 	EXP 	Display Frame 0
+431.5993 	EXP 	Display Frame 1
+431.7244 	EXP 	Display Frame 0
+431.8494 	EXP 	Display Frame 1
+431.9745 	EXP 	Display Frame 0
+432.0994 	EXP 	Display Frame 1
+432.2243 	EXP 	Display Frame 0
+432.3495 	EXP 	Display Frame 1
+432.4744 	EXP 	Display Frame 0
+432.5986 	DATA 	Keypress: t
+432.6011 	EXP 	Display Frame 1
+432.7245 	EXP 	Display Frame 0
+432.8496 	EXP 	Display Frame 1
+432.9741 	EXP 	Display Frame 0
+433.0994 	EXP 	Display Frame 1
+433.2244 	EXP 	Display Frame 0
+433.3494 	EXP 	Display Frame 1
+433.4746 	EXP 	Display Frame 0
+433.5995 	EXP 	Display Frame 1
+433.7244 	EXP 	Display Frame 0
+433.8496 	EXP 	Display Frame 1
+433.9744 	EXP 	Display Frame 0
+434.0994 	EXP 	Display Frame 1
+434.2245 	EXP 	Display Frame 0
+434.3496 	EXP 	Display Frame 1
+434.4744 	EXP 	Display Frame 0
+434.5986 	DATA 	Keypress: t
+434.6016 	EXP 	Display Frame 1
+434.7243 	EXP 	Display Frame 0
+434.8495 	EXP 	Display Frame 1
+434.9743 	EXP 	Display Frame 0
+435.0996 	EXP 	Display Frame 1
+435.2244 	EXP 	Display Frame 0
+435.3494 	EXP 	Display Frame 1
+435.4746 	EXP 	Display Frame 0
+435.5996 	EXP 	Display Frame 1
+435.7243 	EXP 	Display Frame 0
+435.8495 	EXP 	Display Frame 1
+435.9744 	EXP 	Display Frame 0
+436.0995 	EXP 	Display Frame 1
+436.2243 	EXP 	Display Frame 0
+436.3497 	EXP 	Display Frame 1
+436.4742 	EXP 	Display Frame 0
+436.5994 	EXP 	Display Frame 1
+436.7244 	EXP 	Display Frame 0
+436.8494 	EXP 	Display Frame 1
+436.9736 	DATA 	Keypress: t
+436.9763 	EXP 	Display Frame 0
+436.9779 	EXP 	Display Fixation
+438.8966 	DATA 	Keypress: t
+441.3442 	DATA 	Keypress: t
+443.2706 	DATA 	Keypress: t
+445.7195 	DATA 	Keypress: t
+447.6464 	DATA 	Keypress: t
+450.0946 	DATA 	Keypress: t
+452.0218 	DATA 	Keypress: t
+454.4682 	DATA 	Keypress: t
+456.3956 	DATA 	Keypress: t
+458.8434 	DATA 	Keypress: t
+460.7708 	DATA 	Keypress: t
+463.2184 	DATA 	Keypress: t
+465.1454 	DATA 	Keypress: t
+467.5927 	DATA 	Keypress: t
+469.5204 	DATA 	Keypress: t
+471.9676 	DATA 	Keypress: t
+472.0954 	EXP 	Display Frame 1
+472.2201 	EXP 	Display Frame 0
+472.3451 	EXP 	Display Frame 1
+472.4706 	EXP 	Display Frame 0
+472.5955 	EXP 	Display Frame 1
+472.7203 	EXP 	Display Frame 0
+472.8456 	EXP 	Display Frame 1
+472.9704 	EXP 	Display Frame 0
+473.0954 	EXP 	Display Frame 1
+473.2202 	EXP 	Display Frame 0
+473.3454 	EXP 	Display Frame 1
+473.4704 	EXP 	Display Frame 0
+473.5957 	EXP 	Display Frame 1
+473.7206 	EXP 	Display Frame 0
+473.8456 	EXP 	Display Frame 1
+473.9693 	DATA 	Keypress: t
+473.9721 	EXP 	Display Frame 0
+474.0954 	EXP 	Display Frame 1
+474.2203 	EXP 	Display Frame 0
+474.3454 	EXP 	Display Frame 1
+474.4706 	EXP 	Display Frame 0
+474.5956 	EXP 	Display Frame 1
+474.7200 	EXP 	Display Frame 0
+474.8455 	EXP 	Display Frame 1
+474.9703 	EXP 	Display Frame 0
+475.0955 	EXP 	Display Frame 1
+475.2204 	EXP 	Display Frame 0
+475.3455 	EXP 	Display Frame 1
+475.4703 	EXP 	Display Frame 0
+475.5953 	EXP 	Display Frame 1
+475.7204 	EXP 	Display Frame 0
+475.8453 	EXP 	Display Frame 1
+475.9703 	EXP 	Display Frame 0
+476.0954 	EXP 	Display Frame 1
+476.2203 	EXP 	Display Frame 0
+476.3454 	EXP 	Display Frame 1
+476.3464 	DATA 	Keypress: t
+476.4705 	EXP 	Display Frame 0
+476.5952 	EXP 	Display Frame 1
+476.7201 	EXP 	Display Frame 0
+476.8453 	EXP 	Display Frame 1
+476.9702 	EXP 	Display Frame 0
+477.0952 	EXP 	Display Frame 1
+477.2204 	EXP 	Display Frame 0
+477.3454 	EXP 	Display Frame 1
+477.4703 	EXP 	Display Frame 0
+477.5955 	EXP 	Display Frame 1
+477.7204 	EXP 	Display Frame 0
+477.8451 	EXP 	Display Frame 1
+477.9706 	EXP 	Display Frame 0
+478.0954 	EXP 	Display Frame 1
+478.2191 	EXP 	Display Frame 0
+478.3448 	DATA 	Keypress: t
+478.3473 	EXP 	Display Frame 1
+478.4702 	EXP 	Display Frame 0
+478.5955 	EXP 	Display Frame 1
+478.7206 	EXP 	Display Frame 0
+478.8455 	EXP 	Display Frame 1
+478.9705 	EXP 	Display Frame 0
+479.0953 	EXP 	Display Frame 1
+479.2193 	EXP 	Display Frame 0
+479.3453 	EXP 	Display Frame 1
+479.4705 	EXP 	Display Frame 0
+479.5956 	EXP 	Display Frame 1
+479.7205 	EXP 	Display Frame 0
+479.8454 	EXP 	Display Frame 1
+479.9704 	EXP 	Display Frame 0
+480.0955 	EXP 	Display Frame 1
+480.2193 	EXP 	Display Frame 0
+480.3456 	EXP 	Display Frame 1
+480.4705 	EXP 	Display Frame 0
+480.5955 	EXP 	Display Frame 1
+480.7203 	EXP 	Display Frame 0
+480.7211 	DATA 	Keypress: t
+480.8455 	EXP 	Display Frame 1
+480.9702 	EXP 	Display Frame 0
+481.0953 	EXP 	Display Frame 1
+481.2190 	EXP 	Display Frame 0
+481.3451 	EXP 	Display Frame 1
+481.4701 	EXP 	Display Frame 0
+481.5955 	EXP 	Display Frame 1
+481.7201 	EXP 	Display Frame 0
+481.8451 	EXP 	Display Frame 1
+481.9705 	EXP 	Display Frame 0
+482.0955 	EXP 	Display Frame 1
+482.2192 	EXP 	Display Frame 0
+482.3453 	EXP 	Display Frame 1
+482.4702 	EXP 	Display Frame 0
+482.5952 	EXP 	Display Frame 1
+482.7197 	DATA 	Keypress: t
+482.7228 	EXP 	Display Frame 0
+482.8452 	EXP 	Display Frame 1
+482.9702 	EXP 	Display Frame 0
+483.0953 	EXP 	Display Frame 1
+483.2193 	EXP 	Display Frame 0
+483.3455 	EXP 	Display Frame 1
+483.4704 	EXP 	Display Frame 0
+483.5955 	EXP 	Display Frame 1
+483.7204 	EXP 	Display Frame 0
+483.8454 	EXP 	Display Frame 1
+483.9706 	EXP 	Display Frame 0
+484.0954 	EXP 	Display Frame 1
+484.2203 	EXP 	Display Frame 0
+484.3456 	EXP 	Display Frame 1
+484.4704 	EXP 	Display Frame 0
+484.5954 	EXP 	Display Frame 1
+484.7205 	EXP 	Display Frame 0
+484.8455 	EXP 	Display Frame 1
+484.9703 	EXP 	Display Frame 0
+485.0940 	DATA 	Keypress: t
+485.0967 	EXP 	Display Frame 1
+485.2205 	EXP 	Display Frame 0
+485.3452 	EXP 	Display Frame 1
+485.4703 	EXP 	Display Frame 0
+485.5955 	EXP 	Display Frame 1
+485.7203 	EXP 	Display Frame 0
+485.8455 	EXP 	Display Frame 1
+485.9704 	EXP 	Display Frame 0
+486.0956 	EXP 	Display Frame 1
+486.2199 	EXP 	Display Frame 0
+486.3453 	EXP 	Display Frame 1
+486.4704 	EXP 	Display Frame 0
+486.5953 	EXP 	Display Frame 1
+486.7205 	EXP 	Display Frame 0
+486.8454 	EXP 	Display Frame 1
+486.9704 	EXP 	Display Frame 0
+487.0947 	DATA 	Keypress: t
+487.0977 	EXP 	Display Frame 1
+487.2202 	EXP 	Display Frame 0
+487.3452 	EXP 	Display Frame 1
+487.4706 	EXP 	Display Frame 0
+487.5955 	EXP 	Display Frame 1
+487.7198 	EXP 	Display Frame 0
+487.8454 	EXP 	Display Frame 1
+487.9702 	EXP 	Display Frame 0
+488.0952 	EXP 	Display Frame 1
+488.2205 	EXP 	Display Frame 0
+488.3454 	EXP 	Display Frame 1
+488.4704 	EXP 	Display Frame 0
+488.5956 	EXP 	Display Frame 1
+488.7205 	EXP 	Display Frame 0
+488.8454 	EXP 	Display Frame 1
+488.9704 	EXP 	Display Frame 0
+489.0956 	EXP 	Display Frame 1
+489.2204 	EXP 	Display Frame 0
+489.3450 	EXP 	Display Frame 1
+489.4696 	DATA 	Keypress: t
+489.4727 	EXP 	Display Frame 0
+489.5956 	EXP 	Display Frame 1
+489.7200 	EXP 	Display Frame 0
+489.8455 	EXP 	Display Frame 1
+489.9704 	EXP 	Display Frame 0
+490.0953 	EXP 	Display Frame 1
+490.2203 	EXP 	Display Frame 0
+490.3454 	EXP 	Display Frame 1
+490.4705 	EXP 	Display Frame 0
+490.5953 	EXP 	Display Frame 1
+490.7204 	EXP 	Display Frame 0
+490.8453 	EXP 	Display Frame 1
+490.9704 	EXP 	Display Frame 0
+491.0954 	EXP 	Display Frame 1
+491.2204 	EXP 	Display Frame 0
+491.3454 	EXP 	Display Frame 1
+491.4694 	DATA 	Keypress: t
+491.4722 	EXP 	Display Frame 0
+491.5952 	EXP 	Display Frame 1
+491.7202 	EXP 	Display Frame 0
+491.8455 	EXP 	Display Frame 1
+491.9705 	EXP 	Display Frame 0
+492.0953 	EXP 	Display Frame 1
+492.2205 	EXP 	Display Frame 0
+492.3455 	EXP 	Display Frame 1
+492.4704 	EXP 	Display Frame 0
+492.5956 	EXP 	Display Frame 1
+492.7204 	EXP 	Display Frame 0
+492.8453 	EXP 	Display Frame 1
+492.9704 	EXP 	Display Frame 0
+493.0954 	EXP 	Display Frame 1
+493.2201 	EXP 	Display Frame 0
+493.3452 	EXP 	Display Frame 1
+493.4702 	EXP 	Display Frame 0
+493.5952 	EXP 	Display Frame 1
+493.7203 	EXP 	Display Frame 0
+493.8444 	DATA 	Keypress: t
+493.8471 	EXP 	Display Frame 1
+493.9704 	EXP 	Display Frame 0
+494.0951 	EXP 	Display Frame 1
+494.2205 	EXP 	Display Frame 0
+494.3454 	EXP 	Display Frame 1
+494.4704 	EXP 	Display Frame 0
+494.5955 	EXP 	Display Frame 1
+494.7204 	EXP 	Display Frame 0
+494.8451 	EXP 	Display Frame 1
+494.9705 	EXP 	Display Frame 0
+495.0954 	EXP 	Display Frame 1
+495.2203 	EXP 	Display Frame 0
+495.3453 	EXP 	Display Frame 1
+495.4706 	EXP 	Display Frame 0
+495.5954 	EXP 	Display Frame 1
+495.7205 	EXP 	Display Frame 0
+495.8444 	DATA 	Keypress: t
+495.8469 	EXP 	Display Frame 1
+495.9702 	EXP 	Display Frame 0
+496.0954 	EXP 	Display Frame 1
+496.2205 	EXP 	Display Frame 0
+496.3456 	EXP 	Display Frame 1
+496.4701 	EXP 	Display Frame 0
+496.5953 	EXP 	Display Frame 1
+496.7204 	EXP 	Display Frame 0
+496.8454 	EXP 	Display Frame 1
+496.9706 	EXP 	Display Frame 0
+497.0955 	EXP 	Display Frame 1
+497.2203 	EXP 	Display Frame 0
+497.3452 	EXP 	Display Frame 1
+497.4705 	EXP 	Display Frame 0
+497.5953 	EXP 	Display Frame 1
+497.7206 	EXP 	Display Frame 0
+497.8455 	EXP 	Display Frame 1
+497.9705 	EXP 	Display Frame 0
+498.0956 	EXP 	Display Frame 1
+498.2196 	DATA 	Keypress: t
+498.2223 	EXP 	Display Frame 0
+498.3454 	EXP 	Display Frame 1
+498.4702 	EXP 	Display Frame 0
+498.5955 	EXP 	Display Frame 1
+498.7198 	EXP 	Display Frame 0
+498.8454 	EXP 	Display Frame 1
+498.9703 	EXP 	Display Frame 0
+499.0952 	EXP 	Display Frame 1
+499.2205 	EXP 	Display Frame 0
+499.3456 	EXP 	Display Frame 1
+499.4705 	EXP 	Display Frame 0
+499.5954 	EXP 	Display Frame 1
+499.7205 	EXP 	Display Frame 0
+499.8454 	EXP 	Display Frame 1
+499.9705 	EXP 	Display Frame 0
+500.0954 	EXP 	Display Frame 1
+500.2198 	DATA 	Keypress: t
+500.2229 	EXP 	Display Frame 0
+500.3452 	EXP 	Display Frame 1
+500.4701 	EXP 	Display Frame 0
+500.5955 	EXP 	Display Frame 1
+500.7204 	EXP 	Display Frame 0
+500.8453 	EXP 	Display Frame 1
+500.9706 	EXP 	Display Frame 0
+501.0954 	EXP 	Display Frame 1
+501.2203 	EXP 	Display Frame 0
+501.3455 	EXP 	Display Frame 1
+501.4704 	EXP 	Display Frame 0
+501.5952 	EXP 	Display Frame 1
+501.7205 	EXP 	Display Frame 0
+501.8454 	EXP 	Display Frame 1
+501.9704 	EXP 	Display Frame 0
+502.0955 	EXP 	Display Frame 1
+502.2204 	EXP 	Display Frame 0
+502.3452 	EXP 	Display Frame 1
+502.4701 	EXP 	Display Frame 0
+502.5945 	DATA 	Keypress: t
+502.5971 	EXP 	Display Frame 1
+502.7204 	EXP 	Display Frame 0
+502.8451 	EXP 	Display Frame 1
+502.9706 	EXP 	Display Frame 0
+503.0954 	EXP 	Display Frame 1
+503.2203 	EXP 	Display Frame 0
+503.3454 	EXP 	Display Frame 1
+503.4704 	EXP 	Display Frame 0
+503.5957 	EXP 	Display Frame 1
+503.7206 	EXP 	Display Frame 0
+503.8458 	EXP 	Display Frame 1
+503.9703 	EXP 	Display Frame 0
+504.0955 	EXP 	Display Frame 1
+504.2199 	EXP 	Display Frame 0
+504.3452 	EXP 	Display Frame 1
+504.4703 	EXP 	Display Frame 0
+504.5945 	DATA 	Keypress: t
+504.5972 	EXP 	Display Frame 1
+504.7201 	EXP 	Display Frame 0
+504.8451 	EXP 	Display Frame 1
+504.9704 	EXP 	Display Frame 0
+505.0953 	EXP 	Display Frame 1
+505.2205 	EXP 	Display Frame 0
+505.3454 	EXP 	Display Frame 1
+505.4704 	EXP 	Display Frame 0
+505.5953 	EXP 	Display Frame 1
+505.7204 	EXP 	Display Frame 0
+505.8453 	EXP 	Display Frame 1
+505.9703 	EXP 	Display Frame 0
+506.0954 	EXP 	Display Frame 1
+506.2204 	EXP 	Display Frame 0
+506.3453 	EXP 	Display Frame 1
+506.4706 	EXP 	Display Frame 0
+506.5954 	EXP 	Display Frame 1
+506.7203 	EXP 	Display Frame 0
+506.8455 	EXP 	Display Frame 1
+506.9691 	DATA 	Keypress: t
+506.9718 	EXP 	Display Frame 0
+506.9734 	EXP 	Display Fixation
+508.8926 	DATA 	Keypress: t
+511.3409 	DATA 	Keypress: t
+513.2676 	DATA 	Keypress: t
+515.7160 	DATA 	Keypress: t
+517.6428 	DATA 	Keypress: t
+520.0900 	DATA 	Keypress: t
+522.0182 	DATA 	Keypress: t
+524.4648 	DATA 	Keypress: t
+526.3919 	DATA 	Keypress: t
+528.8395 	DATA 	Keypress: t
+530.7665 	DATA 	Keypress: t
+533.2150 	DATA 	Keypress: t
+535.1417 	DATA 	Keypress: t
+537.5889 	DATA 	Keypress: t
+539.5157 	DATA 	Keypress: t
+541.9636 	DATA 	Keypress: t
+542.0914 	EXP 	Display Frame 1
+542.2163 	EXP 	Display Frame 0
+542.3414 	EXP 	Display Frame 1
+542.4662 	EXP 	Display Frame 0
+542.5913 	EXP 	Display Frame 1
+542.7159 	EXP 	Display Frame 0
+542.8413 	EXP 	Display Frame 1
+542.9663 	EXP 	Display Frame 0
+543.0913 	EXP 	Display Frame 1
+543.2163 	EXP 	Display Frame 0
+543.3414 	EXP 	Display Frame 1
+543.4664 	EXP 	Display Frame 0
+543.5914 	EXP 	Display Frame 1
+543.7163 	EXP 	Display Frame 0
+543.8414 	EXP 	Display Frame 1
+543.9657 	DATA 	Keypress: t
+543.9689 	EXP 	Display Frame 0
+544.0911 	EXP 	Display Frame 1
+544.2160 	EXP 	Display Frame 0
+544.3414 	EXP 	Display Frame 1
+544.4665 	EXP 	Display Frame 0
+544.5915 	EXP 	Display Frame 1
+544.7166 	EXP 	Display Frame 0
+544.8413 	EXP 	Display Frame 1
+544.9665 	EXP 	Display Frame 0
+545.0914 	EXP 	Display Frame 1
+545.2165 	EXP 	Display Frame 0
+545.3414 	EXP 	Display Frame 1
+545.4665 	EXP 	Display Frame 0
+545.5913 	EXP 	Display Frame 1
+545.7163 	EXP 	Display Frame 0
+545.8414 	EXP 	Display Frame 1
+545.9666 	EXP 	Display Frame 0
+546.0911 	EXP 	Display Frame 1
+546.2165 	EXP 	Display Frame 0
+546.3412 	EXP 	Display Frame 1
+546.3420 	DATA 	Keypress: t
+546.4663 	EXP 	Display Frame 0
+546.5913 	EXP 	Display Frame 1
+546.7165 	EXP 	Display Frame 0
+546.8413 	EXP 	Display Frame 1
+546.9665 	EXP 	Display Frame 0
+547.0915 	EXP 	Display Frame 1
+547.2164 	EXP 	Display Frame 0
+547.3415 	EXP 	Display Frame 1
+547.4664 	EXP 	Display Frame 0
+547.5915 	EXP 	Display Frame 1
+547.7165 	EXP 	Display Frame 0
+547.8413 	EXP 	Display Frame 1
+547.9664 	EXP 	Display Frame 0
+548.0914 	EXP 	Display Frame 1
+548.2159 	EXP 	Display Frame 0
+548.3400 	DATA 	Keypress: t
+548.3426 	EXP 	Display Frame 1
+548.4663 	EXP 	Display Frame 0
+548.5913 	EXP 	Display Frame 1
+548.7164 	EXP 	Display Frame 0
+548.8413 	EXP 	Display Frame 1
+548.9665 	EXP 	Display Frame 0
+549.0914 	EXP 	Display Frame 1
+549.2163 	EXP 	Display Frame 0
+549.3415 	EXP 	Display Frame 1
+549.4664 	EXP 	Display Frame 0
+549.5917 	EXP 	Display Frame 1
+549.7163 	EXP 	Display Frame 0
+549.8414 	EXP 	Display Frame 1
+549.9663 	EXP 	Display Frame 0
+550.0913 	EXP 	Display Frame 1
+550.2164 	EXP 	Display Frame 0
+550.3413 	EXP 	Display Frame 1
+550.4665 	EXP 	Display Frame 0
+550.5914 	EXP 	Display Frame 1
+550.7155 	DATA 	Keypress: t
+550.7182 	EXP 	Display Frame 0
+550.8415 	EXP 	Display Frame 1
+550.9663 	EXP 	Display Frame 0
+551.0915 	EXP 	Display Frame 1
+551.2163 	EXP 	Display Frame 0
+551.3414 	EXP 	Display Frame 1
+551.4664 	EXP 	Display Frame 0
+551.5911 	EXP 	Display Frame 1
+551.7165 	EXP 	Display Frame 0
+551.8414 	EXP 	Display Frame 1
+551.9663 	EXP 	Display Frame 0
+552.0916 	EXP 	Display Frame 1
+552.2164 	EXP 	Display Frame 0
+552.3413 	EXP 	Display Frame 1
+552.4665 	EXP 	Display Frame 0
+552.5915 	EXP 	Display Frame 1
+552.7153 	DATA 	Keypress: t
+552.7180 	EXP 	Display Frame 0
+552.8411 	EXP 	Display Frame 1
+552.9666 	EXP 	Display Frame 0
+553.0914 	EXP 	Display Frame 1
+553.2163 	EXP 	Display Frame 0
+553.3414 	EXP 	Display Frame 1
+553.4664 	EXP 	Display Frame 0
+553.5915 	EXP 	Display Frame 1
+553.7160 	EXP 	Display Frame 0
+553.8416 	EXP 	Display Frame 1
+553.9664 	EXP 	Display Frame 0
+554.0914 	EXP 	Display Frame 1
+554.2164 	EXP 	Display Frame 0
+554.3413 	EXP 	Display Frame 1
+554.4665 	EXP 	Display Frame 0
+554.5915 	EXP 	Display Frame 1
+554.7164 	EXP 	Display Frame 0
+554.8416 	EXP 	Display Frame 1
+554.9665 	EXP 	Display Frame 0
+555.0907 	DATA 	Keypress: t
+555.0937 	EXP 	Display Frame 1
+555.2164 	EXP 	Display Frame 0
+555.3413 	EXP 	Display Frame 1
+555.4664 	EXP 	Display Frame 0
+555.5916 	EXP 	Display Frame 1
+555.7164 	EXP 	Display Frame 0
+555.8414 	EXP 	Display Frame 1
+555.9663 	EXP 	Display Frame 0
+556.0916 	EXP 	Display Frame 1
+556.2164 	EXP 	Display Frame 0
+556.3416 	EXP 	Display Frame 1
+556.4663 	EXP 	Display Frame 0
+556.5912 	EXP 	Display Frame 1
+556.7163 	EXP 	Display Frame 0
+556.8415 	EXP 	Display Frame 1
+556.9664 	EXP 	Display Frame 0
+557.0907 	DATA 	Keypress: t
+557.0938 	EXP 	Display Frame 1
+557.2161 	EXP 	Display Frame 0
+557.3413 	EXP 	Display Frame 1
+557.4660 	EXP 	Display Frame 0
+557.5916 	EXP 	Display Frame 1
+557.7165 	EXP 	Display Frame 0
+557.8414 	EXP 	Display Frame 1
+557.9663 	EXP 	Display Frame 0
+558.0915 	EXP 	Display Frame 1
+558.2164 	EXP 	Display Frame 0
+558.3412 	EXP 	Display Frame 1
+558.4665 	EXP 	Display Frame 0
+558.5915 	EXP 	Display Frame 1
+558.7163 	EXP 	Display Frame 0
+558.8415 	EXP 	Display Frame 1
+558.9664 	EXP 	Display Frame 0
+559.0914 	EXP 	Display Frame 1
+559.2160 	EXP 	Display Frame 0
+559.3412 	EXP 	Display Frame 1
+559.4649 	DATA 	Keypress: t
+559.4673 	EXP 	Display Frame 0
+559.5915 	EXP 	Display Frame 1
+559.7162 	EXP 	Display Frame 0
+559.8413 	EXP 	Display Frame 1
+559.9663 	EXP 	Display Frame 0
+560.0915 	EXP 	Display Frame 1
+560.2164 	EXP 	Display Frame 0
+560.3413 	EXP 	Display Frame 1
+560.4664 	EXP 	Display Frame 0
+560.5914 	EXP 	Display Frame 1
+560.7163 	EXP 	Display Frame 0
+560.8415 	EXP 	Display Frame 1
+560.9664 	EXP 	Display Frame 0
+561.0913 	EXP 	Display Frame 1
+561.2165 	EXP 	Display Frame 0
+561.3414 	EXP 	Display Frame 1
+561.4645 	DATA 	Keypress: t
+561.4670 	EXP 	Display Frame 0
+561.5913 	EXP 	Display Frame 1
+561.7161 	EXP 	Display Frame 0
+561.8413 	EXP 	Display Frame 1
+561.9662 	EXP 	Display Frame 0
+562.0914 	EXP 	Display Frame 1
+562.2162 	EXP 	Display Frame 0
+562.3412 	EXP 	Display Frame 1
+562.4664 	EXP 	Display Frame 0
+562.5914 	EXP 	Display Frame 1
+562.7163 	EXP 	Display Frame 0
+562.8414 	EXP 	Display Frame 1
+562.9664 	EXP 	Display Frame 0
+563.0914 	EXP 	Display Frame 1
+563.2164 	EXP 	Display Frame 0
+563.3413 	EXP 	Display Frame 1
+563.4663 	EXP 	Display Frame 0
+563.5916 	EXP 	Display Frame 1
+563.7165 	EXP 	Display Frame 0
+563.8415 	EXP 	Display Frame 1
+563.8422 	DATA 	Keypress: t
+563.9665 	EXP 	Display Frame 0
+564.0912 	EXP 	Display Frame 1
+564.2163 	EXP 	Display Frame 0
+564.3414 	EXP 	Display Frame 1
+564.4664 	EXP 	Display Frame 0
+564.5915 	EXP 	Display Frame 1
+564.7160 	EXP 	Display Frame 0
+564.8415 	EXP 	Display Frame 1
+564.9662 	EXP 	Display Frame 0
+565.0911 	EXP 	Display Frame 1
+565.2164 	EXP 	Display Frame 0
+565.3413 	EXP 	Display Frame 1
+565.4660 	EXP 	Display Frame 0
+565.5914 	EXP 	Display Frame 1
+565.7164 	EXP 	Display Frame 0
+565.8404 	DATA 	Keypress: t
+565.8431 	EXP 	Display Frame 1
+565.9663 	EXP 	Display Frame 0
+566.0912 	EXP 	Display Frame 1
+566.2163 	EXP 	Display Frame 0
+566.3414 	EXP 	Display Frame 1
+566.4664 	EXP 	Display Frame 0
+566.5914 	EXP 	Display Frame 1
+566.7165 	EXP 	Display Frame 0
+566.8414 	EXP 	Display Frame 1
+566.9663 	EXP 	Display Frame 0
+567.0914 	EXP 	Display Frame 1
+567.2164 	EXP 	Display Frame 0
+567.3413 	EXP 	Display Frame 1
+567.4663 	EXP 	Display Frame 0
+567.5914 	EXP 	Display Frame 1
+567.7164 	EXP 	Display Frame 0
+567.8417 	EXP 	Display Frame 1
+567.9662 	EXP 	Display Frame 0
+568.0912 	EXP 	Display Frame 1
+568.2156 	DATA 	Keypress: t
+568.2182 	EXP 	Display Frame 0
+568.3415 	EXP 	Display Frame 1
+568.4662 	EXP 	Display Frame 0
+568.5914 	EXP 	Display Frame 1
+568.7166 	EXP 	Display Frame 0
+568.8415 	EXP 	Display Frame 1
+568.9663 	EXP 	Display Frame 0
+569.0916 	EXP 	Display Frame 1
+569.2164 	EXP 	Display Frame 0
+569.3413 	EXP 	Display Frame 1
+569.4663 	EXP 	Display Frame 0
+569.5913 	EXP 	Display Frame 1
+569.7163 	EXP 	Display Frame 0
+569.8414 	EXP 	Display Frame 1
+569.9665 	EXP 	Display Frame 0
+570.0915 	EXP 	Display Frame 1
+570.2147 	DATA 	Keypress: t
+570.2173 	EXP 	Display Frame 0
+570.3412 	EXP 	Display Frame 1
+570.4662 	EXP 	Display Frame 0
+570.5915 	EXP 	Display Frame 1
+570.7165 	EXP 	Display Frame 0
+570.8415 	EXP 	Display Frame 1
+570.9664 	EXP 	Display Frame 0
+571.0916 	EXP 	Display Frame 1
+571.2164 	EXP 	Display Frame 0
+571.3415 	EXP 	Display Frame 1
+571.4662 	EXP 	Display Frame 0
+571.5912 	EXP 	Display Frame 1
+571.7163 	EXP 	Display Frame 0
+571.8415 	EXP 	Display Frame 1
+571.9664 	EXP 	Display Frame 0
+572.0914 	EXP 	Display Frame 1
+572.2165 	EXP 	Display Frame 0
+572.3414 	EXP 	Display Frame 1
+572.4663 	EXP 	Display Frame 0
+572.5907 	DATA 	Keypress: t
+572.5930 	EXP 	Display Frame 1
+572.7165 	EXP 	Display Frame 0
+572.8412 	EXP 	Display Frame 1
+572.9663 	EXP 	Display Frame 0
+573.0916 	EXP 	Display Frame 1
+573.2164 	EXP 	Display Frame 0
+573.3413 	EXP 	Display Frame 1
+573.4665 	EXP 	Display Frame 0
+573.5914 	EXP 	Display Frame 1
+573.7164 	EXP 	Display Frame 0
+573.8416 	EXP 	Display Frame 1
+573.9664 	EXP 	Display Frame 0
+574.0914 	EXP 	Display Frame 1
+574.2165 	EXP 	Display Frame 0
+574.3414 	EXP 	Display Frame 1
+574.4664 	EXP 	Display Frame 0
+574.5904 	DATA 	Keypress: t
+574.5929 	EXP 	Display Frame 1
+574.7162 	EXP 	Display Frame 0
+574.8414 	EXP 	Display Frame 1
+574.9663 	EXP 	Display Frame 0
+575.0915 	EXP 	Display Frame 1
+575.2164 	EXP 	Display Frame 0
+575.3414 	EXP 	Display Frame 1
+575.4664 	EXP 	Display Frame 0
+575.5915 	EXP 	Display Frame 1
+575.7162 	EXP 	Display Frame 0
+575.8413 	EXP 	Display Frame 1
+575.9662 	EXP 	Display Frame 0
+576.0912 	EXP 	Display Frame 1
+576.2165 	EXP 	Display Frame 0
+576.3414 	EXP 	Display Frame 1
+576.4663 	EXP 	Display Frame 0
+576.5916 	EXP 	Display Frame 1
+576.7164 	EXP 	Display Frame 0
+576.8413 	EXP 	Display Frame 1
+576.9657 	DATA 	Keypress: t
+576.9684 	EXP 	Display Frame 0
+576.9699 	EXP 	Display Fixation
+578.8890 	DATA 	Keypress: t
+581.3372 	DATA 	Keypress: t
+583.2638 	DATA 	Keypress: t
+585.7107 	DATA 	Keypress: t
+587.6391 	DATA 	Keypress: t
+590.0858 	DATA 	Keypress: t
+592.0131 	DATA 	Keypress: t
+594.4613 	DATA 	Keypress: t
+596.3879 	DATA 	Keypress: t
+598.8361 	DATA 	Keypress: t
+600.7631 	DATA 	Keypress: t
+603.2096 	DATA 	Keypress: t
+605.1381 	DATA 	Keypress: t
+607.5850 	DATA 	Keypress: t
+609.5118 	DATA 	Keypress: t
+611.9601 	DATA 	Keypress: t
+612.0871 	EXP 	Display Frame 1
+612.2126 	EXP 	Display Frame 0
+612.3378 	EXP 	Display Frame 1
+612.4629 	EXP 	Display Frame 0
+612.5884 	EXP 	Display Frame 1
+612.7126 	EXP 	Display Frame 0
+612.8377 	EXP 	Display Frame 1
+612.9628 	EXP 	Display Frame 0
+613.0881 	EXP 	Display Frame 1
+613.2129 	EXP 	Display Frame 0
+613.3379 	EXP 	Display Frame 1
+613.4630 	EXP 	Display Frame 0
+613.5879 	EXP 	Display Frame 1
+613.7127 	EXP 	Display Frame 0
+613.8378 	EXP 	Display Frame 1
+613.9623 	DATA 	Keypress: t
+613.9654 	EXP 	Display Frame 0
+614.0877 	EXP 	Display Frame 1
+614.2126 	EXP 	Display Frame 0
+614.3378 	EXP 	Display Frame 1
+614.4627 	EXP 	Display Frame 0
+614.5879 	EXP 	Display Frame 1
+614.7130 	EXP 	Display Frame 0
+614.8379 	EXP 	Display Frame 1
+614.9628 	EXP 	Display Frame 0
+615.0880 	EXP 	Display Frame 1
+615.2129 	EXP 	Display Frame 0
+615.3378 	EXP 	Display Frame 1
+615.4629 	EXP 	Display Frame 0
+615.5868 	EXP 	Display Frame 1
+615.7128 	EXP 	Display Frame 0
+615.8375 	EXP 	Display Frame 1
+615.9628 	EXP 	Display Frame 0
+616.0880 	EXP 	Display Frame 1
+616.2130 	EXP 	Display Frame 0
+616.3379 	EXP 	Display Frame 1
+616.3390 	DATA 	Keypress: t
+616.4629 	EXP 	Display Frame 0
+616.5877 	EXP 	Display Frame 1
+616.7129 	EXP 	Display Frame 0
+616.8378 	EXP 	Display Frame 1
+616.9628 	EXP 	Display Frame 0
+617.0880 	EXP 	Display Frame 1
+617.2129 	EXP 	Display Frame 0
+617.3379 	EXP 	Display Frame 1
+617.4627 	EXP 	Display Frame 0
+617.5881 	EXP 	Display Frame 1
+617.7127 	EXP 	Display Frame 0
+617.8380 	EXP 	Display Frame 1
+617.9629 	EXP 	Display Frame 0
+618.0879 	EXP 	Display Frame 1
+618.2127 	EXP 	Display Frame 0
+618.3372 	DATA 	Keypress: t
+618.3404 	EXP 	Display Frame 1
+618.4626 	EXP 	Display Frame 0
+618.5876 	EXP 	Display Frame 1
+618.7129 	EXP 	Display Frame 0
+618.8379 	EXP 	Display Frame 1
+618.9628 	EXP 	Display Frame 0
+619.0879 	EXP 	Display Frame 1
+619.2129 	EXP 	Display Frame 0
+619.3378 	EXP 	Display Frame 1
+619.4629 	EXP 	Display Frame 0
+619.5879 	EXP 	Display Frame 1
+619.7126 	EXP 	Display Frame 0
+619.8377 	EXP 	Display Frame 1
+619.9627 	EXP 	Display Frame 0
+620.0879 	EXP 	Display Frame 1
+620.2129 	EXP 	Display Frame 0
+620.3379 	EXP 	Display Frame 1
+620.4628 	EXP 	Display Frame 0
+620.5878 	EXP 	Display Frame 1
+620.7120 	DATA 	Keypress: t
+620.7144 	EXP 	Display Frame 0
+620.8379 	EXP 	Display Frame 1
+620.9626 	EXP 	Display Frame 0
+621.0879 	EXP 	Display Frame 1
+621.2129 	EXP 	Display Frame 0
+621.3378 	EXP 	Display Frame 1
+621.4629 	EXP 	Display Frame 0
+621.5877 	EXP 	Display Frame 1
+621.7128 	EXP 	Display Frame 0
+621.8379 	EXP 	Display Frame 1
+621.9629 	EXP 	Display Frame 0
+622.0878 	EXP 	Display Frame 1
+622.2130 	EXP 	Display Frame 0
+622.3379 	EXP 	Display Frame 1
+622.4628 	EXP 	Display Frame 0
+622.5880 	EXP 	Display Frame 1
+622.7117 	DATA 	Keypress: t
+622.7147 	EXP 	Display Frame 0
+622.8376 	EXP 	Display Frame 1
+622.9628 	EXP 	Display Frame 0
+623.0879 	EXP 	Display Frame 1
+623.2128 	EXP 	Display Frame 0
+623.3378 	EXP 	Display Frame 1
+623.4629 	EXP 	Display Frame 0
+623.5880 	EXP 	Display Frame 1
+623.7129 	EXP 	Display Frame 0
+623.8379 	EXP 	Display Frame 1
+623.9629 	EXP 	Display Frame 0
+624.0878 	EXP 	Display Frame 1
+624.2129 	EXP 	Display Frame 0
+624.3379 	EXP 	Display Frame 1
+624.4628 	EXP 	Display Frame 0
+624.5881 	EXP 	Display Frame 1
+624.7129 	EXP 	Display Frame 0
+624.8377 	EXP 	Display Frame 1
+624.9631 	EXP 	Display Frame 0
+625.0865 	DATA 	Keypress: t
+625.0892 	EXP 	Display Frame 1
+625.2129 	EXP 	Display Frame 0
+625.3378 	EXP 	Display Frame 1
+625.4627 	EXP 	Display Frame 0
+625.5879 	EXP 	Display Frame 1
+625.7128 	EXP 	Display Frame 0
+625.8378 	EXP 	Display Frame 1
+625.9628 	EXP 	Display Frame 0
+626.0878 	EXP 	Display Frame 1
+626.2129 	EXP 	Display Frame 0
+626.3377 	EXP 	Display Frame 1
+626.4628 	EXP 	Display Frame 0
+626.5879 	EXP 	Display Frame 1
+626.7129 	EXP 	Display Frame 0
+626.8378 	EXP 	Display Frame 1
+626.9629 	EXP 	Display Frame 0
+627.0871 	DATA 	Keypress: t
+627.0896 	EXP 	Display Frame 1
+627.2125 	EXP 	Display Frame 0
+627.3380 	EXP 	Display Frame 1
+627.4629 	EXP 	Display Frame 0
+627.5879 	EXP 	Display Frame 1
+627.7130 	EXP 	Display Frame 0
+627.8380 	EXP 	Display Frame 1
+627.9628 	EXP 	Display Frame 0
+628.0880 	EXP 	Display Frame 1
+628.2127 	EXP 	Display Frame 0
+628.3377 	EXP 	Display Frame 1
+628.4628 	EXP 	Display Frame 0
+628.5879 	EXP 	Display Frame 1
+628.7126 	EXP 	Display Frame 0
+628.8378 	EXP 	Display Frame 1
+628.9629 	EXP 	Display Frame 0
+629.0879 	EXP 	Display Frame 1
+629.2126 	EXP 	Display Frame 0
+629.3379 	EXP 	Display Frame 1
+629.4621 	DATA 	Keypress: t
+629.4646 	EXP 	Display Frame 0
+629.5879 	EXP 	Display Frame 1
+629.7128 	EXP 	Display Frame 0
+629.8380 	EXP 	Display Frame 1
+629.9628 	EXP 	Display Frame 0
+630.0880 	EXP 	Display Frame 1
+630.2129 	EXP 	Display Frame 0
+630.3378 	EXP 	Display Frame 1
+630.4627 	EXP 	Display Frame 0
+630.5880 	EXP 	Display Frame 1
+630.7126 	EXP 	Display Frame 0
+630.8378 	EXP 	Display Frame 1
+630.9627 	EXP 	Display Frame 0
+631.0880 	EXP 	Display Frame 1
+631.2131 	EXP 	Display Frame 0
+631.3381 	EXP 	Display Frame 1
+631.4614 	DATA 	Keypress: t
+631.4638 	EXP 	Display Frame 0
+631.5875 	EXP 	Display Frame 1
+631.7128 	EXP 	Display Frame 0
+631.8380 	EXP 	Display Frame 1
+631.9628 	EXP 	Display Frame 0
+632.0879 	EXP 	Display Frame 1
+632.2129 	EXP 	Display Frame 0
+632.3378 	EXP 	Display Frame 1
+632.4630 	EXP 	Display Frame 0
+632.5880 	EXP 	Display Frame 1
+632.7128 	EXP 	Display Frame 0
+632.8380 	EXP 	Display Frame 1
+632.9629 	EXP 	Display Frame 0
+633.0879 	EXP 	Display Frame 1
+633.2130 	EXP 	Display Frame 0
+633.3380 	EXP 	Display Frame 1
+633.4628 	EXP 	Display Frame 0
+633.5875 	EXP 	Display Frame 1
+633.7130 	EXP 	Display Frame 0
+633.8369 	DATA 	Keypress: t
+633.8393 	EXP 	Display Frame 1
+633.9628 	EXP 	Display Frame 0
+634.0878 	EXP 	Display Frame 1
+634.2130 	EXP 	Display Frame 0
+634.3379 	EXP 	Display Frame 1
+634.4629 	EXP 	Display Frame 0
+634.5879 	EXP 	Display Frame 1
+634.7128 	EXP 	Display Frame 0
+634.8381 	EXP 	Display Frame 1
+634.9629 	EXP 	Display Frame 0
+635.0878 	EXP 	Display Frame 1
+635.2130 	EXP 	Display Frame 0
+635.3379 	EXP 	Display Frame 1
+635.4628 	EXP 	Display Frame 0
+635.5879 	EXP 	Display Frame 1
+635.7129 	EXP 	Display Frame 0
+635.8365 	DATA 	Keypress: t
+635.8395 	EXP 	Display Frame 1
+635.9626 	EXP 	Display Frame 0
+636.0879 	EXP 	Display Frame 1
+636.2126 	EXP 	Display Frame 0
+636.3376 	EXP 	Display Frame 1
+636.4627 	EXP 	Display Frame 0
+636.5877 	EXP 	Display Frame 1
+636.7128 	EXP 	Display Frame 0
+636.8379 	EXP 	Display Frame 1
+636.9629 	EXP 	Display Frame 0
+637.0879 	EXP 	Display Frame 1
+637.2130 	EXP 	Display Frame 0
+637.3380 	EXP 	Display Frame 1
+637.4628 	EXP 	Display Frame 0
+637.5874 	EXP 	Display Frame 1
+637.7129 	EXP 	Display Frame 0
+637.8378 	EXP 	Display Frame 1
+637.9627 	EXP 	Display Frame 0
+638.0879 	EXP 	Display Frame 1
+638.2121 	DATA 	Keypress: t
+638.2149 	EXP 	Display Frame 0
+638.3380 	EXP 	Display Frame 1
+638.4627 	EXP 	Display Frame 0
+638.5880 	EXP 	Display Frame 1
+638.7127 	EXP 	Display Frame 0
+638.8379 	EXP 	Display Frame 1
+638.9630 	EXP 	Display Frame 0
+639.0879 	EXP 	Display Frame 1
+639.2131 	EXP 	Display Frame 0
+639.3379 	EXP 	Display Frame 1
+639.4628 	EXP 	Display Frame 0
+639.5882 	EXP 	Display Frame 1
+639.7127 	EXP 	Display Frame 0
+639.8376 	EXP 	Display Frame 1
+639.9630 	EXP 	Display Frame 0
+640.0879 	EXP 	Display Frame 1
+640.2121 	DATA 	Keypress: t
+640.2153 	EXP 	Display Frame 0
+640.3378 	EXP 	Display Frame 1
+640.4627 	EXP 	Display Frame 0
+640.5878 	EXP 	Display Frame 1
+640.7128 	EXP 	Display Frame 0
+640.8378 	EXP 	Display Frame 1
+640.9628 	EXP 	Display Frame 0
+641.0878 	EXP 	Display Frame 1
+641.2129 	EXP 	Display Frame 0
+641.3379 	EXP 	Display Frame 1
+641.4627 	EXP 	Display Frame 0
+641.5877 	EXP 	Display Frame 1
+641.7125 	EXP 	Display Frame 0
+641.8375 	EXP 	Display Frame 1
+641.9627 	EXP 	Display Frame 0
+642.0879 	EXP 	Display Frame 1
+642.2127 	EXP 	Display Frame 0
+642.3376 	EXP 	Display Frame 1
+642.4629 	EXP 	Display Frame 0
+642.5871 	DATA 	Keypress: t
+642.5897 	EXP 	Display Frame 1
+642.7130 	EXP 	Display Frame 0
+642.8376 	EXP 	Display Frame 1
+642.9628 	EXP 	Display Frame 0
+643.0878 	EXP 	Display Frame 1
+643.2129 	EXP 	Display Frame 0
+643.3377 	EXP 	Display Frame 1
+643.4628 	EXP 	Display Frame 0
+643.5879 	EXP 	Display Frame 1
+643.7129 	EXP 	Display Frame 0
+643.8378 	EXP 	Display Frame 1
+643.9629 	EXP 	Display Frame 0
+644.0879 	EXP 	Display Frame 1
+644.2128 	EXP 	Display Frame 0
+644.3379 	EXP 	Display Frame 1
+644.4629 	EXP 	Display Frame 0
+644.5865 	DATA 	Keypress: t
+644.5894 	EXP 	Display Frame 1
+644.7125 	EXP 	Display Frame 0
+644.8379 	EXP 	Display Frame 1
+644.9628 	EXP 	Display Frame 0
+645.0877 	EXP 	Display Frame 1
+645.2129 	EXP 	Display Frame 0
+645.3378 	EXP 	Display Frame 1
+645.4627 	EXP 	Display Frame 0
+645.5880 	EXP 	Display Frame 1
+645.7129 	EXP 	Display Frame 0
+645.8376 	EXP 	Display Frame 1
+645.9629 	EXP 	Display Frame 0
+646.0878 	EXP 	Display Frame 1
+646.2128 	EXP 	Display Frame 0
+646.3380 	EXP 	Display Frame 1
+646.4625 	EXP 	Display Frame 0
+646.5877 	EXP 	Display Frame 1
+646.7130 	EXP 	Display Frame 0
+646.8378 	EXP 	Display Frame 1
+646.9621 	DATA 	Keypress: t
+646.9647 	EXP 	Display Frame 0
+646.9662 	EXP 	Display Fixation
+648.8855 	DATA 	Keypress: t
+651.3320 	DATA 	Keypress: t
+653.2603 	DATA 	Keypress: t
+655.7072 	DATA 	Keypress: t
+657.6340 	DATA 	Keypress: t
+660.0825 	DATA 	Keypress: t
+662.0090 	DATA 	Keypress: t
+664.4575 	DATA 	Keypress: t
+666.3842 	DATA 	Keypress: t
+668.8314 	DATA 	Keypress: t
+670.7596 	DATA 	Keypress: t
+673.2061 	DATA 	Keypress: t
+675.1334 	DATA 	Keypress: t
+677.5814 	DATA 	Keypress: t
+679.5082 	DATA 	Keypress: t
+681.9566 	DATA 	Keypress: t
+682.0845 	EXP 	Display Frame 1
+682.2091 	EXP 	Display Frame 0
+682.3345 	EXP 	Display Frame 1
+682.4594 	EXP 	Display Frame 0
+682.5843 	EXP 	Display Frame 1
+682.7095 	EXP 	Display Frame 0
+682.8344 	EXP 	Display Frame 1
+682.9594 	EXP 	Display Frame 0
+683.0845 	EXP 	Display Frame 1
+683.2094 	EXP 	Display Frame 0
+683.3344 	EXP 	Display Frame 1
+683.4595 	EXP 	Display Frame 0
+683.5846 	EXP 	Display Frame 1
+683.7095 	EXP 	Display Frame 0
+683.8347 	EXP 	Display Frame 1
+683.9583 	DATA 	Keypress: t
+683.9611 	EXP 	Display Frame 0
+684.0842 	EXP 	Display Frame 1
+684.2096 	EXP 	Display Frame 0
+684.3346 	EXP 	Display Frame 1
+684.4594 	EXP 	Display Frame 0
+684.5846 	EXP 	Display Frame 1
+684.7095 	EXP 	Display Frame 0
+684.8345 	EXP 	Display Frame 1
+684.9594 	EXP 	Display Frame 0
+685.0845 	EXP 	Display Frame 1
+685.2094 	EXP 	Display Frame 0
+685.3345 	EXP 	Display Frame 1
+685.4597 	EXP 	Display Frame 0
+685.5840 	EXP 	Display Frame 1
+685.7095 	EXP 	Display Frame 0
+685.8343 	EXP 	Display Frame 1
+685.9593 	EXP 	Display Frame 0
+686.0844 	EXP 	Display Frame 1
+686.2096 	EXP 	Display Frame 0
+686.3337 	DATA 	Keypress: t
+686.3365 	EXP 	Display Frame 1
+686.4594 	EXP 	Display Frame 0
+686.5844 	EXP 	Display Frame 1
+686.7093 	EXP 	Display Frame 0
+686.8345 	EXP 	Display Frame 1
+686.9596 	EXP 	Display Frame 0
+687.0845 	EXP 	Display Frame 1
+687.2094 	EXP 	Display Frame 0
+687.3347 	EXP 	Display Frame 1
+687.4595 	EXP 	Display Frame 0
+687.5844 	EXP 	Display Frame 1
+687.7095 	EXP 	Display Frame 0
+687.8346 	EXP 	Display Frame 1
+687.9596 	EXP 	Display Frame 0
+688.0845 	EXP 	Display Frame 1
+688.2095 	EXP 	Display Frame 0
+688.3337 	DATA 	Keypress: t
+688.3368 	EXP 	Display Frame 1
+688.4594 	EXP 	Display Frame 0
+688.5844 	EXP 	Display Frame 1
+688.7095 	EXP 	Display Frame 0
+688.8345 	EXP 	Display Frame 1
+688.9595 	EXP 	Display Frame 0
+689.0846 	EXP 	Display Frame 1
+689.2095 	EXP 	Display Frame 0
+689.3344 	EXP 	Display Frame 1
+689.4595 	EXP 	Display Frame 0
+689.5844 	EXP 	Display Frame 1
+689.7095 	EXP 	Display Frame 0
+689.8346 	EXP 	Display Frame 1
+689.9594 	EXP 	Display Frame 0
+690.0845 	EXP 	Display Frame 1
+690.2095 	EXP 	Display Frame 0
+690.3345 	EXP 	Display Frame 1
+690.4593 	EXP 	Display Frame 0
+690.5845 	EXP 	Display Frame 1
+690.7086 	DATA 	Keypress: t
+690.7109 	EXP 	Display Frame 0
+690.8346 	EXP 	Display Frame 1
+690.9593 	EXP 	Display Frame 0
+691.0845 	EXP 	Display Frame 1
+691.2097 	EXP 	Display Frame 0
+691.3343 	EXP 	Display Frame 1
+691.4593 	EXP 	Display Frame 0
+691.5842 	EXP 	Display Frame 1
+691.7096 	EXP 	Display Frame 0
+691.8346 	EXP 	Display Frame 1
+691.9596 	EXP 	Display Frame 0
+692.0844 	EXP 	Display Frame 1
+692.2095 	EXP 	Display Frame 0
+692.3345 	EXP 	Display Frame 1
+692.4596 	EXP 	Display Frame 0
+692.5846 	EXP 	Display Frame 1
+692.7089 	DATA 	Keypress: t
+692.7118 	EXP 	Display Frame 0
+692.8342 	EXP 	Display Frame 1
+692.9593 	EXP 	Display Frame 0
+693.0846 	EXP 	Display Frame 1
+693.2094 	EXP 	Display Frame 0
+693.3346 	EXP 	Display Frame 1
+693.4595 	EXP 	Display Frame 0
+693.5844 	EXP 	Display Frame 1
+693.7095 	EXP 	Display Frame 0
+693.8345 	EXP 	Display Frame 1
+693.9594 	EXP 	Display Frame 0
+694.0847 	EXP 	Display Frame 1
+694.2095 	EXP 	Display Frame 0
+694.3345 	EXP 	Display Frame 1
+694.4595 	EXP 	Display Frame 0
+694.5846 	EXP 	Display Frame 1
+694.7094 	EXP 	Display Frame 0
+694.8344 	EXP 	Display Frame 1
+694.9595 	EXP 	Display Frame 0
+695.0834 	DATA 	Keypress: t
+695.0860 	EXP 	Display Frame 1
+695.2096 	EXP 	Display Frame 0
+695.3343 	EXP 	Display Frame 1
+695.4594 	EXP 	Display Frame 0
+695.5843 	EXP 	Display Frame 1
+695.7094 	EXP 	Display Frame 0
+695.8346 	EXP 	Display Frame 1
+695.9594 	EXP 	Display Frame 0
+696.0846 	EXP 	Display Frame 1
+696.2097 	EXP 	Display Frame 0
+696.3342 	EXP 	Display Frame 1
+696.4593 	EXP 	Display Frame 0
+696.5842 	EXP 	Display Frame 1
+696.7095 	EXP 	Display Frame 0
+696.8343 	EXP 	Display Frame 1
+696.9595 	EXP 	Display Frame 0
+697.0838 	DATA 	Keypress: t
+697.0870 	EXP 	Display Frame 1
+697.2091 	EXP 	Display Frame 0
+697.3343 	EXP 	Display Frame 1
+697.4594 	EXP 	Display Frame 0
+697.5844 	EXP 	Display Frame 1
+697.7095 	EXP 	Display Frame 0
+697.8345 	EXP 	Display Frame 1
+697.9594 	EXP 	Display Frame 0
+698.0845 	EXP 	Display Frame 1
+698.2094 	EXP 	Display Frame 0
+698.3345 	EXP 	Display Frame 1
+698.4595 	EXP 	Display Frame 0
+698.5845 	EXP 	Display Frame 1
+698.7094 	EXP 	Display Frame 0
+698.8347 	EXP 	Display Frame 1
+698.9595 	EXP 	Display Frame 0
+699.0844 	EXP 	Display Frame 1
+699.2093 	EXP 	Display Frame 0
+699.3345 	EXP 	Display Frame 1
+699.4582 	DATA 	Keypress: t
+699.4608 	EXP 	Display Frame 0
+699.5852 	EXP 	Display Frame 1
+699.7093 	EXP 	Display Frame 0
+699.8343 	EXP 	Display Frame 1
+699.9594 	EXP 	Display Frame 0
+700.0845 	EXP 	Display Frame 1
+700.2094 	EXP 	Display Frame 0
+700.3345 	EXP 	Display Frame 1
+700.4595 	EXP 	Display Frame 0
+700.5844 	EXP 	Display Frame 1
+700.7096 	EXP 	Display Frame 0
+700.8347 	EXP 	Display Frame 1
+700.9595 	EXP 	Display Frame 0
+701.0844 	EXP 	Display Frame 1
+701.2095 	EXP 	Display Frame 0
+701.3348 	EXP 	Display Frame 1
+701.4581 	DATA 	Keypress: t
+701.4607 	EXP 	Display Frame 0
+701.5844 	EXP 	Display Frame 1
+701.7093 	EXP 	Display Frame 0
+701.8344 	EXP 	Display Frame 1
+701.9593 	EXP 	Display Frame 0
+702.0840 	EXP 	Display Frame 1
+702.2095 	EXP 	Display Frame 0
+702.3342 	EXP 	Display Frame 1
+702.4593 	EXP 	Display Frame 0
+702.5844 	EXP 	Display Frame 1
+702.7094 	EXP 	Display Frame 0
+702.8345 	EXP 	Display Frame 1
+702.9595 	EXP 	Display Frame 0
+703.0844 	EXP 	Display Frame 1
+703.2095 	EXP 	Display Frame 0
+703.3345 	EXP 	Display Frame 1
+703.4594 	EXP 	Display Frame 0
+703.5846 	EXP 	Display Frame 1
+703.7095 	EXP 	Display Frame 0
+703.8337 	DATA 	Keypress: t
+703.8365 	EXP 	Display Frame 1
+703.9596 	EXP 	Display Frame 0
+704.0843 	EXP 	Display Frame 1
+704.2094 	EXP 	Display Frame 0
+704.3347 	EXP 	Display Frame 1
+704.4595 	EXP 	Display Frame 0
+704.5844 	EXP 	Display Frame 1
+704.7093 	EXP 	Display Frame 0
+704.8345 	EXP 	Display Frame 1
+704.9594 	EXP 	Display Frame 0
+705.0844 	EXP 	Display Frame 1
+705.2095 	EXP 	Display Frame 0
+705.3343 	EXP 	Display Frame 1
+705.4588 	EXP 	Display Frame 0
+705.5845 	EXP 	Display Frame 1
+705.7092 	EXP 	Display Frame 0
+705.8338 	DATA 	Keypress: t
+705.8367 	EXP 	Display Frame 1
+705.9593 	EXP 	Display Frame 0
+706.0843 	EXP 	Display Frame 1
+706.2094 	EXP 	Display Frame 0
+706.3347 	EXP 	Display Frame 1
+706.4592 	EXP 	Display Frame 0
+706.5845 	EXP 	Display Frame 1
+706.7094 	EXP 	Display Frame 0
+706.8346 	EXP 	Display Frame 1
+706.9594 	EXP 	Display Frame 0
+707.0846 	EXP 	Display Frame 1
+707.2095 	EXP 	Display Frame 0
+707.3345 	EXP 	Display Frame 1
+707.4595 	EXP 	Display Frame 0
+707.5841 	EXP 	Display Frame 1
+707.7095 	EXP 	Display Frame 0
+707.8344 	EXP 	Display Frame 1
+707.9594 	EXP 	Display Frame 0
+708.0845 	EXP 	Display Frame 1
+708.2088 	DATA 	Keypress: t
+708.2118 	EXP 	Display Frame 0
+708.3346 	EXP 	Display Frame 1
+708.4592 	EXP 	Display Frame 0
+708.5844 	EXP 	Display Frame 1
+708.7097 	EXP 	Display Frame 0
+708.8346 	EXP 	Display Frame 1
+708.9594 	EXP 	Display Frame 0
+709.0846 	EXP 	Display Frame 1
+709.2095 	EXP 	Display Frame 0
+709.3345 	EXP 	Display Frame 1
+709.4593 	EXP 	Display Frame 0
+709.5846 	EXP 	Display Frame 1
+709.7091 	EXP 	Display Frame 0
+709.8347 	EXP 	Display Frame 1
+709.9595 	EXP 	Display Frame 0
+710.0845 	EXP 	Display Frame 1
+710.2088 	DATA 	Keypress: t
+710.2117 	EXP 	Display Frame 0
+710.3343 	EXP 	Display Frame 1
+710.4592 	EXP 	Display Frame 0
+710.5844 	EXP 	Display Frame 1
+710.7095 	EXP 	Display Frame 0
+710.8346 	EXP 	Display Frame 1
+710.9595 	EXP 	Display Frame 0
+711.0846 	EXP 	Display Frame 1
+711.2095 	EXP 	Display Frame 0
+711.3345 	EXP 	Display Frame 1
+711.4592 	EXP 	Display Frame 0
+711.5843 	EXP 	Display Frame 1
+711.7094 	EXP 	Display Frame 0
+711.8346 	EXP 	Display Frame 1
+711.9595 	EXP 	Display Frame 0
+712.0845 	EXP 	Display Frame 1
+712.2092 	EXP 	Display Frame 0
+712.3346 	EXP 	Display Frame 1
+712.4594 	EXP 	Display Frame 0
+712.5833 	DATA 	Keypress: t
+712.5860 	EXP 	Display Frame 1
+712.7095 	EXP 	Display Frame 0
+712.8344 	EXP 	Display Frame 1
+712.9594 	EXP 	Display Frame 0
+713.0844 	EXP 	Display Frame 1
+713.2096 	EXP 	Display Frame 0
+713.3345 	EXP 	Display Frame 1
+713.4594 	EXP 	Display Frame 0
+713.5847 	EXP 	Display Frame 1
+713.7095 	EXP 	Display Frame 0
+713.8345 	EXP 	Display Frame 1
+713.9596 	EXP 	Display Frame 0
+714.0842 	EXP 	Display Frame 1
+714.2094 	EXP 	Display Frame 0
+714.3346 	EXP 	Display Frame 1
+714.4593 	EXP 	Display Frame 0
+714.5839 	DATA 	Keypress: t
+714.5867 	EXP 	Display Frame 1
+714.7093 	EXP 	Display Frame 0
+714.8343 	EXP 	Display Frame 1
+714.9600 	EXP 	Display Frame 0
+715.0841 	EXP 	Display Frame 1
+715.2093 	EXP 	Display Frame 0
+715.3342 	EXP 	Display Frame 1
+715.4594 	EXP 	Display Frame 0
+715.5846 	EXP 	Display Frame 1
+715.7094 	EXP 	Display Frame 0
+715.8346 	EXP 	Display Frame 1
+715.9595 	EXP 	Display Frame 0
+716.0844 	EXP 	Display Frame 1
+716.2096 	EXP 	Display Frame 0
+716.3346 	EXP 	Display Frame 1
+716.4593 	EXP 	Display Frame 0
+716.5846 	EXP 	Display Frame 1
+716.7095 	EXP 	Display Frame 0
+716.8345 	EXP 	Display Frame 1
+716.9587 	DATA 	Keypress: t
+716.9610 	EXP 	Display Frame 0
+716.9626 	EXP 	Display Fixation
+718.8816 	DATA 	Keypress: t
+721.3283 	DATA 	Keypress: t
+723.2563 	DATA 	Keypress: t
+725.7037 	DATA 	Keypress: t
+727.6304 	DATA 	Keypress: t
+730.0787 	DATA 	Keypress: t
+732.0052 	DATA 	Keypress: t
+734.4535 	DATA 	Keypress: t
+736.3811 	DATA 	Keypress: t
+738.8277 	DATA 	Keypress: t
+740.7547 	DATA 	Keypress: t
+743.2027 	DATA 	Keypress: t
+745.1298 	DATA 	Keypress: t
+747.5778 	DATA 	Keypress: t
+749.5044 	DATA 	Keypress: t
+751.9528 	DATA 	Keypress: t
+752.0806 	EXP 	Display Frame 1
+752.2055 	EXP 	Display Frame 0
+752.3307 	EXP 	Display Frame 1
+752.4559 	EXP 	Display Frame 0
+752.5807 	EXP 	Display Frame 1
+752.7055 	EXP 	Display Frame 0
+752.8308 	EXP 	Display Frame 1
+752.9557 	EXP 	Display Frame 0
+753.0804 	EXP 	Display Frame 1
+753.2055 	EXP 	Display Frame 0
+753.3308 	EXP 	Display Frame 1
+753.4556 	EXP 	Display Frame 0
+753.5805 	EXP 	Display Frame 1
+753.7057 	EXP 	Display Frame 0
+753.8310 	EXP 	Display Frame 1
+753.9548 	DATA 	Keypress: t
+753.9578 	EXP 	Display Frame 0
+754.0805 	EXP 	Display Frame 1
+754.2055 	EXP 	Display Frame 0
+754.3307 	EXP 	Display Frame 1
+754.4557 	EXP 	Display Frame 0
+754.5806 	EXP 	Display Frame 1
+754.7056 	EXP 	Display Frame 0
+754.8306 	EXP 	Display Frame 1
+754.9557 	EXP 	Display Frame 0
+755.0806 	EXP 	Display Frame 1
+755.2055 	EXP 	Display Frame 0
+755.3308 	EXP 	Display Frame 1
+755.4557 	EXP 	Display Frame 0
+755.5805 	EXP 	Display Frame 1
+755.7057 	EXP 	Display Frame 0
+755.8306 	EXP 	Display Frame 1
+755.9555 	EXP 	Display Frame 0
+756.0807 	EXP 	Display Frame 1
+756.2053 	EXP 	Display Frame 0
+756.3299 	DATA 	Keypress: t
+756.3332 	EXP 	Display Frame 1
+756.4557 	EXP 	Display Frame 0
+756.5804 	EXP 	Display Frame 1
+756.7056 	EXP 	Display Frame 0
+756.8307 	EXP 	Display Frame 1
+756.9555 	EXP 	Display Frame 0
+757.0801 	EXP 	Display Frame 1
+757.2059 	EXP 	Display Frame 0
+757.3305 	EXP 	Display Frame 1
+757.4554 	EXP 	Display Frame 0
+757.5810 	EXP 	Display Frame 1
+757.7055 	EXP 	Display Frame 0
+757.8304 	EXP 	Display Frame 1
+757.9559 	EXP 	Display Frame 0
+758.0805 	EXP 	Display Frame 1
+758.2054 	EXP 	Display Frame 0
+758.3299 	DATA 	Keypress: t
+758.3328 	EXP 	Display Frame 1
+758.4555 	EXP 	Display Frame 0
+758.5804 	EXP 	Display Frame 1
+758.7057 	EXP 	Display Frame 0
+758.8307 	EXP 	Display Frame 1
+758.9556 	EXP 	Display Frame 0
+759.0807 	EXP 	Display Frame 1
+759.2055 	EXP 	Display Frame 0
+759.3306 	EXP 	Display Frame 1
+759.4556 	EXP 	Display Frame 0
+759.5807 	EXP 	Display Frame 1
+759.7055 	EXP 	Display Frame 0
+759.8305 	EXP 	Display Frame 1
+759.9555 	EXP 	Display Frame 0
+760.0808 	EXP 	Display Frame 1
+760.2055 	EXP 	Display Frame 0
+760.3305 	EXP 	Display Frame 1
+760.4557 	EXP 	Display Frame 0
+760.5806 	EXP 	Display Frame 1
+760.7048 	DATA 	Keypress: t
+760.7076 	EXP 	Display Frame 0
+760.8307 	EXP 	Display Frame 1
+760.9554 	EXP 	Display Frame 0
+761.0806 	EXP 	Display Frame 1
+761.2057 	EXP 	Display Frame 0
+761.3307 	EXP 	Display Frame 1
+761.4556 	EXP 	Display Frame 0
+761.5807 	EXP 	Display Frame 1
+761.7055 	EXP 	Display Frame 0
+761.8306 	EXP 	Display Frame 1
+761.9555 	EXP 	Display Frame 0
+762.0807 	EXP 	Display Frame 1
+762.2056 	EXP 	Display Frame 0
+762.3305 	EXP 	Display Frame 1
+762.4557 	EXP 	Display Frame 0
+762.5801 	EXP 	Display Frame 1
+762.7042 	DATA 	Keypress: t
+762.7068 	EXP 	Display Frame 0
+762.8305 	EXP 	Display Frame 1
+762.9554 	EXP 	Display Frame 0
+763.0805 	EXP 	Display Frame 1
+763.2057 	EXP 	Display Frame 0
+763.3306 	EXP 	Display Frame 1
+763.4555 	EXP 	Display Frame 0
+763.5807 	EXP 	Display Frame 1
+763.7056 	EXP 	Display Frame 0
+763.8306 	EXP 	Display Frame 1
+763.9557 	EXP 	Display Frame 0
+764.0806 	EXP 	Display Frame 1
+764.2056 	EXP 	Display Frame 0
+764.3307 	EXP 	Display Frame 1
+764.4557 	EXP 	Display Frame 0
+764.5806 	EXP 	Display Frame 1
+764.7056 	EXP 	Display Frame 0
+764.8308 	EXP 	Display Frame 1
+764.9556 	EXP 	Display Frame 0
+765.0795 	DATA 	Keypress: t
+765.0825 	EXP 	Display Frame 1
+765.2057 	EXP 	Display Frame 0
+765.3304 	EXP 	Display Frame 1
+765.4558 	EXP 	Display Frame 0
+765.5807 	EXP 	Display Frame 1
+765.7056 	EXP 	Display Frame 0
+765.8307 	EXP 	Display Frame 1
+765.9557 	EXP 	Display Frame 0
+766.0807 	EXP 	Display Frame 1
+766.2056 	EXP 	Display Frame 0
+766.3309 	EXP 	Display Frame 1
+766.4554 	EXP 	Display Frame 0
+766.5806 	EXP 	Display Frame 1
+766.7057 	EXP 	Display Frame 0
+766.8307 	EXP 	Display Frame 1
+766.9556 	EXP 	Display Frame 0
+767.0800 	DATA 	Keypress: t
+767.0829 	EXP 	Display Frame 1
+767.2055 	EXP 	Display Frame 0
+767.3305 	EXP 	Display Frame 1
+767.4558 	EXP 	Display Frame 0
+767.5807 	EXP 	Display Frame 1
+767.7055 	EXP 	Display Frame 0
+767.8307 	EXP 	Display Frame 1
+767.9556 	EXP 	Display Frame 0
+768.0810 	EXP 	Display Frame 1
+768.2055 	EXP 	Display Frame 0
+768.3305 	EXP 	Display Frame 1
+768.4554 	EXP 	Display Frame 0
+768.5803 	EXP 	Display Frame 1
+768.7057 	EXP 	Display Frame 0
+768.8308 	EXP 	Display Frame 1
+768.9556 	EXP 	Display Frame 0
+769.0807 	EXP 	Display Frame 1
+769.2056 	EXP 	Display Frame 0
+769.3306 	EXP 	Display Frame 1
+769.4549 	DATA 	Keypress: t
+769.4573 	EXP 	Display Frame 0
+769.5809 	EXP 	Display Frame 1
+769.7053 	EXP 	Display Frame 0
+769.8309 	EXP 	Display Frame 1
+769.9557 	EXP 	Display Frame 0
+770.0806 	EXP 	Display Frame 1
+770.2058 	EXP 	Display Frame 0
+770.3308 	EXP 	Display Frame 1
+770.4556 	EXP 	Display Frame 0
+770.5805 	EXP 	Display Frame 1
+770.7057 	EXP 	Display Frame 0
+770.8306 	EXP 	Display Frame 1
+770.9555 	EXP 	Display Frame 0
+771.0807 	EXP 	Display Frame 1
+771.2056 	EXP 	Display Frame 0
+771.3306 	EXP 	Display Frame 1
+771.4548 	DATA 	Keypress: t
+771.4580 	EXP 	Display Frame 0
+771.5803 	EXP 	Display Frame 1
+771.7054 	EXP 	Display Frame 0
+771.8309 	EXP 	Display Frame 1
+771.9557 	EXP 	Display Frame 0
+772.0806 	EXP 	Display Frame 1
+772.2058 	EXP 	Display Frame 0
+772.3308 	EXP 	Display Frame 1
+772.4556 	EXP 	Display Frame 0
+772.5805 	EXP 	Display Frame 1
+772.7057 	EXP 	Display Frame 0
+772.8307 	EXP 	Display Frame 1
+772.9555 	EXP 	Display Frame 0
+773.0807 	EXP 	Display Frame 1
+773.2056 	EXP 	Display Frame 0
+773.3305 	EXP 	Display Frame 1
+773.4558 	EXP 	Display Frame 0
+773.5802 	EXP 	Display Frame 1
+773.7057 	EXP 	Display Frame 0
+773.8292 	DATA 	Keypress: t
+773.8316 	EXP 	Display Frame 1
+773.9557 	EXP 	Display Frame 0
+774.0804 	EXP 	Display Frame 1
+774.2055 	EXP 	Display Frame 0
+774.3306 	EXP 	Display Frame 1
+774.4556 	EXP 	Display Frame 0
+774.5809 	EXP 	Display Frame 1
+774.7057 	EXP 	Display Frame 0
+774.8307 	EXP 	Display Frame 1
+774.9558 	EXP 	Display Frame 0
+775.0806 	EXP 	Display Frame 1
+775.2056 	EXP 	Display Frame 0
+775.3309 	EXP 	Display Frame 1
+775.4557 	EXP 	Display Frame 0
+775.5806 	EXP 	Display Frame 1
+775.7056 	EXP 	Display Frame 0
+775.8293 	DATA 	Keypress: t
+775.8321 	EXP 	Display Frame 1
+775.9554 	EXP 	Display Frame 0
+776.0806 	EXP 	Display Frame 1
+776.2056 	EXP 	Display Frame 0
+776.3308 	EXP 	Display Frame 1
+776.4555 	EXP 	Display Frame 0
+776.5805 	EXP 	Display Frame 1
+776.7055 	EXP 	Display Frame 0
+776.8309 	EXP 	Display Frame 1
+776.9545 	EXP 	Display Frame 0
+777.0798 	EXP 	Display Frame 1
+777.2055 	EXP 	Display Frame 0
+777.3296 	EXP 	Display Frame 1
+777.4546 	EXP 	Display Frame 0
+777.5796 	EXP 	Display Frame 1
+777.7054 	EXP 	Display Frame 0
+777.8295 	EXP 	Display Frame 1
+777.9544 	EXP 	Display Frame 0
+778.0793 	EXP 	Display Frame 1
+778.2045 	DATA 	Keypress: t
+778.2072 	EXP 	Display Frame 0
+778.3298 	EXP 	Display Frame 1
+778.4544 	EXP 	Display Frame 0
+778.5797 	EXP 	Display Frame 1
+778.7045 	EXP 	Display Frame 0
+778.8297 	EXP 	Display Frame 1
+778.9557 	EXP 	Display Frame 0
+779.0802 	EXP 	Display Frame 1
+779.2052 	EXP 	Display Frame 0
+779.3303 	EXP 	Display Frame 1
+779.4555 	EXP 	Display Frame 0
+779.5806 	EXP 	Display Frame 1
+779.7055 	EXP 	Display Frame 0
+779.8307 	EXP 	Display Frame 1
+779.9556 	EXP 	Display Frame 0
+780.0803 	EXP 	Display Frame 1
+780.2048 	DATA 	Keypress: t
+780.2077 	EXP 	Display Frame 0
+780.3304 	EXP 	Display Frame 1
+780.4554 	EXP 	Display Frame 0
+780.5807 	EXP 	Display Frame 1
+780.7056 	EXP 	Display Frame 0
+780.8307 	EXP 	Display Frame 1
+780.9557 	EXP 	Display Frame 0
+781.0806 	EXP 	Display Frame 1
+781.2055 	EXP 	Display Frame 0
+781.3307 	EXP 	Display Frame 1
+781.4556 	EXP 	Display Frame 0
+781.5806 	EXP 	Display Frame 1
+781.7053 	EXP 	Display Frame 0
+781.8303 	EXP 	Display Frame 1
+781.9556 	EXP 	Display Frame 0
+782.0805 	EXP 	Display Frame 1
+782.2056 	EXP 	Display Frame 0
+782.3307 	EXP 	Display Frame 1
+782.4555 	EXP 	Display Frame 0
+782.5789 	DATA 	Keypress: t
+782.5813 	EXP 	Display Frame 1
+782.7058 	EXP 	Display Frame 0
+782.8303 	EXP 	Display Frame 1
+782.9557 	EXP 	Display Frame 0
+783.0806 	EXP 	Display Frame 1
+783.2055 	EXP 	Display Frame 0
+783.3308 	EXP 	Display Frame 1
+783.4556 	EXP 	Display Frame 0
+783.5806 	EXP 	Display Frame 1
+783.7057 	EXP 	Display Frame 0
+783.8306 	EXP 	Display Frame 1
+783.9556 	EXP 	Display Frame 0
+784.0807 	EXP 	Display Frame 1
+784.2056 	EXP 	Display Frame 0
+784.3307 	EXP 	Display Frame 1
+784.4555 	EXP 	Display Frame 0
+784.5789 	DATA 	Keypress: t
+784.5813 	EXP 	Display Frame 1
+784.7056 	EXP 	Display Frame 0
+784.8305 	EXP 	Display Frame 1
+784.9556 	EXP 	Display Frame 0
+785.0806 	EXP 	Display Frame 1
+785.2055 	EXP 	Display Frame 0
+785.3307 	EXP 	Display Frame 1
+785.4556 	EXP 	Display Frame 0
+785.5805 	EXP 	Display Frame 1
+785.7057 	EXP 	Display Frame 0
+785.8304 	EXP 	Display Frame 1
+785.9554 	EXP 	Display Frame 0
+786.0805 	EXP 	Display Frame 1
+786.2053 	EXP 	Display Frame 0
+786.3304 	EXP 	Display Frame 1
+786.4559 	EXP 	Display Frame 0
+786.5806 	EXP 	Display Frame 1
+786.7056 	EXP 	Display Frame 0
+786.8309 	EXP 	Display Frame 1
+786.9550 	DATA 	Keypress: t
+786.9575 	EXP 	Display Frame 0
+786.9589 	EXP 	Display Fixation
+788.8777 	DATA 	Keypress: t
+791.3249 	DATA 	Keypress: t
+793.2517 	DATA 	Keypress: t
+795.6998 	DATA 	Keypress: t
+797.6265 	DATA 	Keypress: t
+800.0745 	DATA 	Keypress: t
+802.0021 	DATA 	Keypress: t
+804.4486 	DATA 	Keypress: t
+806.3766 	DATA 	Keypress: t
+808.8235 	DATA 	Keypress: t
+810.7509 	DATA 	Keypress: t
+813.1990 	DATA 	Keypress: t
+815.1257 	DATA 	Keypress: t
+817.5743 	DATA 	Keypress: t
+819.5007 	DATA 	Keypress: t
+821.9479 	DATA 	Keypress: t
+822.0758 	EXP 	Display Frame 1
+822.2006 	EXP 	Display Frame 0
+822.3259 	EXP 	Display Frame 1
+822.4507 	EXP 	Display Frame 0
+822.5759 	EXP 	Display Frame 1
+822.7008 	EXP 	Display Frame 0
+822.8257 	EXP 	Display Frame 1
+822.9509 	EXP 	Display Frame 0
+823.0753 	EXP 	Display Frame 1
+823.2006 	EXP 	Display Frame 0
+823.3257 	EXP 	Display Frame 1
+823.4506 	EXP 	Display Frame 0
+823.5757 	EXP 	Display Frame 1
+823.7007 	EXP 	Display Frame 0
+823.8259 	EXP 	Display Frame 1
+823.9502 	DATA 	Keypress: t
+823.9535 	EXP 	Display Frame 0
+824.0755 	EXP 	Display Frame 1
+824.2006 	EXP 	Display Frame 0
+824.3259 	EXP 	Display Frame 1
+824.4507 	EXP 	Display Frame 0
+824.5758 	EXP 	Display Frame 1
+824.7008 	EXP 	Display Frame 0
+824.8258 	EXP 	Display Frame 1
+824.9508 	EXP 	Display Frame 0
+825.0759 	EXP 	Display Frame 1
+825.2007 	EXP 	Display Frame 0
+825.3260 	EXP 	Display Frame 1
+825.4508 	EXP 	Display Frame 0
+825.5756 	EXP 	Display Frame 1
+825.7010 	EXP 	Display Frame 0
+825.8259 	EXP 	Display Frame 1
+825.9507 	EXP 	Display Frame 0
+826.0757 	EXP 	Display Frame 1
+826.2008 	EXP 	Display Frame 0
+826.3261 	EXP 	Display Frame 1
+826.3271 	DATA 	Keypress: t
+826.4507 	EXP 	Display Frame 0
+826.5756 	EXP 	Display Frame 1
+826.7007 	EXP 	Display Frame 0
+826.8258 	EXP 	Display Frame 1
+826.9508 	EXP 	Display Frame 0
+827.0758 	EXP 	Display Frame 1
+827.2007 	EXP 	Display Frame 0
+827.3260 	EXP 	Display Frame 1
+827.4508 	EXP 	Display Frame 0
+827.5757 	EXP 	Display Frame 1
+827.7009 	EXP 	Display Frame 0
+827.8259 	EXP 	Display Frame 1
+827.9507 	EXP 	Display Frame 0
+828.0757 	EXP 	Display Frame 1
+828.2008 	EXP 	Display Frame 0
+828.3245 	DATA 	Keypress: t
+828.3277 	EXP 	Display Frame 1
+828.4505 	EXP 	Display Frame 0
+828.5753 	EXP 	Display Frame 1
+828.7006 	EXP 	Display Frame 0
+828.8257 	EXP 	Display Frame 1
+828.9504 	EXP 	Display Frame 0
+829.0763 	EXP 	Display Frame 1
+829.2007 	EXP 	Display Frame 0
+829.3257 	EXP 	Display Frame 1
+829.4508 	EXP 	Display Frame 0
+829.5755 	EXP 	Display Frame 1
+829.7010 	EXP 	Display Frame 0
+829.8259 	EXP 	Display Frame 1
+829.9507 	EXP 	Display Frame 0
+830.0759 	EXP 	Display Frame 1
+830.2007 	EXP 	Display Frame 0
+830.3258 	EXP 	Display Frame 1
+830.4507 	EXP 	Display Frame 0
+830.5757 	EXP 	Display Frame 1
+830.7009 	EXP 	Display Frame 0
+830.7020 	DATA 	Keypress: t
+830.8259 	EXP 	Display Frame 1
+830.9506 	EXP 	Display Frame 0
+831.0757 	EXP 	Display Frame 1
+831.2007 	EXP 	Display Frame 0
+831.3259 	EXP 	Display Frame 1
+831.4507 	EXP 	Display Frame 0
+831.5756 	EXP 	Display Frame 1
+831.7006 	EXP 	Display Frame 0
+831.8259 	EXP 	Display Frame 1
+831.9507 	EXP 	Display Frame 0
+832.0759 	EXP 	Display Frame 1
+832.2009 	EXP 	Display Frame 0
+832.3258 	EXP 	Display Frame 1
+832.4508 	EXP 	Display Frame 0
+832.5757 	EXP 	Display Frame 1
+832.6997 	DATA 	Keypress: t
+832.7029 	EXP 	Display Frame 0
+832.8257 	EXP 	Display Frame 1
+832.9506 	EXP 	Display Frame 0
+833.0757 	EXP 	Display Frame 1
+833.2006 	EXP 	Display Frame 0
+833.3259 	EXP 	Display Frame 1
+833.4507 	EXP 	Display Frame 0
+833.5747 	EXP 	Display Frame 1
+833.7010 	EXP 	Display Frame 0
+833.8259 	EXP 	Display Frame 1
+833.9508 	EXP 	Display Frame 0
+834.0754 	EXP 	Display Frame 1
+834.2008 	EXP 	Display Frame 0
+834.3255 	EXP 	Display Frame 1
+834.4506 	EXP 	Display Frame 0
+834.5747 	EXP 	Display Frame 1
+834.7008 	EXP 	Display Frame 0
+834.8259 	EXP 	Display Frame 1
+834.9508 	EXP 	Display Frame 0
+835.0758 	EXP 	Display Frame 1
+835.0768 	DATA 	Keypress: t
+835.2009 	EXP 	Display Frame 0
+835.3256 	EXP 	Display Frame 1
+835.4507 	EXP 	Display Frame 0
+835.5746 	EXP 	Display Frame 1
+835.7008 	EXP 	Display Frame 0
+835.8258 	EXP 	Display Frame 1
+835.9506 	EXP 	Display Frame 0
+836.0758 	EXP 	Display Frame 1
+836.2008 	EXP 	Display Frame 0
+836.3258 	EXP 	Display Frame 1
+836.4508 	EXP 	Display Frame 0
+836.5747 	EXP 	Display Frame 1
+836.7008 	EXP 	Display Frame 0
+836.8258 	EXP 	Display Frame 1
+836.9508 	EXP 	Display Frame 0
+837.0744 	DATA 	Keypress: t
+837.0774 	EXP 	Display Frame 1
+837.2004 	EXP 	Display Frame 0
+837.3259 	EXP 	Display Frame 1
+837.4507 	EXP 	Display Frame 0
+837.5744 	EXP 	Display Frame 1
+837.7008 	EXP 	Display Frame 0
+837.8256 	EXP 	Display Frame 1
+837.9509 	EXP 	Display Frame 0
+838.0757 	EXP 	Display Frame 1
+838.2007 	EXP 	Display Frame 0
+838.3256 	EXP 	Display Frame 1
+838.4508 	EXP 	Display Frame 0
+838.5745 	EXP 	Display Frame 1
+838.7006 	EXP 	Display Frame 0
+838.8259 	EXP 	Display Frame 1
+838.9508 	EXP 	Display Frame 0
+839.0757 	EXP 	Display Frame 1
+839.2008 	EXP 	Display Frame 0
+839.3259 	EXP 	Display Frame 1
+839.4495 	DATA 	Keypress: t
+839.4523 	EXP 	Display Frame 0
+839.5749 	EXP 	Display Frame 1
+839.7012 	EXP 	Display Frame 0
+839.8255 	EXP 	Display Frame 1
+839.9507 	EXP 	Display Frame 0
+840.0759 	EXP 	Display Frame 1
+840.2009 	EXP 	Display Frame 0
+840.3254 	EXP 	Display Frame 1
+840.4508 	EXP 	Display Frame 0
+840.5758 	EXP 	Display Frame 1
+840.7009 	EXP 	Display Frame 0
+840.8258 	EXP 	Display Frame 1
+840.9507 	EXP 	Display Frame 0
+841.0757 	EXP 	Display Frame 1
+841.2008 	EXP 	Display Frame 0
+841.3260 	EXP 	Display Frame 1
+841.4498 	DATA 	Keypress: t
+841.4526 	EXP 	Display Frame 0
+841.5756 	EXP 	Display Frame 1
+841.7006 	EXP 	Display Frame 0
+841.8258 	EXP 	Display Frame 1
+841.9508 	EXP 	Display Frame 0
+842.0758 	EXP 	Display Frame 1
+842.2007 	EXP 	Display Frame 0
+842.3259 	EXP 	Display Frame 1
+842.4508 	EXP 	Display Frame 0
+842.5758 	EXP 	Display Frame 1
+842.7006 	EXP 	Display Frame 0
+842.8259 	EXP 	Display Frame 1
+842.9507 	EXP 	Display Frame 0
+843.0757 	EXP 	Display Frame 1
+843.2008 	EXP 	Display Frame 0
+843.3257 	EXP 	Display Frame 1
+843.4507 	EXP 	Display Frame 0
+843.5759 	EXP 	Display Frame 1
+843.7007 	EXP 	Display Frame 0
+843.8248 	DATA 	Keypress: t
+843.8274 	EXP 	Display Frame 1
+843.9508 	EXP 	Display Frame 0
+844.0756 	EXP 	Display Frame 1
+844.2007 	EXP 	Display Frame 0
+844.3259 	EXP 	Display Frame 1
+844.4508 	EXP 	Display Frame 0
+844.5758 	EXP 	Display Frame 1
+844.7010 	EXP 	Display Frame 0
+844.8259 	EXP 	Display Frame 1
+844.9508 	EXP 	Display Frame 0
+845.0754 	EXP 	Display Frame 1
+845.2006 	EXP 	Display Frame 0
+845.3255 	EXP 	Display Frame 1
+845.4507 	EXP 	Display Frame 0
+845.5759 	EXP 	Display Frame 1
+845.7007 	EXP 	Display Frame 0
+845.8250 	DATA 	Keypress: t
+845.8278 	EXP 	Display Frame 1
+845.9507 	EXP 	Display Frame 0
+846.0756 	EXP 	Display Frame 1
+846.2008 	EXP 	Display Frame 0
+846.3262 	EXP 	Display Frame 1
+846.4504 	EXP 	Display Frame 0
+846.5755 	EXP 	Display Frame 1
+846.7008 	EXP 	Display Frame 0
+846.8252 	EXP 	Display Frame 1
+846.9505 	EXP 	Display Frame 0
+847.0757 	EXP 	Display Frame 1
+847.2008 	EXP 	Display Frame 0
+847.3258 	EXP 	Display Frame 1
+847.4508 	EXP 	Display Frame 0
+847.5758 	EXP 	Display Frame 1
+847.7007 	EXP 	Display Frame 0
+847.8259 	EXP 	Display Frame 1
+847.9508 	EXP 	Display Frame 0
+848.0758 	EXP 	Display Frame 1
+848.2000 	DATA 	Keypress: t
+848.2029 	EXP 	Display Frame 0
+848.3258 	EXP 	Display Frame 1
+848.4506 	EXP 	Display Frame 0
+848.5758 	EXP 	Display Frame 1
+848.7009 	EXP 	Display Frame 0
+848.8258 	EXP 	Display Frame 1
+848.9507 	EXP 	Display Frame 0
+849.0758 	EXP 	Display Frame 1
+849.2008 	EXP 	Display Frame 0
+849.3255 	EXP 	Display Frame 1
+849.4510 	EXP 	Display Frame 0
+849.5760 	EXP 	Display Frame 1
+849.7004 	EXP 	Display Frame 0
+849.8259 	EXP 	Display Frame 1
+849.9508 	EXP 	Display Frame 0
+850.0758 	EXP 	Display Frame 1
+850.2001 	DATA 	Keypress: t
+850.2030 	EXP 	Display Frame 0
+850.3256 	EXP 	Display Frame 1
+850.4506 	EXP 	Display Frame 0
+850.5754 	EXP 	Display Frame 1
+850.7006 	EXP 	Display Frame 0
+850.8255 	EXP 	Display Frame 1
+850.9505 	EXP 	Display Frame 0
+851.0758 	EXP 	Display Frame 1
+851.2007 	EXP 	Display Frame 0
+851.3258 	EXP 	Display Frame 1
+851.4508 	EXP 	Display Frame 0
+851.5758 	EXP 	Display Frame 1
+851.7005 	EXP 	Display Frame 0
+851.8259 	EXP 	Display Frame 1
+851.9508 	EXP 	Display Frame 0
+852.0757 	EXP 	Display Frame 1
+852.2009 	EXP 	Display Frame 0
+852.3258 	EXP 	Display Frame 1
+852.4507 	EXP 	Display Frame 0
+852.5750 	DATA 	Keypress: t
+852.5774 	EXP 	Display Frame 1
+852.7008 	EXP 	Display Frame 0
+852.8256 	EXP 	Display Frame 1
+852.9506 	EXP 	Display Frame 0
+853.0759 	EXP 	Display Frame 1
+853.2007 	EXP 	Display Frame 0
+853.3258 	EXP 	Display Frame 1
+853.4508 	EXP 	Display Frame 0
+853.5764 	EXP 	Display Frame 1
+853.7003 	EXP 	Display Frame 0
+853.8257 	EXP 	Display Frame 1
+853.9504 	EXP 	Display Frame 0
+854.0757 	EXP 	Display Frame 1
+854.2008 	EXP 	Display Frame 0
+854.3259 	EXP 	Display Frame 1
+854.4507 	EXP 	Display Frame 0
+854.5752 	DATA 	Keypress: t
+854.5783 	EXP 	Display Frame 1
+854.7006 	EXP 	Display Frame 0
+854.8255 	EXP 	Display Frame 1
+854.9509 	EXP 	Display Frame 0
+855.0757 	EXP 	Display Frame 1
+855.2007 	EXP 	Display Frame 0
+855.3257 	EXP 	Display Frame 1
+855.4508 	EXP 	Display Frame 0
+855.5763 	EXP 	Display Frame 1
+855.7005 	EXP 	Display Frame 0
+855.8257 	EXP 	Display Frame 1
+855.9507 	EXP 	Display Frame 0
+856.0754 	EXP 	Display Frame 1
+856.2006 	EXP 	Display Frame 0
+856.3256 	EXP 	Display Frame 1
+856.4505 	EXP 	Display Frame 0
+856.5758 	EXP 	Display Frame 1
+856.7007 	EXP 	Display Frame 0
+856.8257 	EXP 	Display Frame 1
+856.9500 	DATA 	Keypress: t
+856.9527 	EXP 	Display Frame 0
+856.9543 	EXP 	Display Fixation
+858.8729 	DATA 	Keypress: t
+861.3207 	DATA 	Keypress: t
+863.2482 	DATA 	Keypress: t
+865.6958 	DATA 	Keypress: t
+867.6232 	DATA 	Keypress: t
+870.0698 	DATA 	Keypress: t
+871.9979 	DATA 	Keypress: t
+874.4454 	DATA 	Keypress: t
+876.3720 	DATA 	Keypress: t
+878.8203 	DATA 	Keypress: t
+880.7473 	DATA 	Keypress: t
+883.1950 	DATA 	Keypress: t
+885.1224 	DATA 	Keypress: t
+887.5692 	DATA 	Keypress: t
+889.4972 	DATA 	Keypress: t
+891.9443 	DATA 	Keypress: t
+892.0712 	EXP 	Display Frame 1
+892.1970 	EXP 	Display Frame 0
+892.3222 	EXP 	Display Frame 1
+892.4470 	EXP 	Display Frame 0
+892.5723 	EXP 	Display Frame 1
+892.6971 	EXP 	Display Frame 0
+892.8221 	EXP 	Display Frame 1
+892.9471 	EXP 	Display Frame 0
+893.0720 	EXP 	Display Frame 1
+893.1971 	EXP 	Display Frame 0
+893.3222 	EXP 	Display Frame 1
+893.4473 	EXP 	Display Frame 0
+893.5719 	EXP 	Display Frame 1
+893.6972 	EXP 	Display Frame 0
+893.8223 	EXP 	Display Frame 1
+893.9461 	DATA 	Keypress: t
+893.9490 	EXP 	Display Frame 0
+894.0718 	EXP 	Display Frame 1
+894.1970 	EXP 	Display Frame 0
+894.3221 	EXP 	Display Frame 1
+894.4470 	EXP 	Display Frame 0
+894.5717 	EXP 	Display Frame 1
+894.6971 	EXP 	Display Frame 0
+894.8218 	EXP 	Display Frame 1
+894.9472 	EXP 	Display Frame 0
+895.0721 	EXP 	Display Frame 1
+895.1970 	EXP 	Display Frame 0
+895.3222 	EXP 	Display Frame 1
+895.4471 	EXP 	Display Frame 0
+895.5721 	EXP 	Display Frame 1
+895.6972 	EXP 	Display Frame 0
+895.8221 	EXP 	Display Frame 1
+895.9470 	EXP 	Display Frame 0
+896.0723 	EXP 	Display Frame 1
+896.1971 	EXP 	Display Frame 0
+896.3222 	EXP 	Display Frame 1
+896.3232 	DATA 	Keypress: t
+896.4472 	EXP 	Display Frame 0
+896.5719 	EXP 	Display Frame 1
+896.6970 	EXP 	Display Frame 0
+896.8221 	EXP 	Display Frame 1
+896.9469 	EXP 	Display Frame 0
+897.0722 	EXP 	Display Frame 1
+897.1970 	EXP 	Display Frame 0
+897.3223 	EXP 	Display Frame 1
+897.4471 	EXP 	Display Frame 0
+897.5721 	EXP 	Display Frame 1
+897.6972 	EXP 	Display Frame 0
+897.8221 	EXP 	Display Frame 1
+897.9470 	EXP 	Display Frame 0
+898.0723 	EXP 	Display Frame 1
+898.1971 	EXP 	Display Frame 0
+898.3212 	DATA 	Keypress: t
+898.3240 	EXP 	Display Frame 1
+898.4470 	EXP 	Display Frame 0
+898.5720 	EXP 	Display Frame 1
+898.6970 	EXP 	Display Frame 0
+898.8221 	EXP 	Display Frame 1
+898.9471 	EXP 	Display Frame 0
+899.0722 	EXP 	Display Frame 1
+899.1970 	EXP 	Display Frame 0
+899.3222 	EXP 	Display Frame 1
+899.4471 	EXP 	Display Frame 0
+899.5723 	EXP 	Display Frame 1
+899.6971 	EXP 	Display Frame 0
+899.8221 	EXP 	Display Frame 1
+899.9472 	EXP 	Display Frame 0
+900.0717 	EXP 	Display Frame 1
+900.1970 	EXP 	Display Frame 0
+900.3218 	EXP 	Display Frame 1
+900.4470 	EXP 	Display Frame 0
+900.5722 	EXP 	Display Frame 1
+900.6970 	EXP 	Display Frame 0
+900.6980 	DATA 	Keypress: t
+900.8223 	EXP 	Display Frame 1
+900.9469 	EXP 	Display Frame 0
+901.0720 	EXP 	Display Frame 1
+901.1970 	EXP 	Display Frame 0
+901.3225 	EXP 	Display Frame 1
+901.4469 	EXP 	Display Frame 0
+901.5720 	EXP 	Display Frame 1
+901.6970 	EXP 	Display Frame 0
+901.8222 	EXP 	Display Frame 1
+901.9472 	EXP 	Display Frame 0
+902.0723 	EXP 	Display Frame 1
+902.1971 	EXP 	Display Frame 0
+902.3220 	EXP 	Display Frame 1
+902.4471 	EXP 	Display Frame 0
+902.5722 	EXP 	Display Frame 1
+902.6963 	DATA 	Keypress: t
+902.6990 	EXP 	Display Frame 0
+902.8220 	EXP 	Display Frame 1
+902.9471 	EXP 	Display Frame 0
+903.0722 	EXP 	Display Frame 1
+903.1972 	EXP 	Display Frame 0
+903.3221 	EXP 	Display Frame 1
+903.4470 	EXP 	Display Frame 0
+903.5723 	EXP 	Display Frame 1
+903.6971 	EXP 	Display Frame 0
+903.8222 	EXP 	Display Frame 1
+903.9472 	EXP 	Display Frame 0
+904.0722 	EXP 	Display Frame 1
+904.1971 	EXP 	Display Frame 0
+904.3223 	EXP 	Display Frame 1
+904.4471 	EXP 	Display Frame 0
+904.5722 	EXP 	Display Frame 1
+904.6970 	EXP 	Display Frame 0
+904.8222 	EXP 	Display Frame 1
+904.9471 	EXP 	Display Frame 0
+905.0708 	DATA 	Keypress: t
+905.0738 	EXP 	Display Frame 1
+905.1972 	EXP 	Display Frame 0
+905.3219 	EXP 	Display Frame 1
+905.4470 	EXP 	Display Frame 0
+905.5717 	EXP 	Display Frame 1
+905.6972 	EXP 	Display Frame 0
+905.8221 	EXP 	Display Frame 1
+905.9470 	EXP 	Display Frame 0
+906.0722 	EXP 	Display Frame 1
+906.1970 	EXP 	Display Frame 0
+906.3226 	EXP 	Display Frame 1
+906.4468 	EXP 	Display Frame 0
+906.5719 	EXP 	Display Frame 1
+906.6972 	EXP 	Display Frame 0
+906.8222 	EXP 	Display Frame 1
+906.9471 	EXP 	Display Frame 0
+907.0713 	DATA 	Keypress: t
+907.0744 	EXP 	Display Frame 1
+907.1970 	EXP 	Display Frame 0
+907.3222 	EXP 	Display Frame 1
+907.4470 	EXP 	Display Frame 0
+907.5723 	EXP 	Display Frame 1
+907.6967 	EXP 	Display Frame 0
+907.8219 	EXP 	Display Frame 1
+907.9470 	EXP 	Display Frame 0
+908.0722 	EXP 	Display Frame 1
+908.1971 	EXP 	Display Frame 0
+908.3223 	EXP 	Display Frame 1
+908.4471 	EXP 	Display Frame 0
+908.5721 	EXP 	Display Frame 1
+908.6972 	EXP 	Display Frame 0
+908.8221 	EXP 	Display Frame 1
+908.9472 	EXP 	Display Frame 0
+909.0723 	EXP 	Display Frame 1
+909.1972 	EXP 	Display Frame 0
+909.3222 	EXP 	Display Frame 1
+909.4463 	DATA 	Keypress: t
+909.4485 	EXP 	Display Frame 0
+909.5724 	EXP 	Display Frame 1
+909.6968 	EXP 	Display Frame 0
+909.8219 	EXP 	Display Frame 1
+909.9473 	EXP 	Display Frame 0
+910.0722 	EXP 	Display Frame 1
+910.1972 	EXP 	Display Frame 0
+910.3222 	EXP 	Display Frame 1
+910.4472 	EXP 	Display Frame 0
+910.5721 	EXP 	Display Frame 1
+910.6972 	EXP 	Display Frame 0
+910.8221 	EXP 	Display Frame 1
+910.9471 	EXP 	Display Frame 0
+911.0717 	EXP 	Display Frame 1
+911.1976 	EXP 	Display Frame 0
+911.3219 	EXP 	Display Frame 1
+911.4457 	DATA 	Keypress: t
+911.4485 	EXP 	Display Frame 0
+911.5718 	EXP 	Display Frame 1
+911.6969 	EXP 	Display Frame 0
+911.8223 	EXP 	Display Frame 1
+911.9472 	EXP 	Display Frame 0
+912.0722 	EXP 	Display Frame 1
+912.1970 	EXP 	Display Frame 0
+912.3223 	EXP 	Display Frame 1
+912.4471 	EXP 	Display Frame 0
+912.5720 	EXP 	Display Frame 1
+912.6972 	EXP 	Display Frame 0
+912.8222 	EXP 	Display Frame 1
+912.9470 	EXP 	Display Frame 0
+913.0723 	EXP 	Display Frame 1
+913.1971 	EXP 	Display Frame 0
+913.3222 	EXP 	Display Frame 1
+913.4472 	EXP 	Display Frame 0
+913.5722 	EXP 	Display Frame 1
+913.6970 	EXP 	Display Frame 0
+913.8209 	DATA 	Keypress: t
+913.8235 	EXP 	Display Frame 1
+913.9474 	EXP 	Display Frame 0
+914.0719 	EXP 	Display Frame 1
+914.1968 	EXP 	Display Frame 0
+914.3223 	EXP 	Display Frame 1
+914.4469 	EXP 	Display Frame 0
+914.5721 	EXP 	Display Frame 1
+914.6972 	EXP 	Display Frame 0
+914.8223 	EXP 	Display Frame 1
+914.9470 	EXP 	Display Frame 0
+915.0723 	EXP 	Display Frame 1
+915.1971 	EXP 	Display Frame 0
+915.3220 	EXP 	Display Frame 1
+915.4472 	EXP 	Display Frame 0
+915.5723 	EXP 	Display Frame 1
+915.6970 	EXP 	Display Frame 0
+915.8209 	DATA 	Keypress: t
+915.8239 	EXP 	Display Frame 1
+915.9469 	EXP 	Display Frame 0
+916.0720 	EXP 	Display Frame 1
+916.1970 	EXP 	Display Frame 0
+916.3221 	EXP 	Display Frame 1
+916.4469 	EXP 	Display Frame 0
+916.5717 	EXP 	Display Frame 1
+916.6975 	EXP 	Display Frame 0
+916.8219 	EXP 	Display Frame 1
+916.9468 	EXP 	Display Frame 0
+917.0723 	EXP 	Display Frame 1
+917.1971 	EXP 	Display Frame 0
+917.3221 	EXP 	Display Frame 1
+917.4472 	EXP 	Display Frame 0
+917.5722 	EXP 	Display Frame 1
+917.6970 	EXP 	Display Frame 0
+917.8221 	EXP 	Display Frame 1
+917.9471 	EXP 	Display Frame 0
+918.0720 	EXP 	Display Frame 1
+918.1972 	EXP 	Display Frame 0
+918.3220 	EXP 	Display Frame 1
+918.4470 	EXP 	Display Frame 0
+918.5721 	EXP 	Display Frame 1
+918.6970 	EXP 	Display Frame 0
+918.8221 	EXP 	Display Frame 1
+918.9470 	EXP 	Display Frame 0
+919.0723 	EXP 	Display Frame 1
+919.1971 	EXP 	Display Frame 0
+919.3220 	EXP 	Display Frame 1
+919.4471 	EXP 	Display Frame 0
+919.5722 	EXP 	Display Frame 1
+919.6969 	EXP 	Display Frame 0
+919.8222 	EXP 	Display Frame 1
+919.9470 	EXP 	Display Frame 0
+920.0722 	EXP 	Display Frame 1
+920.1972 	EXP 	Display Frame 0
+920.3221 	EXP 	Display Frame 1
+920.4470 	EXP 	Display Frame 0
+920.5722 	EXP 	Display Frame 1
+920.6971 	EXP 	Display Frame 0
+920.8221 	EXP 	Display Frame 1
+920.9470 	EXP 	Display Frame 0
+921.0723 	EXP 	Display Frame 1
+921.1971 	EXP 	Display Frame 0
+921.3221 	EXP 	Display Frame 1
+921.4471 	EXP 	Display Frame 0
+921.5722 	EXP 	Display Frame 1
+921.6970 	EXP 	Display Frame 0
+921.8222 	EXP 	Display Frame 1
+921.9471 	EXP 	Display Frame 0
+922.0718 	EXP 	Display Frame 1
+922.1970 	EXP 	Display Frame 0
+922.3219 	EXP 	Display Frame 1
+922.4468 	EXP 	Display Frame 0
+922.5723 	EXP 	Display Frame 1
+922.6971 	EXP 	Display Frame 0
+922.8222 	EXP 	Display Frame 1
+922.9472 	EXP 	Display Frame 0
+923.0723 	EXP 	Display Frame 1
+923.1970 	EXP 	Display Frame 0
+923.3223 	EXP 	Display Frame 1
+923.4472 	EXP 	Display Frame 0
+923.5722 	EXP 	Display Frame 1
+923.6979 	EXP 	Display Frame 0
+923.8207 	DATA 	Keypress: q
+923.8234 	EXP 	Display Frame 1
+923.8330 	EXP 	topMsg: height = 0.1
+923.8330 	EXP 	topMsg: height = 0.1
+923.8330 	EXP 	topMsg: text = "Thank you very much! \n\nThat's it with the tapping"
+923.8330 	EXP 	bottomMsg: height = 0.1
+923.8330 	EXP 	bottomMsg: height = 0.1
+923.8330 	EXP 	bottomMsg: text = "Please relax for the ramaining time \n\n Press 'q' or 'escape' to end the session."
+923.8330 	EXP 	Display TheEnd
+959.4554 	DATA 	Keypress: q
+959.5404 	EXP 	win: mouseVisible = True
