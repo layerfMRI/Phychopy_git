@@ -17,7 +17,7 @@ import random # for randomization of trials
 
 # ====================== #
 # ===== PARAMETERS ===== #
-# ====================== #
+# ====================== #tttttttttttttttttt
 # Save the parameters declared below?
 saveParams = True;
 newParamsFilename = 'TappingParams.pickle'
@@ -28,18 +28,18 @@ params = {
     'nBlocks': 68,            # number of blocks in this session (number of on and off blocks)
     'condition': 'TapRight',
     'movieFolder': 'Images/', # relative path to tapping videos
-    'blockDur_TRs':12,            # duration of each tapping block (in TRs)
-    'restDur_TRs':12,             # duration of each rest block (in TRs)
+    'blockDur_TRs':160,            # duration of each tapping block (in TRs)
+    'restDur_TRs':160,             # duration of each rest block (in TRs)
     'tStartup_TRs': 0,            # pause time before starting first stimulus (in TRs)
     'triggerKey': 't',        # key from scanner that says scan is starting
 # declare prompt and question files
     'skipPrompts': False,     # go right to the scanner-wait page
     'promptDir': 'Text/',  # directory containing prompts and questions files
 # declare display parameters
-    'fullScreen': True,       # run in full screen mode?
+    'fullScreen': True,       # run in full screen mode?ttttttttt
     'screenToShow': 0,        # display on primary screen (0) or secondary (1)? # Renzo hats auf null gesetzt
     'fixCrossSize': 100,       # size of cross, in pixels
-    'movieSize': (1600,1000), # size of image in pixels # Renzo hat te zahlen verdoppelt
+    'movieSize': (1600,1600), # size of image in pixels # Renzo hat te zahlen verdoppelt
     'fixCrossPos': [0,0],     # (x,y) pos of fixation cross displayed before each stimulus (for gaze drift correction)
     'screenColor':(128,128,128), # in rgb255 space: (r,g,b) all between 0 and 255
     'textHeight': 40 #(in pixels)
@@ -141,11 +141,14 @@ logging.log(level=logging.INFO, msg='---END PARAMETERS---')
 if params['fullScreen']: 
     screens = AppKit.NSScreen.screens()
     screenRes = (int(screens[params['screenToShow']].frame().size.width), int(screens[params['screenToShow']].frame().size.height))
-#    screenRes = [1920, 1200]
+#    screenRes = [1920, 1080]
     if params['screenToShow']>0:
         params['fullScreen'] = False
 else:
-    screenRes = [800,600]
+    screenRes = [1920,1080]
+
+#screenRes = [1920,1080]
+params['fullScreen'] = True
 
 print ("screenRes = [%d,%d]"%screenRes)
 
