@@ -2,7 +2,7 @@
 """Display multi-page text Twith a quiz at the end."""
 #Renzo use this in first experT
 
-#USE this with Psychopy2 
+#USE this with Psychopy2 =
 import pyglet
 print(pyglet.version)
 from pyglet.gl import *
@@ -31,10 +31,10 @@ params = {
     'blockDur_TRs':160,            # duration of each tapping block (in TRs)
     'restDur_TRs':160,             # duration of each rest block (in TRs)
     'tStartup_TRs': 0,            # pause time before starting first stimulus (in TRs)
-    'triggerKey': 't',        # key from scanner that says scan is starting
+    'triggerKey': '=',        # key from scanner that says scan is starting
 # declare prompt and question files
     'skipPrompts': False,     # go right to the scanner-wait page
-    'promptDir': 'Text/',  # directory containing prompts and questions files
+    'promptDir': 'Text/',  # directory containing prompts and questions== files
 # declare display parameters
     'fullScreen': True,       # run in full screen mode?ttttttttt
     'screenToShow': 0,        # display on primary screen (0) or secondary (1)? # Renzo hats auf null gesetzt
