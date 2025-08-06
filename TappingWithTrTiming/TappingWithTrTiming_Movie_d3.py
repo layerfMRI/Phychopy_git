@@ -198,14 +198,14 @@ def SetFlipTimeToNow():
 
 def CheckForTriggers():
     # get new keys
-    newKeys = event.getKeys(keyList=[params['triggerKey'], 'q','escape'],timeStamped=globalClock)
+    newKeys = event.getKeys(keyList=['=', 'q','escape'],timeStamped=globalClock)
     # check each keypress for escape or trigger keys
     nTriggers = 0
     if len(newKeys)>0:
         for thisKey in newKeys: 
             if thisKey[0] in ['q','escape']: # escape keys
                 CoolDown() # exit gracefully
-            elif thisKey[0] == params['triggerKey']:
+            elif thisKey[0] == '=':
                 nTriggers = nTriggers + 1
                 
     return nTriggers
@@ -306,7 +306,7 @@ message1.draw()
 message2.draw()
 win.logOnFlip(level=logging.EXP, msg='PleaseDontMove') #'Display WaitingForScanner')
 win.flip()
-event.waitKeys(keyList=params['triggerKey'])
+event.waitKeys(keyList='=')
 tStartSession = globalClock.getTime()
 AddToFlipTime(tStartSession)
 
