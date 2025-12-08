@@ -2,7 +2,7 @@
 """Display multi-page text Twith a quiz at the end."""
 #Renzo use this in first experT
 
-#USE this with Psychopy2 =
+#USE this with Psychopy2 ====
 import pyglet
 print(pyglet.version)
 from pyglet.gl import *
@@ -17,7 +17,7 @@ import random # for randomization of trials
 
 # ====================== #
 # ===== PARAMETERS ===== #
-# ====================== #tttttttttttttttttt
+# ====================== #==
 # Save the parameters declared below?
 saveParams = True;
 newParamsFilename = 'TappingParams.pickle'
@@ -27,21 +27,23 @@ params = {
 # Declare stimulus and response parameters
     'nBlocks': 68,            # number of blocks in this session (number of on and off blocks)
     'condition': 'TapRight',
-    'movieFolder': 'Images/', # relative path to tapping videos
-    'blockDur_TRs':160,            # duration of each tapping block (in TRs)
-    'restDur_TRs':160,             # duration of each rest block (in TRs)
+    'movieFolder': 'images/', # relative path to tapping videos
+    'movieFolder2': 'images/', # relative path to tapping videos
+    'blockDur_TRs':6,            # duration of each tapping block (in TRs)
+    'block2Dur_TRs':6,            # duration of each tapping block (in TRs)
+    'restDur_TRs':6,             # duration of each rest block (in TRs)
     'tStartup_TRs': 0,            # pause time before starting first stimulus (in TRs)
-    'triggerKey': '=',        # key from scanner that says scan is starting
+    'triggerKey': 'equal',        # key from scanner that says scan is starting
 # declare prompt and question files
     'skipPrompts': False,     # go right to the scanner-wait page
-    'promptDir': 'Text/',  # directory containing prompts and questions== files
+    'promptDir': 'Text/',  # directory containing prompts and questions files
 # declare display parameters
-    'fullScreen': True,       # run in full screen mode?ttttttttt
-    'screenToShow': 0,        # display on primary screen (0) or secondary (1)? # Renzo hats auf null gesetzt
+    'fullScreen': True,       # run in full screen mode?
+    'screenToShow': 1,        # display on primary screen (0) or secondary (1)? # Renzo hats auf null gesetzt
     'fixCrossSize': 100,       # size of cross, in pixels
-    'movieSize': (1600,1600), # size of image in pixels # Renzo hat te zahlen verdoppelt
+    'movieSize': (1600,1000), # size of image in pixels # Renzo hat te zahlen verdoppelt
     'fixCrossPos': [0,0],     # (x,y) pos of fixation cross displayed before each stimulus (for gaze drift correction)
-    'screenColor':(128,128,128), # in rgb255 space: (r,g,b) all between 0 and 255
+    'screenColor':(119,119,119), # in rgb255 space: (r,g,b) all between 0 and 255
     'textHeight': 40 #(in pixels)
 }
 
@@ -141,14 +143,11 @@ logging.log(level=logging.INFO, msg='---END PARAMETERS---')
 if params['fullScreen']: 
     screens = AppKit.NSScreen.screens()
     screenRes = (int(screens[params['screenToShow']].frame().size.width), int(screens[params['screenToShow']].frame().size.height))
-#    screenRes = [1920, 1080]
+#    screenRes = [1920, 1200]
     if params['screenToShow']>0:
         params['fullScreen'] = False
 else:
-    screenRes = [1920,1080]
-
-#screenRes = [1920,1080]
-params['fullScreen'] = True
+    screenRes = [800,600]
 
 print ("screenRes = [%d,%d]"%screenRes)
 
@@ -177,6 +176,10 @@ message2 = visual.TextStim(win, pos=[0,-.5], wrapWidth=1.5, color='#000000', ali
 tapImages = []
 for i in range(0,stimList['movieNFrameList'][iCondition]):
     tapImages.append(visual.ImageStim(win, pos=[0,0], name='Movie Frame %d'%i,image='%s%s_%d.png'%(params['movieFolder'],stimList['moviePrefixList'][iCondition],i), units='pix', size=params['movieSize']))
+
+tapImages2 = []
+for i in range(0,stimList['movieNFrameList'][iCondition]):
+    tapImages2.append(visual.ImageStim(win, pos=[0,0], name='Movie Frame %d'%i,image='%s%s_%d.png'%(params['movieFolder2'],stimList['moviePrefixList'][iCondition],i), units='pix', size=params['movieSize']))
 # Create bottom text stim
 tapText = visual.TextStim(win, stimList['moviePromptList'][iCondition], wrapWidth=params['movieSize'][0], color='#000000', pos=(0, params['movieSize'][1]/2+params['textHeight']*2), height = params['textHeight'], units = 'pix')
 
@@ -198,14 +201,14 @@ def SetFlipTimeToNow():
 
 def CheckForTriggers():
     # get new keys
-    newKeys = event.getKeys(keyList=['=', 'q','escape'],timeStamped=globalClock)
+    newKeys = event.getKeys(keyList=[params['triggerKey'], 'q','escape'],timeStamped=globalClock)
     # check each keypress for escape or trigger keys
     nTriggers = 0
     if len(newKeys)>0:
         for thisKey in newKeys: 
             if thisKey[0] in ['q','escape']: # escape keys
                 CoolDown() # exit gracefully
-            elif thisKey[0] == '=':
+            elif thisKey[0] == params['triggerKey']:
                 nTriggers = nTriggers + 1
                 
     return nTriggers
@@ -240,6 +243,59 @@ def PlayTappingMovie(tapImages, tapText, dt, blockDur_TRs):
                 iFrame=0 # rewind to beginning
             # draw next frame
             tapImages[iFrame].draw()
+            tapText.draw()
+            win.logOnFlip(level=logging.EXP, msg='Display Frame %d'%iFrame)
+            
+            # Add to flip time
+            AddToFlipTime(dt)
+            
+            
+        else:
+            # Give the OS a break if a flip is not needed
+            pass
+            #ts.sleep(0.001)
+            
+        
+    
+    # allow screen update
+    SetFlipTimeToNow()
+    
+    # Get block time
+    tBlock = globalClock.getTime()-tBlockStart
+    print('Block time: %.3f seconds'%(tBlock))
+    
+    return (tBlock)
+
+def PlayTappingMovie2(tapImages, tapText, dt, blockDur_TRs):
+    
+    # Wait for escape key press or 'blockDur_TRs' triggers
+    nTriggers = 0
+    SetFlipTimeToNow()
+    tBlockStart = globalClock.getTime() # record time when window flipped
+    iFrame = 0
+    SetFlipTimeToNow()
+    while (nTriggers < blockDur_TRs): # until it's time for the next frame # while mov.status != visual.FINISHED:
+        # ---tapping movie
+        
+        # Only flip when a new frame should be displayed.
+        if globalClock.getTime()>=tNextFlip[0]:
+            # draw movie frame, draw text stim, and flip
+            win.flip()
+            
+            # Check for triggers and increment trigger count
+            nNew = CheckForTriggers()
+            nTriggers = nTriggers + nNew
+            # check for final trigger
+            if nTriggers >= blockDur_TRs:
+                break
+            
+            # increment iFrame
+            iFrame = iFrame+1
+            # check for loop or movie end
+            if iFrame >= len(tapImages2):
+                iFrame=0 # rewind to beginning
+            # draw next frame
+            tapImages2[iFrame].draw()
             tapText.draw()
             win.logOnFlip(level=logging.EXP, msg='Display Frame %d'%iFrame)
             
@@ -306,7 +362,7 @@ message1.draw()
 message2.draw()
 win.logOnFlip(level=logging.EXP, msg='PleaseDontMove') #'Display WaitingForScanner')
 win.flip()
-event.waitKeys(keyList='=')
+event.waitKeys(keyList=params['triggerKey'])
 tStartSession = globalClock.getTime()
 AddToFlipTime(tStartSession)
 
@@ -342,6 +398,23 @@ for iBlock in range(0,params['nBlocks']):
     print('Tapping Block %d: movie=%s, framerate=%.2f, dt=%.3f'%(iBlock, stimList['moviePrefixList'][iCondition], stimList['movieFrameRateList'][iCondition], dt) )
     # display tapping movie
     tBlock = PlayTappingMovie(tapImages=tapImages, tapText=tapText, dt=dt, blockDur_TRs=params['blockDur_TRs'])
+    
+    # Run rest period
+    print('Resting Block %d: duration=%.2f'%(iBlock, params['restDur_TRs']) )
+    # Display fixation cross
+    win.clearBuffer() # clear the screen
+    fixation.draw() # draw the cross
+    win.logOnFlip(level=logging.EXP, msg='Display Fixation')
+    win.flip() # flip the window ASAP
+    # do rest period
+    WaitForTrs(params['restDur_TRs'])
+    
+    # display info to experimenter
+    dt = 1.0/stimList['movieFrameRateList'][iCondition]
+    print('Tapping Block %d: movie=%s, framerate=%.2f, dt=%.3f'%(iBlock, stimList['moviePrefixList'][iCondition], stimList['movieFrameRateList'][iCondition], dt) )
+    # display tapping movie
+    
+    tBlock = PlayTappingMovie2(tapImages=tapImages, tapText=tapText, dt=dt, blockDur_TRs=params['blockDur_TRs'])
 
 # Log end of experiment
 logging.log(level=logging.EXP, msg='--- END EXPERIMENT ---')

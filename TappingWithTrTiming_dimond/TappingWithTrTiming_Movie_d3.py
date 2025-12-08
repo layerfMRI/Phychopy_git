@@ -28,18 +28,18 @@ params = {
     'nBlocks': 68,            # number of blocks in this session (number of on and off blocks)
     'condition': 'TapRight',
     'movieFolder': 'images/', # relative path to tapping videos
-    'movieFolder2': 'images_2/', # relative path to tapping videos
-    'blockDur_TRs':12,            # duration of each tapping block (in TRs)
-    'block2Dur_TRs':12,            # duration of each tapping block (in TRs)
-    'restDur_TRs':12,             # duration of each rest block (in TRs)
+    'movieFolder2': 'images/', # relative path to tapping videos
+    'blockDur_TRs':6,            # duration of each tapping block (in TRs)
+    'block2Dur_TRs':6,            # duration of each tapping block (in TRs)
+    'restDur_TRs':6,             # duration of each rest block (in TRs)
     'tStartup_TRs': 0,            # pause time before starting first stimulus (in TRs)
-    'triggerKey': 't',        # key from scanner that says scan is starting
+    'triggerKey': 'equal',        # key from scanner that says scan is starting
 # declare prompt and question files
     'skipPrompts': False,     # go right to the scanner-wait page
     'promptDir': 'Text/',  # directory containing prompts and questions files
 # declare display parameters
     'fullScreen': True,       # run in full screen mode?
-    'screenToShow': 0,        # display on primary screen (0) or secondary (1)? # Renzo hats auf null gesetzt
+    'screenToShow': 1,        # display on primary screen (0) or secondary (1)? # Renzo hats auf null gesetzt
     'fixCrossSize': 100,       # size of cross, in pixels
     'movieSize': (1600,1000), # size of image in pixels # Renzo hat te zahlen verdoppelt
     'fixCrossPos': [0,0],     # (x,y) pos of fixation cross displayed before each stimulus (for gaze drift correction)

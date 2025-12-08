@@ -1,0 +1,517 @@
+0.5667 	WARNING 	The 'psychtoolbox' library cannot be loaded but is required for audio capture (use `pip install psychtoolbox` to get it). Microphone recording will be unavailable this session. Note that opening a microphone stream will raise an error.
+1.3894 	ERROR 	Failed to import psychopy.sound.transcribe. Transcription will not bepossible on this machine. For details see stack trace below:
+Traceback (most recent call last):
+  File "/Applications/PsychoPy.app/Contents/Resources/lib/python3.8/psychopy/sound/__init__.py", line 57, in <module>
+    from .transcribe import *  # import transcription engine stuff
+  File "/Applications/PsychoPy.app/Contents/Resources/lib/python3.8/psychopy/sound/transcribe.py", line 58, in <module>
+    import pocketsphinx
+  File "/Applications/PsychoPy.app/Contents/Resources/lib/python3.8/pocketsphinx/__init__.py", line 35, in <module>
+    from sphinxbase import *
+  File "<frozen zipimport>", line 259, in load_module
+  File "sphinxbase/__init__.pyc", line 37, in <module>
+  File "<frozen zipimport>", line 259, in load_module
+  File "sphinxbase/ad_openal.pyc", line 27, in <module>
+  File "<frozen zipimport>", line 259, in load_module
+  File "sphinxbase/_ad_openal.pyc", line 14, in <module>
+  File "sphinxbase/_ad_openal.pyc", line 10, in __load
+  File "imp.pyc", line 342, in load_dynamic
+ImportError: dlopen(/Applications/PsychoPy.app/Contents/Resources/lib/python3.8/lib-dynload/sphinxbase/_ad_openal.so, 2): Symbol not found: ____chkstk_darwin
+  Referenced from: /Applications/PsychoPy.app/Contents/MacOS/../Frameworks/libopenal.1.21.1.dylib (which was built for Mac OS X 11.0)
+  Expected in: /usr/lib/libSystem.B.dylib
+ in /Applications/PsychoPy.app/Contents/MacOS/../Frameworks/libopenal.1.21.1.dylib
+
+1.6790 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+13.2797 	WARNING 	User requested fullscreen with size [1512  982], but screen is actually [1920, 1080]. Using actual size
+13.9741 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x12908b7c0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x15457c340>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+13.9743 	EXP 	window1: mouseVisible = True
+13.9745 	EXP 	window1: mouseVisible = False
+14.0538 	EXP 	Created task_trial1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial1', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='TABLE', units='pix', win=Window(...), wrapWidth=600)
+14.0654 	EXP 	Created resp_trial1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial1', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='vague or vivid?', units='pix', win=Window(...), wrapWidth=600)
+14.0744 	EXP 	Created task_trial2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='18 / 2', units='pix', win=Window(...), wrapWidth=600)
+14.0834 	EXP 	Created resp_trial2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='easy or difficult?', units='pix', win=Window(...), wrapWidth=600)
+14.0890 	EXP 	Created task_trial3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial3', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='SHOES', units='pix', win=Window(...), wrapWidth=600)
+14.0927 	EXP 	Created resp_trial3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial3', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='vague or vivid?', units='pix', win=Window(...), wrapWidth=600)
+14.0985 	EXP 	Created task_trial4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial4', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='39 - 22', units='pix', win=Window(...), wrapWidth=600)
+14.1023 	EXP 	Created resp_trial4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial4', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='easy or difficult?', units='pix', win=Window(...), wrapWidth=600)
+14.1077 	EXP 	Created task_trial5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial5', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='PUPIL', units='pix', win=Window(...), wrapWidth=600)
+14.1112 	EXP 	Created resp_trial5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial5', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='vague or vivid?', units='pix', win=Window(...), wrapWidth=600)
+14.1163 	EXP 	Created task_trial6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial6', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='36 * 2', units='pix', win=Window(...), wrapWidth=600)
+14.1201 	EXP 	Created resp_trial6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial6', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='easy or difficult?', units='pix', win=Window(...), wrapWidth=600)
+14.1255 	EXP 	Created task_trial7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial7', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='CORN', units='pix', win=Window(...), wrapWidth=600)
+14.1312 	EXP 	Created resp_trial7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial7', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='vague or vivid?', units='pix', win=Window(...), wrapWidth=600)
+14.1344 	EXP 	Created task_trial8 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial8', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='31 * 2', units='pix', win=Window(...), wrapWidth=600)
+14.1387 	EXP 	Created resp_trial8 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial8', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='easy or difficult?', units='pix', win=Window(...), wrapWidth=600)
+14.1423 	EXP 	Created task_trial9 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial9', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='DOLL', units='pix', win=Window(...), wrapWidth=600)
+14.1465 	EXP 	Created resp_trial9 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial9', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='vague or vivid?', units='pix', win=Window(...), wrapWidth=600)
+14.1511 	EXP 	Created task_trial10 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial10', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='24 + 16', units='pix', win=Window(...), wrapWidth=600)
+14.1554 	EXP 	Created resp_trial10 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial10', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='easy or difficult?', units='pix', win=Window(...), wrapWidth=600)
+14.1585 	EXP 	Created task_trial11 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial11', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='PALACE', units='pix', win=Window(...), wrapWidth=600)
+14.1624 	EXP 	Created resp_trial11 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial11', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='vague or vivid?', units='pix', win=Window(...), wrapWidth=600)
+14.1664 	EXP 	Created task_trial12 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial12', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='54 / 3', units='pix', win=Window(...), wrapWidth=600)
+14.1709 	EXP 	Created resp_trial12 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial12', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='easy or difficult?', units='pix', win=Window(...), wrapWidth=600)
+14.1748 	EXP 	Created task_trial13 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial13', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='SUGAR', units='pix', win=Window(...), wrapWidth=600)
+14.1782 	EXP 	Created resp_trial13 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial13', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='vague or vivid?', units='pix', win=Window(...), wrapWidth=600)
+14.1820 	EXP 	Created task_trial14 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial14', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='77 - 52', units='pix', win=Window(...), wrapWidth=600)
+14.1859 	EXP 	Created resp_trial14 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial14', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='easy or difficult?', units='pix', win=Window(...), wrapWidth=600)
+14.1884 	EXP 	Created task_trial15 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial15', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='BIRD', units='pix', win=Window(...), wrapWidth=600)
+14.1918 	EXP 	Created resp_trial15 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial15', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='vague or vivid?', units='pix', win=Window(...), wrapWidth=600)
+14.1954 	EXP 	Created task_trial16 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial16', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='72 / 2', units='pix', win=Window(...), wrapWidth=600)
+14.1994 	EXP 	Created resp_trial16 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial16', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='easy or difficult?', units='pix', win=Window(...), wrapWidth=600)
+14.2026 	EXP 	Created task_trial17 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial17', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='PIPE', units='pix', win=Window(...), wrapWidth=600)
+14.2060 	EXP 	Created resp_trial17 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial17', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='vague or vivid?', units='pix', win=Window(...), wrapWidth=600)
+14.2096 	EXP 	Created task_trial18 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial18', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='29 - 21', units='pix', win=Window(...), wrapWidth=600)
+14.2136 	EXP 	Created resp_trial18 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial18', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='easy or difficult?', units='pix', win=Window(...), wrapWidth=600)
+14.2166 	EXP 	Created task_trial19 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial19', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='LETTER', units='pix', win=Window(...), wrapWidth=600)
+14.2204 	EXP 	Created resp_trial19 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial19', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='vague or vivid?', units='pix', win=Window(...), wrapWidth=600)
+14.2236 	EXP 	Created task_trial20 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial20', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='56 - 23', units='pix', win=Window(...), wrapWidth=600)
+14.2312 	EXP 	Created resp_trial20 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial20', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='easy or difficult?', units='pix', win=Window(...), wrapWidth=600)
+14.2356 	EXP 	Created task_trial21 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial21', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='TICKET', units='pix', win=Window(...), wrapWidth=600)
+14.2391 	EXP 	Created resp_trial21 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial21', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='vague or vivid?', units='pix', win=Window(...), wrapWidth=600)
+14.2444 	EXP 	Created task_trial22 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial22', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='38 * 3', units='pix', win=Window(...), wrapWidth=600)
+14.2497 	EXP 	Created resp_trial22 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial22', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='easy or difficult?', units='pix', win=Window(...), wrapWidth=600)
+14.2529 	EXP 	Created task_trial23 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial23', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='HOUSE', units='pix', win=Window(...), wrapWidth=600)
+14.2568 	EXP 	Created resp_trial23 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial23', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='vague or vivid?', units='pix', win=Window(...), wrapWidth=600)
+14.2610 	EXP 	Created task_trial24 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial24', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='70 + 22', units='pix', win=Window(...), wrapWidth=600)
+14.2650 	EXP 	Created resp_trial24 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial24', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='easy or difficult?', units='pix', win=Window(...), wrapWidth=600)
+14.2698 	EXP 	Created task_trial25 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial25', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='FACTORY', units='pix', win=Window(...), wrapWidth=600)
+14.2738 	EXP 	Created resp_trial25 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial25', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='vague or vivid?', units='pix', win=Window(...), wrapWidth=600)
+14.2770 	EXP 	Created task_trial26 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial26', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='38 + 70', units='pix', win=Window(...), wrapWidth=600)
+14.2819 	EXP 	Created resp_trial26 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial26', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='easy or difficult?', units='pix', win=Window(...), wrapWidth=600)
+14.2860 	EXP 	Created task_trial27 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial27', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='FUR', units='pix', win=Window(...), wrapWidth=600)
+14.2899 	EXP 	Created resp_trial27 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial27', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='vague or vivid?', units='pix', win=Window(...), wrapWidth=600)
+14.2936 	EXP 	Created task_trial28 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial28', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='25 + 54', units='pix', win=Window(...), wrapWidth=600)
+14.2981 	EXP 	Created resp_trial28 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial28', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='easy or difficult?', units='pix', win=Window(...), wrapWidth=600)
+14.3026 	EXP 	Created task_trial29 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial29', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='FLOOD', units='pix', win=Window(...), wrapWidth=600)
+14.3071 	EXP 	Created resp_trial29 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial29', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='vague or vivid?', units='pix', win=Window(...), wrapWidth=600)
+14.3105 	EXP 	Created task_trial30 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='task_trial30', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='32 / 4', units='pix', win=Window(...), wrapWidth=600)
+14.3143 	EXP 	Created resp_trial30 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50.0, italic=False, languageStyle='LTR', name='resp_trial30', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='easy or difficult?', units='pix', win=Window(...), wrapWidth=600)
+14.3204 	EXP 	Created fix0 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([0.6549, 0.6549, 0.6549]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=1.5, italic=False, languageStyle='LTR', name='fix0', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='cm', win=Window(...), wrapWidth=15.0)
+14.3231 	EXP 	Created fix1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=1.5, italic=False, languageStyle='LTR', name='fix1', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='cm', win=Window(...), wrapWidth=15.0)
+20.1623 	DATA 	Keypress: t
+20.1742 	EXP 	buffer
+23.1603 	DATA 	Keypress: t
+23.1716 	EXP 	buffer
+26.1602 	DATA 	Keypress: t
+26.1776 	EXP 	rest
+29.1602 	DATA 	Keypress: t
+29.1743 	EXP 	task am
+32.1627 	DATA 	Keypress: t
+32.1802 	EXP 	task am
+35.1607 	DATA 	Keypress: t
+35.1780 	EXP 	task am
+38.1620 	DATA 	Keypress: t
+38.1752 	EXP 	task am
+41.1625 	DATA 	Keypress: t
+41.1729 	EXP 	task am
+44.1619 	DATA 	Keypress: t
+44.1784 	EXP 	task am
+47.1613 	DATA 	Keypress: t
+47.1758 	EXP 	rest
+50.1612 	DATA 	Keypress: t
+50.1728 	EXP 	task ma
+53.1615 	DATA 	Keypress: t
+53.1789 	EXP 	task ma
+56.1609 	DATA 	Keypress: t
+56.1762 	EXP 	task ma
+59.1621 	DATA 	Keypress: t
+59.1735 	EXP 	task ma
+62.1609 	DATA 	Keypress: t
+62.1709 	EXP 	task ma
+65.1614 	DATA 	Keypress: t
+65.1770 	EXP 	task ma
+68.1614 	DATA 	Keypress: t
+68.1739 	EXP 	rest
+71.1625 	DATA 	Keypress: t
+71.1797 	EXP 	task am
+74.1633 	DATA 	Keypress: t
+74.1774 	EXP 	task am
+77.1635 	DATA 	Keypress: t
+77.1737 	EXP 	task am
+80.1619 	DATA 	Keypress: t
+80.1722 	EXP 	task am
+83.1625 	DATA 	Keypress: t
+83.1773 	EXP 	task am
+86.1621 	DATA 	Keypress: t
+86.1746 	EXP 	task am
+89.1625 	DATA 	Keypress: t
+89.1727 	EXP 	rest
+92.1624 	DATA 	Keypress: t
+92.1780 	EXP 	task ma
+95.1625 	DATA 	Keypress: t
+95.1751 	EXP 	task ma
+98.1633 	DATA 	Keypress: t
+98.1734 	EXP 	task ma
+101.1622 	DATA 	Keypress: t
+101.1785 	EXP 	task ma
+104.1621 	DATA 	Keypress: t
+104.1759 	EXP 	task ma
+107.1618 	DATA 	Keypress: t
+107.1719 	EXP 	task ma
+110.1634 	DATA 	Keypress: t
+110.1794 	EXP 	rest
+113.1624 	DATA 	Keypress: t
+113.1770 	EXP 	task am
+116.1645 	DATA 	Keypress: t
+116.1823 	EXP 	task am
+119.1632 	DATA 	Keypress: t
+119.1796 	EXP 	task am
+122.1643 	DATA 	Keypress: t
+122.1770 	EXP 	task am
+125.1632 	DATA 	Keypress: t
+125.1734 	EXP 	task am
+128.1640 	DATA 	Keypress: t
+128.1803 	EXP 	task am
+131.1635 	DATA 	Keypress: t
+131.1778 	EXP 	rest
+134.1629 	DATA 	Keypress: t
+134.1745 	EXP 	task ma
+137.1644 	DATA 	Keypress: t
+137.1805 	EXP 	task ma
+140.1645 	DATA 	Keypress: t
+140.1777 	EXP 	task ma
+143.1631 	DATA 	Keypress: t
+143.1753 	EXP 	task ma
+146.1628 	DATA 	Keypress: t
+146.1730 	EXP 	task ma
+149.1631 	DATA 	Keypress: t
+149.1787 	EXP 	task ma
+152.1642 	DATA 	Keypress: t
+152.1756 	EXP 	rest
+155.1643 	DATA 	Keypress: t
+155.1816 	EXP 	task am
+158.1639 	DATA 	Keypress: t
+158.1792 	EXP 	task am
+161.1642 	DATA 	Keypress: t
+161.1756 	EXP 	task am
+164.1639 	DATA 	Keypress: t
+164.1739 	EXP 	task am
+167.1655 	DATA 	Keypress: t
+167.1798 	EXP 	task am
+170.1653 	DATA 	Keypress: t
+170.1767 	EXP 	task am
+173.1643 	DATA 	Keypress: t
+173.1744 	EXP 	rest
+176.1643 	DATA 	Keypress: t
+176.1804 	EXP 	task ma
+179.1648 	DATA 	Keypress: t
+179.1774 	EXP 	task ma
+182.1649 	DATA 	Keypress: t
+182.1755 	EXP 	task ma
+185.1649 	DATA 	Keypress: t
+185.1807 	EXP 	task ma
+188.1651 	DATA 	Keypress: t
+188.1780 	EXP 	task ma
+191.1637 	DATA 	Keypress: t
+191.1739 	EXP 	task ma
+194.1640 	DATA 	Keypress: t
+194.1740 	EXP 	rest
+197.1643 	DATA 	Keypress: t
+197.1784 	EXP 	task am
+200.1649 	DATA 	Keypress: t
+200.1750 	EXP 	task am
+203.1665 	DATA 	Keypress: t
+203.1811 	EXP 	task am
+206.1665 	DATA 	Keypress: t
+206.1785 	EXP 	task am
+209.1661 	DATA 	Keypress: t
+209.1842 	EXP 	task am
+212.1663 	DATA 	Keypress: t
+212.1818 	EXP 	task am
+215.1662 	DATA 	Keypress: t
+215.1789 	EXP 	rest
+218.1665 	DATA 	Keypress: t
+218.1769 	EXP 	task ma
+221.1648 	DATA 	Keypress: t
+221.1749 	EXP 	task ma
+224.1669 	DATA 	Keypress: t
+224.1797 	EXP 	task ma
+227.1653 	DATA 	Keypress: t
+227.1766 	EXP 	task ma
+230.1658 	DATA 	Keypress: t
+230.1829 	EXP 	task ma
+233.1664 	DATA 	Keypress: t
+233.1796 	EXP 	task ma
+236.1657 	DATA 	Keypress: t
+236.1779 	EXP 	rest
+239.1662 	DATA 	Keypress: t
+239.1831 	EXP 	task am
+242.1672 	DATA 	Keypress: t
+242.1806 	EXP 	task am
+245.1667 	DATA 	Keypress: t
+245.1782 	EXP 	task am
+248.1667 	DATA 	Keypress: t
+248.1839 	EXP 	task am
+251.1674 	DATA 	Keypress: t
+251.1813 	EXP 	task am
+254.1665 	DATA 	Keypress: t
+254.1785 	EXP 	task am
+257.1662 	DATA 	Keypress: t
+257.1763 	EXP 	rest
+260.1669 	DATA 	Keypress: t
+260.1817 	EXP 	task ma
+263.1672 	DATA 	Keypress: t
+263.1787 	EXP 	task ma
+266.1665 	DATA 	Keypress: t
+266.1768 	EXP 	task ma
+269.1670 	DATA 	Keypress: t
+269.1826 	EXP 	task ma
+272.1669 	DATA 	Keypress: t
+272.1795 	EXP 	task ma
+275.1667 	DATA 	Keypress: t
+275.1766 	EXP 	task ma
+278.1672 	DATA 	Keypress: t
+278.1833 	EXP 	rest
+281.1663 	DATA 	Keypress: t
+281.1767 	EXP 	task am
+284.1685 	DATA 	Keypress: t
+284.1858 	EXP 	task am
+287.1680 	DATA 	Keypress: t
+287.1836 	EXP 	task am
+290.1673 	DATA 	Keypress: t
+290.1801 	EXP 	task am
+293.1674 	DATA 	Keypress: t
+293.1776 	EXP 	task am
+296.1684 	DATA 	Keypress: t
+296.1841 	EXP 	task am
+299.1674 	DATA 	Keypress: t
+299.1811 	EXP 	rest
+302.1679 	DATA 	Keypress: t
+302.1782 	EXP 	task ma
+305.1672 	DATA 	Keypress: t
+305.1846 	EXP 	task ma
+308.1680 	DATA 	Keypress: t
+308.1819 	EXP 	task ma
+311.1683 	DATA 	Keypress: t
+311.1786 	EXP 	task ma
+314.1669 	DATA 	Keypress: t
+314.1770 	EXP 	task ma
+317.1675 	DATA 	Keypress: t
+317.1777 	EXP 	task ma
+320.1673 	DATA 	Keypress: t
+320.1775 	EXP 	rest
+323.1683 	DATA 	Keypress: t
+323.1854 	EXP 	task am
+326.1667 	DATA 	Keypress: t
+326.1768 	EXP 	task am
+329.1684 	DATA 	Keypress: t
+329.1801 	EXP 	task am
+332.1681 	DATA 	Keypress: t
+332.1782 	EXP 	task am
+335.1682 	DATA 	Keypress: t
+335.1830 	EXP 	task am
+338.1694 	DATA 	Keypress: t
+338.1802 	EXP 	task am
+341.1694 	DATA 	Keypress: t
+341.1865 	EXP 	rest
+344.1682 	DATA 	Keypress: t
+344.1784 	EXP 	task ma
+347.1681 	DATA 	Keypress: t
+347.1783 	EXP 	task ma
+350.1678 	DATA 	Keypress: t
+350.1780 	EXP 	task ma
+353.1679 	DATA 	Keypress: t
+353.1780 	EXP 	task ma
+356.1677 	DATA 	Keypress: t
+356.1780 	EXP 	task ma
+359.1685 	DATA 	Keypress: t
+359.1786 	EXP 	task ma
+362.1682 	DATA 	Keypress: t
+362.1783 	EXP 	rest
+365.1691 	DATA 	Keypress: t
+365.1817 	EXP 	task am
+368.1690 	DATA 	Keypress: t
+368.1790 	EXP 	task am
+371.1699 	DATA 	Keypress: t
+371.1853 	EXP 	task am
+374.1703 	DATA 	Keypress: t
+374.1818 	EXP 	task am
+377.1698 	DATA 	Keypress: t
+377.1799 	EXP 	task am
+380.1688 	DATA 	Keypress: t
+380.1787 	EXP 	task am
+383.1701 	DATA 	Keypress: t
+383.1832 	EXP 	rest
+386.1704 	DATA 	Keypress: t
+386.1891 	EXP 	task ma
+389.1691 	DATA 	Keypress: t
+389.1792 	EXP 	task ma
+392.1689 	DATA 	Keypress: t
+392.1790 	EXP 	task ma
+395.1701 	DATA 	Keypress: t
+395.1802 	EXP 	task ma
+398.1688 	DATA 	Keypress: t
+398.1786 	EXP 	task ma
+401.1692 	DATA 	Keypress: t
+401.1793 	EXP 	task ma
+404.1693 	DATA 	Keypress: t
+404.1793 	EXP 	rest
+407.1702 	DATA 	Keypress: t
+407.1868 	EXP 	task am
+410.1703 	DATA 	Keypress: t
+410.1849 	EXP 	task am
+413.1702 	DATA 	Keypress: t
+413.1804 	EXP 	task am
+416.1704 	DATA 	Keypress: t
+416.1807 	EXP 	task am
+419.1712 	DATA 	Keypress: t
+419.1856 	EXP 	task am
+422.1713 	DATA 	Keypress: t
+422.1821 	EXP 	task am
+425.1714 	DATA 	Keypress: t
+425.1883 	EXP 	rest
+428.1704 	DATA 	Keypress: t
+428.1855 	EXP 	task ma
+431.1711 	DATA 	Keypress: t
+431.1824 	EXP 	task ma
+434.1712 	DATA 	Keypress: t
+434.1888 	EXP 	task ma
+437.1699 	DATA 	Keypress: t
+437.1801 	EXP 	task ma
+440.1709 	DATA 	Keypress: t
+440.1830 	EXP 	task ma
+443.1699 	DATA 	Keypress: t
+443.1800 	EXP 	task ma
+446.1699 	DATA 	Keypress: t
+446.1801 	EXP 	rest
+449.1700 	DATA 	Keypress: t
+449.1804 	EXP 	task am
+452.1699 	DATA 	Keypress: t
+452.1800 	EXP 	task am
+455.1724 	DATA 	Keypress: t
+455.1874 	EXP 	task am
+458.1724 	DATA 	Keypress: t
+458.1846 	EXP 	task am
+461.1714 	DATA 	Keypress: t
+461.1815 	EXP 	task am
+464.1709 	DATA 	Keypress: t
+464.1811 	EXP 	task am
+467.1708 	DATA 	Keypress: t
+467.1809 	EXP 	rest
+470.1724 	DATA 	Keypress: t
+470.1829 	EXP 	task ma
+473.1726 	DATA 	Keypress: t
+473.1884 	EXP 	task ma
+476.1710 	DATA 	Keypress: t
+476.1811 	EXP 	task ma
+479.1718 	DATA 	Keypress: t
+479.1827 	EXP 	task ma
+482.1709 	DATA 	Keypress: t
+482.1809 	EXP 	task ma
+485.1713 	DATA 	Keypress: t
+485.1815 	EXP 	task ma
+488.1708 	DATA 	Keypress: t
+488.1809 	EXP 	rest
+491.1716 	DATA 	Keypress: t
+491.1891 	EXP 	task am
+494.1712 	DATA 	Keypress: t
+494.1814 	EXP 	task am
+497.1722 	DATA 	Keypress: t
+497.1822 	EXP 	task am
+500.1719 	DATA 	Keypress: t
+500.1820 	EXP 	task am
+503.1721 	DATA 	Keypress: t
+503.1821 	EXP 	task am
+506.1727 	DATA 	Keypress: t
+506.1826 	EXP 	task am
+509.1735 	DATA 	Keypress: t
+509.1896 	EXP 	rest
+512.1721 	DATA 	Keypress: t
+512.1823 	EXP 	task ma
+515.1734 	DATA 	Keypress: t
+515.1849 	EXP 	task ma
+518.1730 	DATA 	Keypress: t
+518.1907 	EXP 	task ma
+521.1728 	DATA 	Keypress: t
+521.1831 	EXP 	task ma
+524.1720 	DATA 	Keypress: t
+524.1824 	EXP 	task ma
+527.1734 	DATA 	Keypress: t
+527.1835 	EXP 	task ma
+530.1729 	DATA 	Keypress: t
+530.1884 	EXP 	rest
+533.1719 	DATA 	Keypress: t
+533.1824 	EXP 	task am
+536.1721 	DATA 	Keypress: t
+536.1832 	EXP 	task am
+539.1728 	DATA 	Keypress: t
+539.1830 	EXP 	task am
+542.1728 	DATA 	Keypress: t
+542.1831 	EXP 	task am
+545.1738 	DATA 	Keypress: t
+545.1838 	EXP 	task am
+548.1735 	DATA 	Keypress: t
+548.1838 	EXP 	task am
+551.1729 	DATA 	Keypress: t
+551.1831 	EXP 	rest
+554.1732 	DATA 	Keypress: t
+554.1836 	EXP 	task ma
+557.1743 	DATA 	Keypress: t
+557.1900 	EXP 	task ma
+560.1729 	DATA 	Keypress: t
+560.1829 	EXP 	task ma
+563.1733 	DATA 	Keypress: t
+563.1836 	EXP 	task ma
+566.1744 	DATA 	Keypress: t
+566.1847 	EXP 	task ma
+569.1743 	DATA 	Keypress: t
+569.1844 	EXP 	task ma
+572.1739 	DATA 	Keypress: t
+572.1852 	EXP 	rest
+575.1736 	DATA 	Keypress: t
+575.1839 	EXP 	task am
+578.1731 	DATA 	Keypress: t
+578.1842 	EXP 	task am
+581.1747 	DATA 	Keypress: t
+581.1853 	EXP 	task am
+584.1739 	DATA 	Keypress: t
+584.1840 	EXP 	task am
+587.1744 	DATA 	Keypress: t
+587.1844 	EXP 	task am
+590.1744 	DATA 	Keypress: t
+590.1846 	EXP 	task am
+593.1747 	DATA 	Keypress: t
+593.1849 	EXP 	rest
+596.1753 	DATA 	Keypress: t
+596.1888 	EXP 	task ma
+599.1754 	DATA 	Keypress: t
+599.1868 	EXP 	task ma
+602.1739 	DATA 	Keypress: t
+602.1843 	EXP 	task ma
+605.1740 	DATA 	Keypress: t
+605.1842 	EXP 	task ma
+608.1754 	DATA 	Keypress: t
+608.1873 	EXP 	task ma
+611.1754 	DATA 	Keypress: t
+611.1856 	EXP 	task ma
+614.1744 	DATA 	Keypress: t
+614.1847 	EXP 	rest
+617.1754 	DATA 	Keypress: t
+617.1858 	EXP 	task am
+620.1740 	DATA 	Keypress: t
+620.1853 	EXP 	task am
+623.1760 	DATA 	Keypress: t
+623.1908 	EXP 	task am
+626.1754 	DATA 	Keypress: t
+626.1878 	EXP 	task am
+629.1751 	DATA 	Keypress: t
+629.1850 	EXP 	task am
+632.1763 	DATA 	Keypress: t
+632.1916 	EXP 	task am
+635.1754 	DATA 	Keypress: t
+635.1856 	EXP 	rest
+638.1749 	DATA 	Keypress: t
+638.1849 	EXP 	task ma
+653.4954 	DATA 	Keypress: t
+653.5062 	EXP 	task ma
+655.3521 	DATA 	Keypress: t
+655.3673 	EXP 	task ma
+655.5834 	DATA 	Keypress: t
+655.5926 	EXP 	task ma
+655.7922 	DATA 	Keypress: t
+655.8018 	EXP 	task ma
+655.9841 	DATA 	Keypress: t
+655.9939 	EXP 	task ma
+656.1839 	DATA 	Keypress: t
+656.1943 	EXP 	rest
+656.3757 	DATA 	Keypress: t
+656.6538 	EXP 	window1: mouseVisible = True
