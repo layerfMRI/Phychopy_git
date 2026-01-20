@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+q#!/usr/bin/env python2
 """Load Questions, Run Prompts, and Run Probe Trials."""
 # BasicPromptTools.py
 # Created 1/30/15 by DJ based on VidLecTask.py - called PromptTools.py.
