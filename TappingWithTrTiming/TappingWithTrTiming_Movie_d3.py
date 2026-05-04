@@ -29,9 +29,9 @@ params = {
     'condition': 'TapRight',
     'movieFolder': 'images/', # relative path to tapping videos
     'movieFolder2': 'images/', # relative path to tapping videos
-    'blockDur_TRs':6,            # duration of each tapping block (in TRs)
-    'block2Dur_TRs':6,            # duration of each tapping block (in TRs)
-    'restDur_TRs':6,             # duration of each rest block (in TRs)
+    'blockDur_TRs':30,            # duration of each tapping block (in TRs)
+    'block2Dur_TRs':0,            # duration of each tapping block (in TRs)
+    'restDur_TRs'q:30,             # duration of each rest block (in TRs)
     'tStartup_TRs': 0,            # pause time before starting first stimulus (in TRs)
     'triggerKey': 'equal',        # key from scanner that says scan is starting
 # declare prompt and question files
