@@ -37,4 +37,5 @@ t getit back on screen,
     :target: https://github.com/layerfMRI/Psychopy/blob/master/readme/window_isgone.png
     :alt: screenshot of zoomed window
 
+Tip for Saskia. use file /TappingWithTrTiming/TappingWithTrTiming_Movie_d3_trigger_t.py
 
