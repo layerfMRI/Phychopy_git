@@ -10,7 +10,7 @@ from psychopy import core, gui, data, event, sound, logging
 # from psychopy import visual # visual causes a bug in the guis, so it's declared after all GUIs run.
 from psychopy.tools.filetools import fromFile, toFile # saving and loading parameter files
 import time as ts, numpy as np # for timing and array operations
-import AppKit, os, glob # for monitor size dqq===etection, files
+import AppKit, os, glob # for monitor size detection, files
 import BasicPromptTools # for loading/presenting prompts and questions
 import random # for randomization of trials
 
@@ -27,11 +27,11 @@ params = {
 # Declare stimulus and response parameters
     'nBlocks': 68,            # number of blocks in this session (number of on and off blocks)
     'condition': 'TapRight',
-    'movieFolder': 'Images/', # relative path to tapping videos======
-    'blockDur_TRs':20,            # duration of each tapping block (in TRs)
-    'restDur_TRs':20,             # duration of each rest block (in TRs)
+    'movieFolder': 'Images/', # relative path to tapping videos
+    'blockDur_TRs':10,            # duration of each tapping block (in TRs)
+    'restDur_TRs':10,             # duration of each rest block (in TRs)
     'tStartup_TRs': 0,            # pause time before starting first stimulus (in TRs)
-    'triggerKey': 'equal',   #equal      # key from scanner that says scan is starting
+    'triggerKey': 't',        # key from scanner that says scan is starting
 # declare prompt and question files
     'skipPrompts': False,     # go right to the scanner-wait page
     'promptDir': 'Text/',  # directory containing prompts and questions files
@@ -39,10 +39,10 @@ params = {
     'fullScreen': True,       # run in full screen mode?ttttttttt
     'screenToShow': 0,        # display on primary screen (0) or secondary (1)? # Renzo hats auf null gesetzt
     'fixCrossSize': 100,       # size of cross, in pixels
-    'movieSize': (1600,1000), # size of image in pixels # Renzo hat te zahlen verdoppelt
+    'movieSize': (1600,1600), # size of image in pixels # Renzo hat te zahlen verdoppelt
     'fixCrossPos': [0,0],     # (x,y) pos of fixation cross displayed before each stimulus (for gaze drift correction)
     'screenColor':(128,128,128), # in rgb255 space: (r,g,b) all between 0 and 255
-    'textHeight': 40 #(in pixels)s
+    'textHeight': 40 #(in pixels)
 }
 
 stimList = {

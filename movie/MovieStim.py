@@ -18,12 +18,13 @@ print('orig movie size=%s' % mov.size)
 print('duration=%.2fs' % mov.duration)
 globalClock = core.Clock()
 
+ss
 
 msg1 = visual.TextStim(win, text=u"Please do not move! ",height=100,units='pix',name='intro', color='black',wrapWidth=600,pos=(0,0))  # default position = centered
 msg1.draw()
 win.flip()
 
-event.waitKeys(keyList=['return','t']);                                                                   # Wait for Scanner Trigger.
+event.waitKeys(keyList=['return','s']);                                                                   # Wait for Scanner Trigger.
 
 
 while mov.status != visual.FINISHED:
