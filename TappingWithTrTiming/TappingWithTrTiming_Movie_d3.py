@@ -7,6 +7,7 @@ import pyglet
 print(pyglet.version)
 from pyglet.gl import *
 from psychopy import core, gui, data, event, sound, logging
+
 # from psychopy import visual # visual causes a bug in the guis, so it's declared after all GUIs run.
 from psychopy.tools.filetools import fromFile, toFile # saving and loading parameter files
 import time as ts, numpy as np # for timing and array operations
@@ -28,9 +29,9 @@ params = {
     'nBlocks': 68,            # number of blocks in this session (number of on and off blocks)
     'condition': 'TapRight',
     'movieFolder': 'Images/', # relative path to tapping videos======
-    'blockDur_TRs':20,            # duration of each tapping block (in TRs)
-    'restDur_TRs':20,             # duration of each rest block (in TRs)
-    'tStartup_TRs': 0,            # pause time before starting first stimulus (in TRs)
+    'blockDur_TRs':15,            # duration of each tapping block (in TRs)
+    'restDur_TRs':15,             # duration of each rest block (in TRs)
+    'tStartup_TRs': 4,            # pause time before starting first stimulus (in TRs)
     'triggerKey': 'equal',   #equal      # key from scanner that says scan is starting
 # declare prompt and question files
     'skipPrompts': False,     # go right to the scanner-wait page
